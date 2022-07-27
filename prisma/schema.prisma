@@ -73,21 +73,20 @@ model parent {
 }
 
 model student {
-  id         Int      @id @default(autoincrement())
-  createdAt  DateTime @default(now())
-  email      String   @unique
+  id         Int                                 @id @default(autoincrement())
+  createdAt  DateTime                            @default(now())
+  email      String                              @unique
   firstName  String
   gradeLevel Int
   lastName   String
   password   String
   school     String
-  updatedAt  DateTime @updatedAt
+  updatedAt  DateTime                            @updatedAt
   why        String
-
-  meeting  meeting[]
-  mentors  studentsandmentors[]
-  messages messagesbetweenstudentsandmentors[]
-  parents  studentsandparents[]
+  meeting    meeting[]
+  mentors    studentsandmentors[]
+  messages   messagesbetweenstudentsandmentors[]
+  parents    studentsandparents[]
 }
 
 model studentsandmentors {
