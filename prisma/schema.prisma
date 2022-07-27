@@ -1,0 +1,111 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// update datebase schema with the following command:
+//    npx prisma migrate dev --name placeholder_for_migration_note
+// please kindly run this command after each schema update:
+//    npx prisma generate
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model meeting {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  meetingTime DateTime
+  updatedAt   DateTime @updatedAt
+  mentor      mentor   @relation(fields: [mentorId], references: [id])
+  mentorId    Int
+  student     student  @relation(fields: [studentId], references: [id])
+  studentId   Int
+}
+
+model mentor {
+  id        Int                                 @id @default(autoincrement())
+  createdAt DateTime                            @default(now())
+  updatedAt DateTime                            @updatedAt
+  firstName String
+  lastName  String
+  email     String                              @unique
+  password  String
+  meeting   meeting[]
+  messages  messagesbetweenstudentsandmentors[]
+  students  studentsandmentors[]
+}
+
+model message {
+  id                                Int                                 @id @default(autoincrement())
+  createdAt                         DateTime                            @default(now())
+  message                           String
+  receiverId                        Int
+  senderId                          Int
+  messagesbetweenstudentsandmentors messagesbetweenstudentsandmentors[]
+}
+
+model messagesbetweenstudentsandmentors {
+  message   message @relation(fields: [messageId], references: [id])
+  messageId Int
+  mentor    mentor  @relation(fields: [mentorId], references: [id])
+  mentorId  Int
+  student   student @relation(fields: [studentId], references: [id])
+  studentId Int
+
+  @@id([messageId])
+}
+
+model parent {
+  id        Int                  @id @default(autoincrement())
+  createdAt DateTime             @default(now())
+  email     String               @unique
+  firstName String
+  lastName  String
+  password  String
+  school    String
+  updatedAt DateTime             @updatedAt
+  why       String
+  students  studentsandparents[]
+}
+
+model student {
+  id         Int      @id @default(autoincrement())
+  createdAt  DateTime @default(now())
+  email      String   @unique
+  firstName  String
+  gradeLevel Int
+  lastName   String
+  password   String
+  school     String
+  updatedAt  DateTime @updatedAt
+  why        String
+
+  meeting  meeting[]
+  mentors  studentsandmentors[]
+  messages messagesbetweenstudentsandmentors[]
+  parents  studentsandparents[]
+}
+
+model studentsandmentors {
+  student    student  @relation(fields: [studentId], references: [id])
+  studentId  Int
+  mentor     mentor   @relation(fields: [mentorId], references: [id])
+  mentorId   Int
+  assignedAt DateTime @default(now())
+
+  @@id([mentorId, studentId])
+}
+
+model studentsandparents {
+  student    student  @relation(fields: [studentId], references: [id])
+  studentId  Int
+  parent     parent   @relation(fields: [parentId], references: [id])
+  parentId   Int
+  assignedAt DateTime @default(now())
+
+  @@id([studentId, parentId])
+}
