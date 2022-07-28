@@ -1,8 +1,27 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import prisma from '../lib/prisma.js';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import DatePicker from '@mui/x-date-pickers/DatePicker';
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const students = await prisma.student.findMany({
+    select: {
+      firstName: true,
+      email: true,
+    },
+  });
+  return {
+    props: { students },
+    revalidate: 10,
+  };
+};
+
+export default function Home(props) {
+  const students = props.students;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,6 +34,14 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <p>
+          Hi {students[0].firstName}! Your email is {students[0].email}
+        </p>
+
+        <Button variant="contained">Hello World</Button>
+
+        <Divider style={{width:'100%'}} light>HERE</Divider>
 
         <p className={styles.description}>
           Get started by editing{' '}
