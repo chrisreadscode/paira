@@ -2,23 +2,37 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Developer Documentation - Getting Started
 
-(0) Please kindly open the terminal, either in or outside of VS Code, and navigate to the paira directory.
+(0.0) Please kindly open the terminal, either in or outside of VS Code, go to the Desktop folder (or where you would like the project folder to be on your computer) and then kindly run
 
-(1) First, please kindly run
+```
+gh repo clone rcreadii/paira
+``` 
+
+This will download a copy of the PAIRA web app repository.
+
+(0.1) Please kindly navigate to the PAIRA directory. This command may differ depending, for example, on where we ran the previous command, but may look something like the following
+
+```
+cd paira
+```
+
+This will place our terminal inside the paira directory.
+
+(1) Then, please kindly run
 
 ```
 npm install
 ```
 
-This will install our dependencies.
+This will install our project dependencies.
 
-(2) Second, please kindly run the development server
+(2) After, please kindly start the development server
 
 ```
 npm run dev
 ```
 
-This will run out website locally.
+This will run our website locally.
 
 (3) Third, in your browser please kindly go to
 
@@ -27,6 +41,12 @@ http://localhost:3000
 ```
 
 This will allow us to see our website !
+
+(4) We can also navigate to individual pages with urls like
+
+```
+http://localhost:3000/choose-your-mentor
+```
 
 # From Next.js / Vercel!
 
