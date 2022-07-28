@@ -1,5 +1,35 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Developer Documentation - Getting Started
+
+(0) Please kindly open the terminal, either in or outside of VS Code, and navigate to the paira directory.
+
+(1) First, please kindly run
+
+```
+npm install
+```
+
+This will install our dependencies.
+
+(2) Second, please kindly run the development server
+
+```
+npm run dev
+```
+
+This will run out website locally.
+
+(3) Third, in your browser please kindly go to
+
+```
+http://localhost:3000
+```
+
+This will allow us to see our website !
+
+# From Next.js / Vercel!
+
 ## Getting Started
 
 First, run the development server:
