@@ -1,10 +1,28 @@
 # Developer Documentation
 ## Table of Contents
 - Getting Started
+    - Summary Of What's Needed
+    - How To Run The Project Locally
+    - Step By Step Setup Instructions
 - Project Overview
 
 ## Getting Started
 
+### Summary Of What's Needed
+- Clone repo
+- npm install
+- local .env with DATABASE_URL 
+- local postgres installation
+
+Please kindly see below for step by step instructions !
+
+### How To Run The Project Locally
+After setup, please kindly run the following code:
+```
+npm run dev
+```
+
+### Step By Step Setup Instructions
 (0.0) Please kindly open the terminal, either in or outside of VS Code, go to the Desktop folder (or where you would like the project folder to be on your computer) and then kindly run
 
 ```
@@ -24,7 +42,7 @@ This will place our terminal inside the paira directory.
 (1) Then, please kindly run
 
 ```
-npm install
+npm install --include=dev
 ```
 
 This will install our project dependencies.
@@ -51,18 +69,48 @@ This will allow us to see our website !
 http://localhost:3000/choose-your-mentor
 ```
 
-(5) To develop locally, we can setup a local postgres database. We can do this by:
+(5.0) To develop locally, we can use a local postgres database. We can do this by adding a .env file with the following code:
 
 ```
-https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database#setting-up-postgresql-on-macos
+DATABASE_URL="postgresql://USERNAME:PASSWORD@localhost:PORT/DATABASENAME?schema=public"
 ```
 
-??
-```
+Where USERNAME, PASSWORD, PORT, and DATABASENAME are all set on our local machines. If the logged-in user has no password. Please kindly try to leave the :PASSWORD blank. The database url might look like "postgresql://USERNAME@localhost:PORT/DATABASENAME?schema=public", but I am not sure if this will work.
+
+(5.1) If we need to install postgres and create a local database, please kindly run the following commands:
 
 ```
+brew install postgresql
+```
 
-To view the database tables more easily, please kindly download Postico
+That has installed postgres and the psql command line tool.
+
+Please kindly run the following command to open the psql command line tool:
+
+```
+psql postgres
+```
+
+Then, in the psql client that's popped up, please kindly create a database with the following command:
+```
+CREATE DATABASE placeholder_for_your_database_name_here;
+```
+
+Then, please kindly run the following two commands:
+```
+\c placeholder_for_your_database_name_here
+\conninfo
+```
+
+Lastly, please kindly note down the connection info, and use it to return to step 5.0.
+
+Please kindly feel free to close psql with the following command
+
+```
+\q
+```
+
+To view the database tables more easily, please kindly download Postico and connect it to your new database.
 ```
 https://eggerapps.at/postico/
 ```
@@ -75,6 +123,7 @@ https://eggerapps.at/postico/
 - Host - Heroku (not yet set up)
 
 ## Where To Find Each Project Section
+### Main Folders
 - Frontend: the pages folder. Reusable components are in the components folder
 - "Backend": is in the prisma folder. This is where we create and change the database schema
 - Database: the connection url is in the .env file
@@ -86,7 +135,7 @@ https://eggerapps.at/postico/
 - node_modules: where external packages are installed
 - public: I don't know, currently we can put our site images here
 
-### Other Files
+### Remaining Files
 - .eslintrc.json: I don't know, maybe to do with formatting code files
 - .gitignore: files to be ignored by git
 - next.config.js: I don't know
