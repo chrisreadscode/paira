@@ -1,6 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Developer Documentation
+## Table of Contents
+- Getting Started
+- Project Overview
 
-## Developer Documentation - Getting Started
+## Getting Started
 
 (0.0) Please kindly open the terminal, either in or outside of VS Code, go to the Desktop folder (or where you would like the project folder to be on your computer) and then kindly run
 
@@ -48,7 +51,50 @@ This will allow us to see our website !
 http://localhost:3000/choose-your-mentor
 ```
 
+(5) To develop locally, we can setup a local postgres database. We can do this by:
+
+```
+https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database#setting-up-postgresql-on-macos
+```
+
+??
+```
+
+```
+
+To view the database tables more easily, please kindly download Postico
+```
+https://eggerapps.at/postico/
+```
+
+## Project Overview
+- Frontend - Next.js (React)
+- "Backend" - Express/Prisma
+- Database - Postgres
+- Styling Library - MUI
+- Host - Heroku (not yet set up)
+
+## Where To Find Each Project Section
+- Frontend: the pages folder. Reusable components are in the components folder
+- "Backend": is in the prisma folder. This is where we create and change the database schema
+- Database: the connection url is in the .env file
+- Styling Library: for MUI please kindly see an example in pages/index.js, for css the styles folder
+
+### Other Folders
+- .next: I don't know, something to do with Next.js
+- lib: I don't know, currently it may be like a utilities folder
+- node_modules: where external packages are installed
+- public: I don't know, currently we can put our site images here
+
+### Other Files
+- .eslintrc.json: I don't know, maybe to do with formatting code files
+- .gitignore: files to be ignored by git
+- next.config.js: I don't know
+- package-lock.json: full list of external modules our project uses
+- package.json: I don't know, currently a summary of the project, project dependencies, and scripts
+
 # From Next.js / Vercel!
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
