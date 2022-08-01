@@ -31,12 +31,11 @@ export default function Home(props) {
           Welcome to <a href="https://pairahealth.com">PAIRA</a>
         </h1>
 
-        <p>
-          {/* Please kindly find a list of our students below: */}
+        <div>
           {students.map((student, index) => 
             <p key={index}>{student.firstName}: {student.email}</p>
           )}
-        </p>
+        </div>
 
         <Button variant="contained">Hello World</Button>
 
