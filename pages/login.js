@@ -4,9 +4,10 @@ import _Head from "../components/_Head.js";
 import Footer from "../components/Footer.js";
 import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
+import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal"
+import Divider from "@mui/material/Divider"
 import { useState } from 'react';
 
 export default function Login() {
@@ -56,35 +57,35 @@ export default function Login() {
       <_Head />
       <main
         className={styles.main}
-        style={{ display: "flex", flexDirection: "row" }}
       >
-        <div>
+        <div id={styles.div}>
           <Image
             alt="paira logo"
-            height="100px"
-            src="/../public/paira-placeholder.png"
-            width="500px"
+            id={styles.logo}
+            height="50px"
+            src="/../public/paira-logo.png"
+            width="200px"
           />
           <p id={styles.createAccount}>
             Create an account to enjoy all the services without any ads free!
           </p>
-          <form action="api/login" method="post" onSubmit={handleSubmit}>
-            <InputLabel htmlFor="email">Email Address</InputLabel>
-            <Input id="email" required type="email"></Input>
-            <InputLabel htmlFor="password">Password</InputLabel>
-            <Input id="password" required type="password"></Input>
+          <form action="api/login" id={styles.loginForm} method="post" onSubmit={handleSubmit}>
+            <TextField className={styles.input} id="email" fullWidth placeholder="Email" required type="email"></TextField>
             <br/>
-            <Button type="submit">Log In</Button>
+            <TextField className={styles.input} id="password" fullWidth placeholder="Password" required type="password"></TextField>
+            <br/>
+            <Button className={styles.button} fullWidth type="submit" size="large" variant="contained">Log In</Button>
           </form>
-          <Button>Forgot Password</Button>
-          <br/>
-          <Button onClick={handleOpen}>Create new account</Button>
+          <Button style={{margin: "auto", width: "fit-content"}}>Forgot Password?</Button>
+          <Divider style={{margin: "2vh auto", width: "80%"}}></Divider>
+          <Button color="success" onClick={handleOpen} style={{margin: "auto", width: "50%"}} variant="contained">Create new account</Button>
         </div>
         <Image
           alt="paira student"
-          height="500px"
-          src="/../public/student-placeholder.png"
-          width="200px"
+          id={styles.pairaStudent}
+          height="500"
+          src="/../public/paira-student-girl.png"
+          width="100"
         />
         {/* <Modal open={} onClose={handleClose}>
           <div>Sign Up</div>
