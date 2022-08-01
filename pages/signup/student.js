@@ -1,8 +1,9 @@
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Signup.module.css";
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { margin } from "@mui/system";
 
 export default function Student() {
     return (
@@ -10,19 +11,31 @@ export default function Student() {
       <_Head />
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <div id={styles.box}>
+            <h1 className={styles.title}>
+              Signup
+            </h1>
 
-        <p>Welcome to our student signup page!</p>
+            <div>
+              <input className={styles.input} name="first_name" placeholder="First name" style={{ margin: "20px 20px 10px 20px", width: "40%" }}></input>
+              <input className={styles.input} name="last_name" placeholder="Last name" style={{ margin: "20px 20px 10px 20px", width: "40%" }}></input>
+            </div>
+            <input className={styles.input} name="student_email" placeholder="Student's email"></input>
+            <input className={styles.input} name="grade_level" placeholder="Grade level" ></input>
+            <input className={styles.input} name="student_school" placeholder="Student's school"></input>
+            <input className={styles.input} name="question" placeholder="What do you hope to gain through PAIRA?" ></input>
 
-        {/* <form action="/api/hello" method="post" onSubmit={handleSubmit}>
+            <div style={{display: "flex", justifyContent: "center"}}><button id={styles.button}> Create new account</button></div>
+
+
+            {/* <form action="/api/hello" method="post" onSubmit={handleSubmit}>
           <label htmlFor="first">First name:</label>
           <input type="text" id="first" name="first" />
           <label htmlFor="last">Last name:</label>
           <input type="text" id="last" name="last" />
           <button type="submit">Submit</button>
-        </form> */}
+          </form> */}
+          </div> 
       </main>
 
       <Footer />
