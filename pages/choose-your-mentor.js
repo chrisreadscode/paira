@@ -4,7 +4,7 @@ import Footer from "../components/Footer.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-export default function chooseMentor() {
+export default function ChooseMentor() {
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
