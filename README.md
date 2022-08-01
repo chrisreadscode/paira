@@ -142,6 +142,9 @@ https://eggerapps.at/postico/
 - package-lock.json: full list of external modules our project uses
 - package.json: I don't know, currently a summary of the project, project dependencies, and scripts
 
+### PAIRA Hexcode
+PAIRA Blue: #73C2FB
+
 # From Next.js / Vercel!
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

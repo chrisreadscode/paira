@@ -15,28 +15,66 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model insightsforstudents {
+  id               Int     @id @default(autoincrement())
+  createdAt        Float   @default(dbgenerated("SELECT extract(epoch from now());"))
+  communication    Int
+  criticalThinking Int
+  direction        Int
+  empathy          Int
+  growthMindset    Int
+  perseverance     Int
+  resilience       Int
+  selfAwareness    Int
+  timeManagement   Int
+  updatedAt        Float   @default(dbgenerated("SELECT extract(epoch from now());"))
+  student          student @relation(fields: [studentId], references: [id])
+  studentId        Int
+}
+
 model meeting {
-  id          Int      @id @default(autoincrement())
-  createdAt   DateTime @default(now())
-  meetingTime DateTime
-  updatedAt   DateTime @updatedAt
-  mentor      mentor   @relation(fields: [mentorId], references: [id])
-  mentorId    Int
-  student     student  @relation(fields: [studentId], references: [id])
-  studentId   Int
+  id               Int      @id @default(autoincrement())
+  createdAt        DateTime @default(now())
+  meetingTimeEnd   DateTime
+  meetingTimeStart DateTime
+  updatedAt        DateTime @updatedAt
+  mentor           mentor   @relation(fields: [mentorId], references: [id])
+  mentorId         Int
+  student          student  @relation(fields: [studentId], references: [id])
+  studentId        Int
 }
 
 model mentor {
-  id        Int                                 @id @default(autoincrement())
-  createdAt DateTime                            @default(now())
-  updatedAt DateTime                            @updatedAt
-  firstName String
-  lastName  String
-  email     String                              @unique
-  password  String
-  meeting   meeting[]
-  messages  messagesbetweenstudentsandmentors[]
-  students  studentsandmentors[]
+  id             Int                                 @id @default(autoincrement())
+  bio            String
+  createdAt      DateTime                            @default(now())
+  updatedAt      DateTime                            @updatedAt
+  firstName      String
+  lastName       String
+  location       String
+  educationLevel String
+  email          String                              @unique
+  password       String
+  profileImage   String
+  speciality     String
+  university     String
+  meeting        meeting[]
+  messages       messagesbetweenstudentsandmentors[]
+  notes          mentornote[]
+  students       studentsandmentors[]
+  resources      resourcesforstudentsandmentors[]
+}
+
+model mentornote {
+  id        Int     @id @default(autoincrement())
+  createdAt Float   @default(dbgenerated("SELECT extract(epoch from now());"))
+  note      String
+  title     String
+  updatedAt Float   @default(dbgenerated("SELECT extract(epoch from now());"))
+  mentor    mentor  @relation(fields: [mentorId], references: [id])
+  mentorId  Int
+  student   student @relation(fields: [studentId], references: [id])
+  studentId Int
 }
 
 model message {
@@ -72,24 +110,57 @@ model parent {
   students  studentsandparents[]
 }
 
+// A resource type: article, video, quiz, exercise
+model resource {
+  id                             Int                              @id @default(autoincrement())
+  createdAt                      Float
+  timeToCompleteInMinutes        Int
+  link                           String
+  summary                        String
+  title                          String
+  type                           String
+  resourcesforstudentsandmentors resourcesforstudentsandmentors[]
+}
+
+model resourcesforstudentsandmentors {
+  id         Int      @id @default(autoincrement())
+  assigned   Boolean  @default(true)
+  completed  Boolean  @default(false)
+  createdAt  Float
+  saved      Boolean  @default(false)
+  mentor     mentor?  @relation(fields: [mentorId], references: [id])
+  mentorId   Int?
+  resource   resource @relation(fields: [resourceId], references: [id])
+  resourceId Int
+  student    student? @relation(fields: [studentId], references: [id])
+  studentId  Int?
+}
+
 model student {
-  id         Int                                 @id @default(autoincrement())
-  createdAt  DateTime                            @default(now())
-  email      String                              @unique
-  firstName  String
-  gradeLevel Int
-  lastName   String
-  password   String
-  school     String
-  updatedAt  DateTime                            @updatedAt
-  why        String
-  meeting    meeting[]
-  mentors    studentsandmentors[]
-  messages   messagesbetweenstudentsandmentors[]
-  parents    studentsandparents[]
+  id                  Int                                 @id @default(autoincrement())
+  age                 Int
+  createdAt           DateTime                            @default(now())
+  email               String                              @unique
+  firstName           String
+  gradeLevel          Int
+  lastName            String
+  location            String
+  password            String
+  school              String
+  updatedAt           DateTime                            @updatedAt
+  why                 String
+  insightsforstudents insightsforstudents[]
+  meeting             meeting[]
+  mentors             studentsandmentors[]
+  messages            messagesbetweenstudentsandmentors[]
+  notes               mentornote[]
+  parents             studentsandparents[]
+  resources           resourcesforstudentsandmentors[]
+  quizanswers         quizanswers[]
 }
 
 model studentsandmentors {
+  active     Boolean  @default(false)
   student    student  @relation(fields: [studentId], references: [id])
   studentId  Int
   mentor     mentor   @relation(fields: [mentorId], references: [id])
@@ -107,4 +178,23 @@ model studentsandparents {
   assignedAt DateTime @default(now())
 
   @@id([studentId, parentId])
+}
+
+model quiz {
+  id                      Int           @id @default(autoincrement())
+  createdAt               Float         @default(dbgenerated("SELECT extract(epoch from now());"))
+  title                   String
+  timeToCompleteInMinutes Int
+  updatedAt               Float         @default(dbgenerated("SELECT extract(epoch from now());"))
+  quizanswers             quizanswers[]
+}
+
+model quizanswers {
+  id        Int     @id @default(autoincrement())
+  answer    String
+  question  String
+  quizId    Int
+  student   student @relation(fields: [studentId], references: [id])
+  studentId Int
+  quiz      quiz    @relation(fields: [quizId], references: [id])
 }

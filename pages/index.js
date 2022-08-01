@@ -35,10 +35,8 @@ export default function Home(props) {
           {/* Please kindly find a list of our students below: */}
           {students.map((student, index) => {
             <div></div>
-          }) {
-
-            }
           }
+          )}
           {/* Hi {students[0].firstName}! Your email is {students[0].email} */}
         </p>
 
