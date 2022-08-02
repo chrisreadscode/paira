@@ -13,17 +13,18 @@ export default function ParentSignup() {
 
       <main className={styles.main}>
         <div id={styles.box}>
-          <h1 className={styles.title}>
-            Signup
+          <h1 className={styles.title} style={{ fontSize: "2rem" }}>
+            Questions about Student
           </h1>
 
           <div>
-            <input className={styles.input} name="first_name" placeholder="First name" style={{ margin: "20px 20px 10px 20px", width: "40%" }}></input>
-            <input className={styles.input} name="last_name" placeholder="Last name" style={{ margin: "20px 20px 10px 20px", width: "40%" }}></input>
+            <input className={styles.input} name="student_first_name" placeholder="Student's First name" style={{ margin: "20px 20px 10px 20px", width: "40%" }}></input>
+            <input className={styles.input} name="student_last_name" placeholder="Student's Last name" style={{ margin: "20px 20px 10px 20px", width: "40%" }}></input>
           </div>
-          <input className={styles.input} name="student_email" placeholder="Email"></input>
-          <input className={styles.input} name="grade_level" placeholder="Password" ></input>
-          <input className={styles.input} name="question" placeholder="Why did you decide to join PAIRA?" ></input><br></br>
+          <input className={styles.input} name="student_email" placeholder="Student's Email"></input>
+          <input className={styles.input} name="grade_level" placeholder="Grade level" ></input>
+          <input className={styles.input} name="school" placeholder="Student's School" ></input>
+          <input className={styles.input} name="question" placeholder="What do you hope to gain through PAIRA?" ></input><br></br>
 
           <div id={styles.consent}>
             <input type="checkbox" className={styles.checkbox} value="parent_consent"></input>
