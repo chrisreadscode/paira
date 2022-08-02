@@ -1,5 +1,6 @@
 import styles from "../../styles/Login.module.css";
 import _Head from "../../components/_Head.js";
+import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -10,13 +11,7 @@ export default function Student() {
   return (
     <div className={styles.container}>
       <_Head />
-      <Image
-        alt="paira logo"
-        height="50px"
-        width="200px"
-        src="/paira-placeholder.png"
-        z-index="0"
-      />
+      <Header />
 
       <main className={styles.main}>
 
