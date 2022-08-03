@@ -1,54 +1,3 @@
-#mainBox {
-    width: 55%;
-    height: 500px;
-    margin: 60px auto auto 10px;
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid #d0cece;
-
-}
-
-#mainBoxTop {
-    width: 100%;
-    height: 150px;
-    margin: 0px 0px auto 0px;
-    background-color: grey;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#profile {
-    height: 346px;
-    padding: 20px;
-    font-size: 25px;
-}
-
-#profileImg {
-    position: absolute;
-    top: 500px;
-    width: 200px;
-}
-
-#background {
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.container {
-    padding: 0 2rem;
-    background-color: #f2f2f1;
-}
-
-.main {
-    min-height: 100vh;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer {
     display: flex;
     flex: 1;
@@ -164,4 +113,99 @@
     .logo img {
         filter: invert(1);
     }
+}
+
+#mainBox {
+    width: 55%;
+    height: 500px;
+    margin: 60px auto auto 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #d0cece;
+    float: left;
+
+}
+
+#mainBoxTop {
+    width: 100%;
+    height: 150px;
+    margin: 0px 0px auto 0px;
+    background-color: grey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#profile {
+    height: 346px;
+    padding: 40px;
+    font-size: 25px;
+}
+
+#profileImg {
+    display: block;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#background {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container {
+    padding: 0 2rem;
+    background-color: #f2f2f1;
+}
+
+.main {
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    margin: 0px;
+}
+
+.fontSmall {
+    font-size: small;
+}
+
+.fontMedium {
+    font-size: medium;
+}
+
+.fontLarge {
+    font-size: large;
+}
+
+#education {
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.textBox {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+#email {
+    margin: 10px 0px;
+    margin-bottom: 5px;
+}
+
+#sideBox {
+    width: 30%;
+    height: 500px;
+    margin: 60px auto auto 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #d0cece;
 }
