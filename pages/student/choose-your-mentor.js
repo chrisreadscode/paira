@@ -1,63 +1,49 @@
+import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
+import Header from "../../components/Header.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-export default function ChooseMentor() {
-  const handleSubmit = async (event) => {
-    // Stop the form from submitting and refreshing the page.
-    event.preventDefault();
-
-    const data = {
-      firstName: event.target.first.value,
-      lastName: event.target.last.value,
-    };
-
-    console.log(data);
-
-    const JSONdata = JSON.stringify(data);
-
-    const endpoint = "/api/hello";
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-
-    const result = await response.json();
-
-    alert(`Is this your full name: ${result.data}`);
-  };
+export default function ChooseYourMentor() {
+  const router = useRouter();
 
   return (
-    <div className={styles.container}>
+    <div>
       <_Head />
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p>Welcome to our second page!</p>
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        <Button variant="contained">Submit Form!</Button>
-
-        <form action="/api/hello" method="post" onSubmit={handleSubmit}>
-          <label htmlFor="first">First name:</label>
-          <input type="text" id="first" name="first" />
-          <label htmlFor="last">Last name:</label>
-          <input type="text" id="last" name="last" />
-          <button type="submit">Submit</button>
-        </form>
-      </main>
-
-      <Footer />
+      <div className={styles.container}>
+        <Header />
+        <main className={styles.main}>
+          <div id="matched-mentors">
+            <h3>You have 3 matched mentors:</h3>
+            <div>Tina Richards</div>
+            <div>John Lake</div>
+            <div>Gina Wee</div>
+          </div>
+          <div id="choose-mentor">
+            <h2>Choose your mentor</h2>
+            <Button onClick={() => router.push("/student/home")}>done</Button>
+            <div id="mentor-profile-summary">
+              {/* profile */}
+              <div>Meet Gina Wee</div>
+              <div>
+                Gina is a Harvard graduate studying education and adolescent
+                psychology
+              </div>
+            </div>
+            <div>
+              <Button onClick={() => router.push("/student/schedule")}>
+                Schedule with Gina
+              </Button>
+              <Button onClick={() => router.push("/student/mentor-profile")}>
+                More about me
+              </Button>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
