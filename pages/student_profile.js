@@ -1,9 +1,9 @@
 
 
-import styles from "../../styles/Profile.module.css";
-import _Head from "../../components/_Head.js";
-import Header from "../../components/Header.js";
-import Footer from "../../components/Footer.js";
+import styles from "../styles/Profile.module.css";
+import _Head from "../components/_Head.js";
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 import Image from "next/image";
 
 export default function StudentProfile() {
