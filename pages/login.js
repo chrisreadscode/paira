@@ -103,9 +103,9 @@ export default function Login() {
               Log In
             </Button>
           </form>
-          <Button style={{ margin: "auto", width: "fit-content" }}>
+          <Link href="/password-reset" style={{ margin: "auto", width: "fit-content" }}>
             Forgot Password?
-          </Button>
+          </Link>
           <Divider style={{ margin: "2vh auto", width: "80%" }}></Divider>
           <Button
             color="success"
