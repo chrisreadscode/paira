@@ -1,5 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../styles/Login.module.css";
 import _Head from "../components/_Head.js";
 import Footer from "../components/Footer.js";
@@ -11,21 +12,17 @@ import TextField from "@mui/material/TextField";
 import { useEffect, useState } from "react";
 
 export default function Login() {
-  const handleSubmit = async (event) => {
+  const handleLoginSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
-    // event.preventDefault();
-
+    event.preventDefault();
+    
     // const data = {
     //   firstName: event.target.first.value,
     //   lastName: event.target.last.value,
     // };
-
     // console.log(data);
-
     // const JSONdata = JSON.stringify(data);
-
     // const endpoint = "/api/hello";
-
     // const options = {
     //   method: "POST",
     //   headers: {
@@ -33,12 +30,12 @@ export default function Login() {
     //   },
     //   body: JSONdata,
     // };
-
     // const response = await fetch(endpoint, options);
-
     // const result = await response.json();
-
     // alert(`Is this your full name: ${result.data}`);
+
+    // if everything checks out
+    router.push("/")
   };
 
   // const handleCloseModal = async (event) => {
@@ -51,22 +48,24 @@ export default function Login() {
   //   console.log
   // };
 
+  const router = useRouter();
+
   const [openModal, setOpenModal] = useState(false);
 
   const handleModalClose = async (event) => {
-      const modalNode = document.getElementById("modaldiv");
-      const nodeUserClicksOn = event.target;
-      if (!modalNode.contains(nodeUserClicksOn)) {
-        setOpenModal(false);
-      }
-  }
+    const modalNode = document.getElementById("modaldiv");
+    const nodeUserClicksOn = event.target;
+    if (!modalNode.contains(nodeUserClicksOn)) {
+      setOpenModal(false);
+    }
+  };
 
   return (
     <div className={styles.container}>
       <_Head />
+      <Header />
       <main className={styles.main}>
         <div id={styles.div}>
-          <Header />
           <p id={styles.createAccount}>
             Create an account to enjoy all the services without any ads free!
           </p>
@@ -74,7 +73,7 @@ export default function Login() {
             action="api/login"
             id={styles.loginForm}
             method="post"
-            onSubmit={handleSubmit}
+            onSubmit={handleLoginSubmit}
           >
             <TextField
               className={styles.input}
