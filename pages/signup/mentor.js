@@ -1,32 +1,70 @@
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Login.module.css";
+import { useRouter } from "next/router";
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
+import Header from "../../components/Header.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { margin } from "@mui/system";
 
-export default function MentorSignup() {
-    return (
+export default function ParentSignup() {
+  const router = useRouter();
+
+  const handleMentorSignupSubmit = async (event) => {
+    event.preventDefault();
+
+    router.push("/signup/mentor-thank-you");
+  };
+
+  return (
     <div className={styles.container}>
       <_Head />
-
+      <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p>Welcome to our mentor signup page!</p>
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        <Button variant="contained">Submit Form!</Button>
-
-        {/* <form action="/api/hello" method="post" onSubmit={handleSubmit}>
-          <label htmlFor="first">First name:</label>
-          <input type="text" id="first" name="first" />
-          <label htmlFor="last">Last name:</label>
-          <input type="text" id="last" name="last" />
-          <button type="submit">Submit</button>
-        </form> */}
+        <div id={styles.box}>
+          <h1 className={styles.title}>Questions About Applicant</h1>
+          <form onSubmit={handleMentorSignupSubmit}>
+            <div>
+              <input
+                className={styles.input}
+                name="first_name"
+                placeholder="First name"
+                style={{ margin: "20px 20px 10px 20px", width: "40%" }}
+              ></input>
+              <input
+                className={styles.input}
+                name="last_name"
+                placeholder="Last name"
+                style={{ margin: "20px 20px 10px 20px", width: "40%" }}
+              ></input>
+            </div>
+            <input
+              className={styles.input}
+              name="mentor_email"
+              placeholder="Email"
+            ></input>
+            <input
+              className={styles.input}
+              name="level_of_education"
+              placeholder="Level of Education"
+            ></input>
+            <input
+              className={styles.input}
+              name="colleges_attended"
+              placeholder="College(s) & Universities attended"
+            ></input>
+            <input
+              className={styles.input}
+              name="how_question"
+              placeholder="How did you find out about PAIRA?"
+            ></input>
+            <br></br>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <button id={styles.button}>Create new account</button>
+            </div>
+          </form>
+        </div>
       </main>
-
       <Footer />
     </div>
   );
