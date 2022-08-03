@@ -3,13 +3,12 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <div style={{ backgroundColor: "white" }}>
+        <div style={{ backgroundColor: "white", width: "100%", margin: "10px" }}>
             <Image
                 alt="paira logo"
-                height="50px"
+                height="38px"
                 width="200px"
-                src="/paira-placeholder.png"
-                z-index="0"
+                src="/paira-logo.png"
             />
         </div>
     );
