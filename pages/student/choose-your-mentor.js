@@ -1,6 +1,6 @@
-import styles from "../styles/Home.module.css";
-import _Head from "../components/_Head.js";
-import Footer from "../components/Footer.js";
+import styles from "../../styles/Home.module.css";
+import _Head from "../../components/_Head.js";
+import Footer from "../../components/Footer.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
