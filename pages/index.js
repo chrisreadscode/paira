@@ -7,18 +7,18 @@ import DatePicker from '@mui/x-date-pickers/DatePicker';
 import _Head from '../components/_Head.js'
 import Footer from '../components/Footer.js'
 
-export const getStaticProps = async () => {
-  const students = await prisma.student.findMany({
-    select: {
-      firstName: true,
-      email: true,
-    },
-  });
-  return {
-    props: { students },
-    revalidate: 10,
-  };
-};
+// export const getStaticProps = async () => {
+//   const students = await prisma.student.findMany({
+//     select: {
+//       firstName: true,
+//       email: true,
+//     },
+//   });
+//   return {
+//     props: { students },
+//     revalidate: 10,
+//   };
+// };
 
 export default function Home(props) {
   const students = props.students;
@@ -31,11 +31,11 @@ export default function Home(props) {
           Welcome to <a href="https://pairahealth.com">PAIRA</a>
         </h1>
 
-        <div>
+        {/* <div>
           {students.map((student, index) => 
             <p key={index}>{student.firstName}: {student.email}</p>
           )}
-        </div>
+        </div> */}
 
         <Button variant="contained">Hello World</Button>
 
