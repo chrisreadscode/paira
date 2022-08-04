@@ -1,9 +1,13 @@
+import Script from "next/script";
 import styles from "../../styles/Login.module.css";
 import _Head from "../../components/_Head.js";
 import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
 import MentorCard from "../../components/MentorCard";
 import MentorCardExpanded from "../../components/MentorCardExpanded";
+import { InlineWidget, InLineWidget } from "react-calendly";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 export default function Schedule() {
   return (
@@ -11,7 +15,10 @@ export default function Schedule() {
       <_Head />
       <div className={styles.container}>
         <Header />
-        <main className={styles.main}>
+        <main
+          className={styles.main}
+          style={{ display: "flex", flexDirection: "row" }}
+        >
           <div
             id={styles.box}
             style={{ display: "flex", flexDirection: "column" }}
@@ -21,16 +28,17 @@ export default function Schedule() {
             <MentorCard />
             <MentorCard />
           </div>
-
-          {/* <h1 className={styles.title}>Thank You So Much!</h1>
-            <div>
-              We have received your submission and will reach out to your child
-              shortly. We greatly appreciate your interest.
-            </div>
-            <div>
-                In the meantime, please kindly see more about our website here <a href="https:/www.pairahealth.com">PAIRA</a>
-            </div>
-            <div>We hope you have a great day!</div> */}
+          <div>
+            <ToggleButtonGroup>
+              <div>How long do you need?</div>
+              <div>
+                <ToggleButton>30 mins</ToggleButton>
+                <ToggleButton>1 hour</ToggleButton>
+              </div>
+            </ToggleButtonGroup>
+            {/* Please kindly remove the /meet to see the alternative calendly presentation */}
+            <InlineWidget url="https://calendly.com/rcreadii/meet" />
+          </div>
         </main>
         <Footer />
       </div>
