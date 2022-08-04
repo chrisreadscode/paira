@@ -7,7 +7,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import MessageIcon from "@mui/icons-material/Message";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function Header() {
+export default function HeaderStudent() {
   return (
     <div style={{ backgroundColor: "white", width: "100%", margin: "10px" }}>
       <Link href="/">

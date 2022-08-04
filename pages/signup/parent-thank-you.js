@@ -14,12 +14,8 @@ export default function ParentThankYou() {
             <h1 className={styles.title}>Thank You So Much!</h1>
             <div>
               We have received your submission and will reach out to your child
-              shortly. We greatly appreciate your interest.
+              shortly. We greatly appreciate your interest. We hope you have a great day!
             </div>
-            <div>
-                In the meantime, please kindly see more about our website here <a href="https:/www.pairahealth.com">PAIRA</a>
-            </div>
-            <div>We hope you have a great day!</div>
           </div>
         </main>
         <Footer />

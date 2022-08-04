@@ -3,7 +3,9 @@ import styles from "../../styles/MentorProfile.module.css";
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
 import Header from "../../components/Header.js";
-import EditIcon from '@mui/icons-material/Edit';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+import EditIcon from "@mui/icons-material/Edit";
 import Divider from "@mui/material/Divider";
 import TextField from "@mui/material/TextField";
 
@@ -14,6 +16,7 @@ export default function MentorProfile() {
       <div className={styles.container}>
         <Header />
         <main className={styles.main}>
+          <div style={{ display: "flex" }}>
           <div id={styles.mainBox}>
             <Image
               alt="Background Image"
@@ -47,7 +50,10 @@ export default function MentorProfile() {
             </div>
             <div>
               <div>Description</div>
-              <TextField value="Harvard graduate studying education and adolescent psychology" variant="outlined" />
+              <TextField
+                value="Harvard graduate studying education and adolescent psychology"
+                variant="outlined"
+              />
             </div>
             <EditIcon />
           </div>
@@ -61,12 +67,22 @@ export default function MentorProfile() {
 
             <div>
               <h3>Wallet</h3>
-              <div>Balance</div>
-              <div>$164.95</div>
+              <div style={{ display: "flex" }}>
+                <div>
+                  <div>Balance</div>
+                  <div>$164.95</div>
+                </div>
+                <ArrowForwardIosIcon />
+              </div>
               <div>Payout scheduled for: July 21st</div>
             </div>
             <br />
-            <div>Payment Methods</div>
+            <div style={{ display: "flex" }}>
+              <CreditCardIcon />
+              <div>Payment Methods</div>
+            </div>
+            {/* Payout, Linked Payout Methods */}
+          </div>
           </div>
         </main>
 
