@@ -2,7 +2,7 @@ import Link from "next/link";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Divider from "@mui/material/Divider";
 
-export default function MentorCardExpanded() {
+export default function MentorCardWide() {
   return (
     <Link href="/student/mentor-profile">
       <div style={{ display: "flex" }}>

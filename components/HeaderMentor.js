@@ -50,7 +50,7 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <Link href="/student/message">
+                <Link href="/mentor/message">
                     <div className={styles.icon}>
                         <MessageIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Message</div>

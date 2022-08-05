@@ -1,6 +1,6 @@
 import Link from "next/Link";
 
-export default function MentorCardNameOnly() {
+export default function MentorCardNarrow() {
   return (
     <Link href="/student/mentor-profile">
       <div>

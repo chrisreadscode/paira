@@ -11,7 +11,7 @@ export default function MentorCard() {
       <div>Time: 2:30pm</div>
       <Divider />
       <div style={{ display: "flex" }}>
-        <Button href="/student/home">Zoom Link</Button>
+        <Button href="/student/schedule">Zoom Link</Button>
         <Button href="/student/message">Message</Button>
       </div>
     </div>

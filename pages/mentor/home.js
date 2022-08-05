@@ -18,25 +18,31 @@ export default function Home() {
       {/* <div className={styles.container}> */}
       <main className={styles.main}>
         <div id="upcoming-assignments-container">
-          <h2>Upcoming Assignments</h2>
+          <h2>Upcoming Meetings</h2>
           <div style={{ display: "flex" }}>
             <ArrowBackIosIcon />
             <ArrowForwardIosIcon />
           </div>
           <div style={{ display: "flex" }}>
             <MeetingCard />
-            <AssignmentCard />
-            <AssignmentCard />
+            <MeetingCard />
+            <MeetingCard />
           </div>
         </div>
         <Divider></Divider>
-        <div id="your-mentors-container">
-          <h2>Your Mentors</h2>
-          <div>Explore Mentors</div>
-          <ArrowForwardIosIcon />
+        <div id="resources-container">
           <div style={{ display: "flex" }}>
-            <MentorCardWide />
-            <MentorCard />
+            <h2>Resources on Positive Psychology</h2>
+            <div>
+              <ArrowBackIosIcon />
+              <ArrowForwardIosIcon />
+            </div>
+          </div>
+          <div style={{ display: "flex" }}>
+            <AssignmentCard />
+            <AssignmentCard />
+            <AssignmentCard />
+            <AssignmentCard />
           </div>
         </div>
       </main>

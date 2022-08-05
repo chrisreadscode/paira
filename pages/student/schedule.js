@@ -4,7 +4,7 @@ import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
 import Footer from "../../components/Footer.js";
 import MentorCard from "../../components/MentorCard";
-import MentorCardExpanded from "../../components/MentorCardExpanded";
+import MentorCardWide from "../../components/MentorCardWide";
 import { InlineWidget, InLineWidget } from "react-calendly";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
@@ -24,7 +24,7 @@ export default function Schedule() {
             style={{ display: "flex", flexDirection: "column" }}
           >
             <h1>Your Mentors</h1>
-            <MentorCardExpanded />
+            <MentorCardWide />
             <MentorCard />
             <MentorCard />
           </div>
