@@ -7,6 +7,7 @@ import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
 import Image from "next/image";
 import EditIcon from '@mui/icons-material/Edit';
+import MentorCardNameOnly from "../../components/MentorCardNameOnly.js";
 
 export default function StudentProfile() {
     return (
@@ -79,9 +80,11 @@ export default function StudentProfile() {
                             <p className={styles.subtitle} style={{ marginTop: "50px" }}>Current Mentors</p>
 
                             <div style={{ display: "flex", flexDirection: "row" }}>
-                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}></div>
-                                <div className={styles.mentorBox}></div>
-                                <div className={styles.mentorBox}></div>
+                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
+                                <MentorCardNameOnly />
+                                </div>
+                                <div className={styles.mentorBox}><MentorCardNameOnly /></div>
+                                <div className={styles.mentorBox}><MentorCardNameOnly /></div>
                             </div>
 
 

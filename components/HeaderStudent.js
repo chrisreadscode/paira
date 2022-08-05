@@ -8,10 +8,10 @@ import MessageIcon from "@mui/icons-material/Message";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "../styles/Header.module.css";
 
-export default function Header() {
+export default function HeaderStudent() {
   return (
     <div id={styles.logo} style={{ width: "98%" }}>
-      <Link href="/">
+      <Link href="/student/home">
         <Image
           alt="paira logo"
           height="38px"

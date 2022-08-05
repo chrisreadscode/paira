@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from "next/Link";
 
-export default function MentorCard() {
+export default function MentorCardMessage() {
   return (
     <Link href="/student/mentor-profile">
       <div>
