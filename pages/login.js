@@ -15,7 +15,7 @@ export default function Login() {
   const handleLoginSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
-    
+
     // const data = {
     //   firstName: event.target.first.value,
     //   lastName: event.target.last.value,
@@ -62,8 +62,9 @@ export default function Login() {
 
   return (
     <div className={styles.container}>
-      <_Head />
       <Header />
+      <_Head />
+
       <main className={styles.main}>
         <div id={styles.div}>
           <p id={styles.createAccount}>

@@ -1,0 +1,30 @@
+#logo {
+    background-color: white;
+    width: 100%;
+    margin: 15px;
+    margin-left: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+    align-items: center;
+    width: 65px;
+    height: 40px;
+    opacity: .6;
+}
+
+.icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.iconText {
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
