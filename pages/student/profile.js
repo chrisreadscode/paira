@@ -3,7 +3,6 @@
 import styles from "../../styles/Profile.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
-import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
 import Image from "next/image";
 import EditIcon from '@mui/icons-material/Edit';

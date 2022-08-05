@@ -3,6 +3,7 @@ import _Head from "../../components/_Head.js";
 import AssignmentCard from "../../components/AssignmentCard";
 import Footer from "../../components/Footer.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
+import MeetingCard from "../../components/MeetingCard";
 import { Divider } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -23,7 +24,7 @@ export default function Home() {
             <ArrowForwardIosIcon />
           </div>
           <div style={{ display: "flex" }}>
-            <AssignmentCard />
+            <MeetingCard />
             <AssignmentCard />
             <AssignmentCard />
           </div>
