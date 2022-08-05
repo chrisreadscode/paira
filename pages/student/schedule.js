@@ -36,7 +36,7 @@ export default function Schedule() {
                 <ToggleButton>1 hour</ToggleButton>
               </div>
             </ToggleButtonGroup>
-            {/* Please kindly remove the /meet to see the alternative calendly presentation */}
+            {/* Please kindly remove the /meet in the link below to see the alternative calendly presentation */}
             <InlineWidget url="https://calendly.com/rcreadii/meet" />
           </div>
         </main>
