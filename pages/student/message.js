@@ -1,6 +1,5 @@
 import styles from "../../styles/Login.module.css";
 import _Head from "../../components/_Head.js";
-import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
 import MentorCardMessage from "../../components/MentorCardMessage";
 import MessageTopBar from "../../components/MessageTopBar";
@@ -8,13 +7,14 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import HeaderStudent from "../../components/HeaderStudent";
 
 export default function Message() {
   return (
     <div>
       <_Head />
       <div className={styles.container}>
-        <Header />
+        <HeaderStudent />
         <main className={styles.main}>
           <div id={styles.box} style={{ display: "flex" }}>
             <div style={{ display: "flex", flexDirection: "column" }}>

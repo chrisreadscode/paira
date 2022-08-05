@@ -1,7 +1,7 @@
 import Script from "next/script";
 import styles from "../../styles/Login.module.css";
 import _Head from "../../components/_Head.js";
-import Header from "../../components/Header.js";
+import HeaderStudent from "../../components/HeaderStudent.js";
 import Footer from "../../components/Footer.js";
 import MentorCard from "../../components/MentorCard";
 import MentorCardExpanded from "../../components/MentorCardExpanded";
@@ -14,7 +14,7 @@ export default function Schedule() {
     <div>
       <_Head />
       <div className={styles.container}>
-        <Header />
+      <HeaderStudent />
         <main
           className={styles.main}
           style={{ display: "flex", flexDirection: "row" }}
