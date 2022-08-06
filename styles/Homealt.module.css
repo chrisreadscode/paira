@@ -1,0 +1,77 @@
+.main {
+    min-height: 100vh;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 0 5rem;
+    background-color: #f2f2f1;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: normal;
+}
+
+.assignments {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 28%;
+    height: 250px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.imgContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 40%;
+    background-color: grey;
+    object-fit: contain;
+}
+
+#img1 {
+    position: relative;
+    bottom: 40px;
+}
+
+.content {
+    margin: 15px;
+    position: absolute;
+}
+
+.mentorClicked {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 35%;
+    height: 200px;
+    margin-right: 15px;
+    padding: 20px;
+}
+
+.mentor {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 15%;
+    height: 200px;
+    margin-right: 15px;
+    padding: 20px;
+}
+
+.mentorCard {
+    width: 100px;
+    height: 150px;
+    margin: 0px;
+    text-align: center;
+}
+
+.mentorDescription {
+    font-size: small;
+    color: rgb(98, 98, 98);
+    margin-top: 8px;
+}
