@@ -1,6 +1,6 @@
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
-import HeaderStudent from "../../components/HeaderStudent";
+import HeaderMentor from "../../components/HeaderMentor";
 import MessageMain from "../../components/MessageMain";
 import styles from "../../styles/Login.module.css";
 
@@ -9,7 +9,7 @@ export default function Message() {
     <div>
       <_Head />
       <div className={styles.container}>
-        <HeaderStudent />
+        <HeaderMentor />
         <main className={styles.main}>
           <MessageMain />
         </main>

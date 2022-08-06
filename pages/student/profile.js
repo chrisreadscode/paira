@@ -3,11 +3,10 @@
 import styles from "../../styles/Profile.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
-import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
 import Image from "next/image";
 import EditIcon from '@mui/icons-material/Edit';
-import MentorCardNameOnly from "../../components/MentorCardNameOnly.js";
+import MentorCardNarrow from "../../components/MentorCardNarrow.js";
 
 export default function StudentProfile() {
     return (
@@ -81,10 +80,10 @@ export default function StudentProfile() {
 
                             <div style={{ display: "flex", flexDirection: "row" }}>
                                 <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                <MentorCardNameOnly />
+                                <MentorCardNarrow />
                                 </div>
-                                <div className={styles.mentorBox}><MentorCardNameOnly /></div>
-                                <div className={styles.mentorBox}><MentorCardNameOnly /></div>
+                                <div className={styles.mentorBox}><MentorCardNarrow /></div>
+                                <div className={styles.mentorBox}><MentorCardNarrow /></div>
                             </div>
 
 
