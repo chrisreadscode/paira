@@ -11,7 +11,7 @@ export default function SampleReading() {
       <main className={styles.container + " " + styles.main}>
         <object
           data="https://ppc.sas.upenn.edu/sites/default/files/ppintroarticle.pdf"
-          style={{height: "90vh", width: "80vw"}}
+          style={{height: "90vh", width: "100vw"}}
           type="application/pdf"
         />
       </main>
