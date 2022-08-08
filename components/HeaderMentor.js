@@ -57,7 +57,7 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <Link href="/mentor/saved">
+                <Link href="/mentor/saved-resources">
                     <div className={styles.icon}>
                         <BookmarkIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Saved</div>

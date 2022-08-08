@@ -12,6 +12,7 @@ export default function HeaderStudent() {
   return (
     <div id={styles.logo} style={{ width: "98%" }}>
       <Link href="/student/home">
+        <>
         <Image
           alt="paira logo"
           height="38px"
@@ -19,6 +20,7 @@ export default function HeaderStudent() {
           src="/paira-logo.png"
           float="left"
         />
+        </>
       </Link>
 
       <div style={{ display: "flex", flexDirection: "row", float: "right" }}>
@@ -57,7 +59,7 @@ export default function HeaderStudent() {
           </div>
         </Link>
 
-        <Link href="/student/saved">
+        <Link href="/student/saved-resources">
           <div className={styles.icon}>
             <BookmarkIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Saved</div>
