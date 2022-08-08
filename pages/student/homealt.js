@@ -1,6 +1,7 @@
 
 
 import styles from "../../styles/Homealt.module.css";
+import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
 import Footer from "../../components/Footer.js";
@@ -14,18 +15,18 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 export default function StudentProfile() {
     return (
         <><HeaderStudent />
-            <div className={styles.container}>
+            <div className={commonStyles.container}>
                 <_Head />
-                <main className={styles.main}>
+                <main className={commonStyles.main}>
                     <div id={styles.upcomingAssignment}>
-                        <h2 className={styles.title}>Upcoming Assignments</h2>
+                        <h2 className={commonStyles.title}>Upcoming Assignments</h2>
                     </div>
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
 
 
 
-                        <div className={styles.assignments} style={{ marginLeft: "20px" }}>
+                        <div className={commonStyles.assignments} style={{ marginLeft: "20px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -45,7 +46,7 @@ export default function StudentProfile() {
                         </div>
 
 
-                        <div className={styles.assignments} style={{ marginLeft: "20px" }}>
+                        <div className={commonStyles.assignments} style={{ marginLeft: "20px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -73,7 +74,7 @@ export default function StudentProfile() {
 
 
 
-                        <div className={styles.assignments} style={{ marginLeft: "20px" }}>
+                        <div className={commonStyles.assignments} style={{ marginLeft: "20px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -103,7 +104,7 @@ export default function StudentProfile() {
 
 
                     <div id={styles.upcomingAssignment}>
-                        <h2 className={styles.title}>Your Mentors</h2>
+                        <h2 className={commonStyles.title}>Your Mentors</h2>
                     </div>
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>

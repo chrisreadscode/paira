@@ -13,13 +13,13 @@ export default function HeaderStudent() {
     <div id={styles.logo} style={{ width: "98%" }}>
       <Link href="/student/home">
         <>
-        <Image
-          alt="paira logo"
-          height="38px"
-          width="200px"
-          src="/paira-logo.png"
-          float="left"
-        />
+          <Image
+            alt="paira logo"
+            height="38px"
+            width="200px"
+            src="/paira-logo.png"
+            float="left"
+          />
         </>
       </Link>
 
