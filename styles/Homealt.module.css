@@ -15,14 +15,39 @@
     font-weight: normal;
 }
 
+#upcomingAssignment {
+    width: 88%;
+}
+
 .assignments {
     border-radius: 10px;
     border: 2px solid #d0cece;
     background-color: white;
-    width: 28%;
+    width: 33%;
     height: 250px;
     margin-right: 15px;
     overflow: hidden;
+}
+
+.assignmentTitle {
+    width: 100%;
+    height: 40%;
+}
+
+.assignmentDescription {
+    font-size: small;
+    color: rgb(98, 98, 98);
+}
+
+
+
+.assignmentDetails {
+    margin: 0px;
+    padding-top: 10px;
+    padding: 20px;
+    font-size: small;
+    line-height: 20px;
+    color: rgb(98, 98, 98);
 }
 
 .imgContainer {
@@ -39,9 +64,11 @@
 }
 
 .content {
-    margin: 15px;
-    position: absolute;
+    width: 100%;
+    height: 60%;
+    padding: 20px;
 }
+
 
 .mentorClicked {
     border-radius: 10px;
@@ -68,10 +95,37 @@
     height: 150px;
     margin: 0px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mentorDescription {
     font-size: small;
     color: rgb(98, 98, 98);
     margin-top: 8px;
+    line-height: 20px;
+
+}
+
+.icon {
+    margin: 0px 10px 0px auto;
+    opacity: 0.6;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+#sessions {
+    float: right;
+    color: rgb(98, 98, 98);
+}
+
+.link {
+    text-decoration: underline;
+    color: rgb(98, 98, 98);
+    font-size: small;
+}
+
+.link:hover {
+    cursor: pointer;
 }
