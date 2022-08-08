@@ -1,6 +1,7 @@
 import styles from "../../styles/Login.module.css";
 import { useRouter } from "next/router";
 import _Head from "../../components/_Head.js";
+import AssessmentSubmitButton from "../../components/AssessmentSubmitButton";
 import AssessmentQuestionSkillQuestion from "../../components/AssessmentQuestionSkillQuestion";
 import AssessmentQuestionFiveRadioButtons from "../../components/AssessmentQuestionFiveRadioButtons";
 import Header from "../../components/Header.js";
@@ -28,13 +29,11 @@ export default function Initial() {
     AssessmentQuestionFiveRadioButtons(questionObject)
   );
 
-  const submitButton = (
-    <div key="submit" style={{ display: "flex", justifyContent: "center" }}>
-      <button id={styles.button} key="submit">Next</button>
-    </div>
-  );
-
-  const assessmentQuestions = [skillQuestion, ...radioButtonQuestions, submitButton];
+  const assessmentQuestions = [
+    skillQuestion,
+    ...radioButtonQuestions,
+    AssessmentSubmitButton(),
+  ];
 
   return (
     <div>
@@ -42,7 +41,6 @@ export default function Initial() {
       <div className={styles.container}>
         <Header />
         <main className={styles.main}>
-          {/* <div id={styles.box}> */}
           <form
             onSubmit={handleInitialAssessmentSubmit}
             style={{ width: "70vw" }}
@@ -59,10 +57,12 @@ export default function Initial() {
               {assessmentQuestions}
             </Carousel>
           </form>
-          {/* </div> */}
         </main>
         <Footer />
       </div>
     </div>
   );
 }
+
+{/* <div id={styles.box}>
+</div> */}
