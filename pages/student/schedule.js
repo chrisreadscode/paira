@@ -5,7 +5,7 @@ import HeaderStudent from "../../components/HeaderStudent.js";
 import Footer from "../../components/Footer.js";
 import MentorCard from "../../components/MentorCard";
 import MentorCardWide from "../../components/MentorCardWide";
-import { InlineWidget, InLineWidget } from "react-calendly";
+import { InlineWidget } from "react-calendly";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
