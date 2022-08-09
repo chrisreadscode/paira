@@ -26,7 +26,7 @@ export default function StudentProfile() {
 
 
 
-                        <div className={commonStyles.assignments} style={{ marginLeft: "20px" }}>
+                        <div className={commonStyles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -46,7 +46,7 @@ export default function StudentProfile() {
                         </div>
 
 
-                        <div className={commonStyles.assignments} style={{ marginLeft: "20px" }}>
+                        <div className={commonStyles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -74,7 +74,7 @@ export default function StudentProfile() {
 
 
 
-                        <div className={commonStyles.assignments} style={{ marginLeft: "20px" }}>
+                        <div className={commonStyles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
