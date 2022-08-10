@@ -1,5 +1,3 @@
-
-
 #upcomingAssignment {
     width: 88%;
 }
@@ -10,16 +8,14 @@
 }
 
 .assignmentDescription {
+    padding-top: 2px;
     font-size: small;
     color: rgb(98, 98, 98);
 }
 
-
-
 .assignmentDetails {
     margin: 0px;
-    padding-top: 10px;
-    padding: 20px;
+    padding-top: 20px;
     font-size: small;
     line-height: 20px;
     color: rgb(98, 98, 98);
@@ -103,4 +99,60 @@
 
 .link:hover {
     cursor: pointer;
+}
+
+
+/* Mentor Home Page */
+
+.menteeBox {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 30%;
+    height: 200px;
+    margin-right: 15px;
+    overflow: hidden;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.menteeName {
+    font-size: 1.3em;
+    margin: 0px;
+    width: 40%;
+    float: left;
+}
+
+.menteePic {
+    width: 50px;
+    margin: 0px 10px 0px auto;
+}
+
+.meetingDescription {
+    font-size: small;
+    margin: 0px 10px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    border-radius: 15px;
+    background-color: #ebebeb;
+    width: 40%;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.buttons:hover {
+    cursor: pointer;
+}
+
+.resources {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 25%;
+    height: 300px;
+    margin-right: 15px;
+    overflow: hidden;
 }
