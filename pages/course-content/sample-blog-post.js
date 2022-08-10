@@ -11,7 +11,7 @@ export default function SampleBlogPost() {
       <main className={styles.container + " " + styles.main}>
         <object
           data="https://characterlab.org/tips-of-the-week/the-paramecium-principle/"
-          style={{height: "90vh", width: "80vw"}}
+          style={{height: "90vh", width: "100vw"}}
           type="application/pdf"
         />
       </main>

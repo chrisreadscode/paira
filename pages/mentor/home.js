@@ -2,7 +2,7 @@ import styles from "../../styles/Login.module.css";
 import _Head from "../../components/_Head.js";
 import AssignmentCard from "../../components/AssignmentCard";
 import Footer from "../../components/Footer.js";
-import HeaderStudent from "../../components/HeaderStudent.js";
+import HeaderMentor from "../../components/HeaderMentor.js";
 import MeetingCard from "../../components/MeetingCard";
 import { Divider } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <_Head />
-      <HeaderStudent />
+      <HeaderMentor />
       {/* <div className={styles.container}> */}
       <main className={styles.main}>
         <div id="upcoming-assignments-container">
