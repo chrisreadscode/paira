@@ -12,7 +12,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 
 
-export default function StudentProfile() {
+export default function Homealt() {
     return (
         <><HeaderStudent />
             <div className={commonStyles.container}>
@@ -100,7 +100,6 @@ export default function StudentProfile() {
 
                     </div>
 
-                    <hr></hr>
 
 
                     <div id={styles.upcomingAssignment}>

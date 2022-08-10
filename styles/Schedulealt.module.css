@@ -1,0 +1,45 @@
+#mentorsBox {
+    width: 23%;
+    height: 630px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #d0cece;
+    padding: 20px;
+    float: left;
+}
+
+.mentor {
+    margin: 20px auto;
+    width: 70%;
+    height: 28%;
+    border-radius: 5px;
+    border: 1px solid #d0cece;
+    padding: 12px;
+}
+
+
+.mentorCard {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mentorDescription {
+    font-size: small;
+    color: rgb(98, 98, 98);
+    margin-top: 2px;
+    line-height: 20px;
+
+}
+
+#scheduleBox {
+    width: 70%;
+    height: 630px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #d0cece;
+    padding: 20px;
+    float: right;
+}

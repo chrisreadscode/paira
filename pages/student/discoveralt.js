@@ -14,7 +14,7 @@ import Link from "next/link";
 
 
 
-export default function StudentProfile() {
+export default function Discoveralt() {
     return (
         <><HeaderStudent />
             <div className={commonStyles.container}>
