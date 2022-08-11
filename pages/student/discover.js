@@ -3,7 +3,7 @@ import BrowserForMentor from "../../components/BrowseForMentorCard";
 import Footer from "../../components/Footer";
 import HeaderStudent from "../../components/HeaderStudent";
 import RecommendedResources from "../../components/RecommendedResources";
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import HotelIcon from "@mui/icons-material/Hotel";
 import RestaurantIcon from "@mui/icons-material/Restaurant";

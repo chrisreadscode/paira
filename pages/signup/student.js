@@ -1,8 +1,8 @@
-import styles from "../../styles/Login.module.css";
-import { useRouter } from "next/router";
 import _Head from "../../components/_Head.js";
 import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
+import styles from "../../styles/Signup.module.css";
+import { useRouter } from "next/router";
 
 export default function Student() {
   const router = useRouter();
@@ -13,10 +13,10 @@ export default function Student() {
     router.push("/assessment/initial");
   };
   return (
-    <div>
+    <>
       <_Head />
+      <Header />
       <div className={styles.container}>
-        <Header />
         <main className={styles.main}>
           <div id={styles.box}>
             <h1 className={styles.title}>Sign Up</h1>
@@ -66,8 +66,8 @@ export default function Student() {
             </form>
           </div>
         </main>
-        <Footer />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

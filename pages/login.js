@@ -4,7 +4,6 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import Divider from "@mui/material/Divider";
 import Footer from "../components/Footer.js";
-import Header from "../components/Header.js";
 import Image from "next/image";
 import Link from "next/link";
 import List from '@mui/material/List';
@@ -63,7 +62,6 @@ export default function Login() {
     return (
         <>
             <_Head />
-            {/* <Header /> */}
             <div className={styles.container}>
                 <main className={styles.main}>
 

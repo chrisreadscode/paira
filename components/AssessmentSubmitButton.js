@@ -1,4 +1,4 @@
-import styles from "../styles/Login.module.css";
+import styles from "../styles/Default.module.css";
 
 export default function AssessmentSubmitButton() {
   return (

@@ -3,7 +3,7 @@ import AssessmentSubmitButton from "../../components/AssessmentSubmitButton";
 import AssessmentQuestionFiveRadioButtons from "../../components/AssessmentQuestionFiveRadioButtons";
 import Footer from "../../components/Footer";
 import HeaderStudent from "../../components/HeaderStudent";
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 import Carousel from "react-material-ui-carousel";
 
 export default function TimeManagement() {

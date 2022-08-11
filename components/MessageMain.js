@@ -1,6 +1,6 @@
 import MessageCard from "./MessageCard";
 import MessageHeader from "./MessageHeader";
-import styles from "../styles/Login.module.css";
+import styles from "../styles/Default.module.css";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import Button from "@mui/material/Button";
