@@ -12,8 +12,8 @@ export default function ChooseYourMentor() {
   return (
     <div>
       <_Head />
+      <Header />
       <div className={styles.container}>
-        <Header />
         <main className={styles.main}>
           <div id="matched-mentors">
             <h3>You have 3 matched mentors:</h3>
@@ -42,8 +42,8 @@ export default function ChooseYourMentor() {
             </div>
           </div>
         </main>
-        <Footer />
       </div>
+        <Footer />
     </div>
   );
 }

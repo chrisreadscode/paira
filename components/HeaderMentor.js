@@ -12,13 +12,15 @@ export default function Header() {
     return (
         <div id={styles.logo} style={{ width: "98%" }}>
             <Link href="/">
-                <Image
-                    alt="paira logo"
-                    height="38px"
-                    width="200px"
-                    src="/paira-logo.png"
-                    float="left"
-                />
+                <a>
+                    <Image
+                        alt="paira logo"
+                        height="38px"
+                        width="200px"
+                        src="/paira-logo.png"
+                        float="left"
+                    />
+                </a>
             </Link>
 
             <div style={{ display: "flex", flexDirection: "row", float: "right" }}>

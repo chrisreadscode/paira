@@ -16,9 +16,10 @@ import Link from "next/link";
 
 export default function Schedulealt() {
     return (
-        <><HeaderStudent />
+        <>
+            <_Head />
+            <HeaderStudent />
             <div className={commonStyles.container}>
-                <_Head />
                 <main className={commonStyles.main} style={{ paddingTop: "40px", marginBottom: "50px" }}>
                     <div id={styles.mentorsBox}>
                         <h4 style={{ margin: "0px", marginBottom: "20px" }}>
@@ -68,7 +69,8 @@ export default function Schedulealt() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+            </div >
+        <Footer />
+        </>
     );
 }

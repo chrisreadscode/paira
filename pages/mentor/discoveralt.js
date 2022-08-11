@@ -16,9 +16,10 @@ import Link from "next/link";
 
 export default function Discoveralt() {
     return (
-        <><HeaderMentor />
+        <>
+            <_Head />
+            <HeaderMentor />
             <div className={commonStyles.container}>
-                <_Head />
                 <main className={commonStyles.main}>
 
                     <div id={styles.search}>
@@ -113,7 +114,8 @@ export default function Discoveralt() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+                </div >
+            <Footer />
+            </>
     );
 }

@@ -1,8 +1,8 @@
-import styles from "../../styles/Login.module.css";
+import styles from "../styles/Login.module.css";
 import { useRouter } from "next/router";
-import _Head from "../../components/_Head.js";
-import Footer from "../../components/Footer.js";
-import Header from "../../components/Header.js";
+import _Head from "../components/_Head.js";
+import Footer from "../components/Footer.js";
+import Header from "../components/Header.js";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { margin } from "@mui/system";

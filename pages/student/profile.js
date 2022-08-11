@@ -11,9 +11,10 @@ import MentorCardNarrow from "../../components/MentorCardNarrow.js";
 
 export default function StudentProfile() {
     return (
-        <><HeaderStudent />
+        <>
+            <_Head />
+            <HeaderStudent />
             <div className={commonStyles.container}>
-                <_Head />
                 <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
                     {/* Div so that mainBox and sideBox are side by side */}
@@ -113,7 +114,8 @@ export default function StudentProfile() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+            </div >
+        <Footer />
+        </>
     );
 }

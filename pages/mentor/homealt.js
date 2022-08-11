@@ -14,9 +14,10 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 export default function Homealt() {
     return (
-        <><HeaderMentor />
+        <>
+            <_Head />
+            <HeaderMentor />
             <div className={commonStyles.container}>
-                <_Head />
                 <main className={commonStyles.main}>
                     <div id={styles.upcomingAssignment}>
                         <h2 className={commonStyles.title}>Upcoming Meetings</h2>
@@ -208,7 +209,8 @@ export default function Homealt() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+                </div >
+            <Footer />
+            </>
     );
 }

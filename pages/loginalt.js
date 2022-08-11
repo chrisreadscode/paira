@@ -10,9 +10,10 @@ import Link from "next/link";
 
 export default function Loginalt() {
     return (
-        <><Header />
+        <>
+            <_Head />
+            <Header />
             <div className={styles.container}>
-                <_Head />
                 <main className={styles.main}>
 
                     <div id={styles.mainBox} className={styles.center}>
@@ -62,7 +63,8 @@ export default function Loginalt() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+            </div >
+            <Footer />
+        </>
     );
 }
