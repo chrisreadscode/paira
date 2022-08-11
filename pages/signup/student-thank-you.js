@@ -5,7 +5,7 @@ import Footer from "../../components/Footer.js";
 
 export default function StudentThankYou() {
   return (
-    <div>
+    <>
       <_Head />
       <Header />
       <main className={styles.main}>
@@ -17,6 +17,6 @@ export default function StudentThankYou() {
         </div>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

@@ -12,9 +12,10 @@ import TextField from "@mui/material/TextField";
 
 export default function StudentProfile() {
   return (
-    <><HeaderMentor />
+    <>
+      <_Head />
+      <HeaderMentor />
       <div className={commonStyles.container}>
-        <_Head />
         <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
           {/* Div so that mainBox and sideBox are side by side */}
@@ -159,7 +160,8 @@ export default function StudentProfile() {
 
         </main>
 
-        <Footer />
-      </div ></>
+      </div >
+      <Footer />
+      </>
   );
 }

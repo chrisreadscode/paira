@@ -5,10 +5,10 @@ import Footer from "../../components/Footer.js";
 
 export default function MentorThankYou() {
   return (
-    <div>
+    <>
       <_Head />
+      <Header />
       <div className={styles.container}>
-        <Header />
         <main className={styles.main}>
           <div id={styles.box}>
             <h2 className={styles.title}>Thank you, we will reach out to you shortly!</h2>
@@ -17,8 +17,8 @@ export default function MentorThankYou() {
             </div>
           </div>
         </main>
-        <Footer />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

@@ -13,9 +13,10 @@ import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 export default function Messagealt() {
     return (
-        <><HeaderMentor />
+        <>
+            <_Head />
+            <HeaderMentor />
             <div className={commonStyles.container}>
-                <_Head />
                 <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
                     <div id={styles.mainBox}>
@@ -96,7 +97,8 @@ export default function Messagealt() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+            </div >
+        <Footer />
+        </>
     );
 }

@@ -5,20 +5,23 @@ import Footer from "../../components/Footer.js";
 
 export default function ParentThankYou() {
   return (
-    <div>
+    <>
       <_Head />
+      <Header />
       <div className={styles.container}>
-        <Header />
         <main className={styles.main}>
           <div id={styles.box}>
-            <h2 className={styles.title}>Thank you, we will reach out to your child shortly!</h2>
+            <h2 className={styles.title}>
+              Thank you, we will reach out to your child shortly!
+            </h2>
             <div>
-              We have received your submission. We greatly appreciate your interest.
+              We have received your submission. We greatly appreciate your
+              interest.
             </div>
           </div>
         </main>
-        <Footer />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

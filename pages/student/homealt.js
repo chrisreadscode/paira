@@ -13,9 +13,10 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 export default function Homealt() {
     return (
-        <><HeaderStudent />
+        <>
+            <_Head />
+            <HeaderStudent />
             <div className={commonStyles.container}>
-                <_Head />
                 <main className={commonStyles.main}>
                     <div id={styles.upcomingAssignment}>
                         <h2 className={commonStyles.title}>Upcoming Assignments</h2>
@@ -175,7 +176,9 @@ export default function Homealt() {
 
                 </main>
 
-                <Footer />
-            </div ></>
+                
+            </div >
+            <Footer />
+            </>
     );
 }
