@@ -10,7 +10,7 @@ import styles from "../styles/Header.module.css";
 
 export default function HeaderStudent() {
   return (
-    <div id={styles.logo} style={{ width: "98%" }}>
+    <div id={styles.logo}>
       <Link href="/student/home">
         <a>
           <Image
