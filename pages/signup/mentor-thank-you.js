@@ -1,4 +1,4 @@
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/ThankYou.module.css";
 import _Head from "../../components/_Head.js";
 import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
@@ -11,9 +11,9 @@ export default function MentorThankYou() {
         <Header />
         <main className={styles.main}>
           <div id={styles.box}>
-            <h1 className={styles.title}>Application Complete</h1>
+            <h2 className={styles.title}>Thank you, we will reach out to you shortly!</h2>
             <div>
-              Thank you for completing the survey! We are currently reviewing your application and will notify you shortly.
+               We are currently reviewing your application and will notify you with next steps.
             </div>
           </div>
         </main>
