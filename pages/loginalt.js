@@ -6,6 +6,7 @@ import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import Image from "next/image";
 import TextField from "@mui/material/TextField";
+import Link from "next/link";
 
 export default function Loginalt() {
     return (

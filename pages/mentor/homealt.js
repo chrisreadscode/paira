@@ -134,7 +134,6 @@ export default function Homealt() {
                             <div className={styles.imgContainer} style={{ height: "40%" }}>
                             </div>
 
-
                             <div className={styles.content} style={{ height: "60%" }}>
                                 <div className={styles.assignmentTitle}>
                                     How to Cultivate Self-Awareness

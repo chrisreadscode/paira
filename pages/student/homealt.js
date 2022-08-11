@@ -11,7 +11,6 @@ import Link from "next/link";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 
-
 export default function Homealt() {
     return (
         <><HeaderStudent />
