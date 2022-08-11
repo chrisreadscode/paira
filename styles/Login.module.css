@@ -1,6 +1,4 @@
 .main {
-  /* padding: 2rem 3rem; */
-  /* padding-top: 10rem; */
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -9,13 +7,10 @@
 }
 
 #mainBox {
-  /* margin: 0px auto auto 10px; */
   width: 40vw;
-  /* height: 500px */
   height: 75vh;
   margin: 0 45vw 0 0;
   background-color: #f6fbf9;
-  /* border-radius: 30px; */
   border-radius: 1.6em;
   border: 2px solid #d0cece;
   float: left;
@@ -25,7 +20,6 @@
 .center {
   margin-left: auto;
   margin-right: auto;
-  /* width: 300px */
   width: 27vw;
   text-align: center;
 }
@@ -33,7 +27,6 @@
 .centerText {
   margin-left: auto;
   margin-right: auto;
-  /* width: 300px */
   width: 27vw;
   text-align: center;
   background-color: white;
@@ -41,10 +34,8 @@
 }
 
 #login {
-  /* height: 50px; */
   height: 7.5vh;
   background-color: #84c7ae;
-  /* border-radius: 10px; */
   border-radius: .8em;
   border: 2px solid #d0cece;
 }
@@ -56,7 +47,6 @@
 
 #forgotPassword {
   width: 13vw;
-  /* width: 150px; */
 }
 
 #forgotPassword:hover {
@@ -64,10 +54,8 @@
 }
 
 #signup {
-  /* height: 50px; */
   height: 7.5vh;
   background-color: #7ec6ee;
-  /* border-radius: 10px; */
   border-radius: .8em;
   border: 2px solid #d0cece;
 }
