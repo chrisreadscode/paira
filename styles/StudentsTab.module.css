@@ -1,0 +1,9 @@
+#mainBox {
+    margin: 0px auto;
+    width: 90%;
+    height: 530px;
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    display: flex;
+}
