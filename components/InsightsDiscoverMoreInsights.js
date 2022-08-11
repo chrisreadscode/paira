@@ -1,4 +1,4 @@
-import styles from "../styles/Login.module.css";
+import styles from "../styles/Default.module.css";
 import QuizCard from "../components/QuizCard";
 
 export default function InsightsDiscoverMoreInsights() {

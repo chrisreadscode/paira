@@ -1,7 +1,7 @@
 import _Head from "../components/_Head";
 import Footer from "../components/Footer";
 import HeaderStudent from "../components/HeaderStudent";
-import styles from "../styles/Login.module.css";
+import styles from "../styles/Default.module.css";
 
 export default function Sample() {
   return (

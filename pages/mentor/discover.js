@@ -3,7 +3,7 @@ import DiscoverAssignmentsCard from "../../components/DiscoverAssignmentsCard";
 import Footer from "../../components/Footer";
 import HeaderMentor from "../../components/HeaderMentor";
 import RecommendedResources from "../../components/RecommendedResources";
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";

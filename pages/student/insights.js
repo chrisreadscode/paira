@@ -5,7 +5,7 @@ import InsightsDiscoverMoreInsights from "../../components/InsightsDiscoverMoreI
 import InsightsMonthlyImprovements from "../../components/InsightsMonthlyImprovements";
 import InsightsPersonalityType from "../../components/InsightsPersonalityType";
 import InsightsTopStrengthsTopAreasOfGrowth from "../../components/InsightsTopStrengthsTopAreasOfGrowth";
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 
 export default function Insights() {
   return (

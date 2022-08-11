@@ -1,5 +1,5 @@
 import Script from "next/script";
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
 import Footer from "../../components/Footer.js";
@@ -11,10 +11,10 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 export default function Schedule() {
   return (
-    <div>
+    <>
       <_Head />
-      <div className={styles.container}>
       <HeaderStudent />
+      <div className={styles.container}>
         <main
           className={styles.main}
           style={{ display: "flex", flexDirection: "row" }}
@@ -40,8 +40,8 @@ export default function Schedule() {
             <InlineWidget url="https://calendly.com/rcreadii/meet" />
           </div>
         </main>
-        <Footer />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

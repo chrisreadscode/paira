@@ -2,7 +2,7 @@ import _Head from "../../components/_Head";
 import AssignmentCard from "../../components/AssignmentCard";
 import Footer from "../../components/Footer";
 import HeaderMentor from "../../components/HeaderMentor";
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 
 export default function SavedResources() {
   return (

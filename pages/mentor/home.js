@@ -1,4 +1,4 @@
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 import _Head from "../../components/_Head.js";
 import AssignmentCard from "../../components/AssignmentCard";
 import Footer from "../../components/Footer.js";
@@ -12,7 +12,7 @@ import MentorCard from "../../components/MentorCard";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <_Head />
       <HeaderMentor />
       {/* <div className={styles.container}> */}
@@ -48,6 +48,6 @@ export default function Home() {
       </main>
       <Footer />
       {/* </div> */}
-    </div>
+    </>
   );
 }
