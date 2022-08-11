@@ -1,0 +1,82 @@
+#mainBox {
+    margin: 0px auto;
+    width: 90%;
+    height: 530px;
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    display: flex;
+}
+
+#mentorSide {
+    width: 25%;
+    height: 100%;
+    border: 2px solid #d0cece;
+
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.mentorBox {
+    width: 100%;
+    height: 18%;
+    border-bottom: 2px solid #d0cece;
+    padding: 20px 10px;
+    padding-right: 0px;
+    display: flex;
+}
+
+.mentorNames {
+    font-weight: normal;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.mentorDescription {
+    width: 130px;
+    height: 42px;
+    margin: auto 0px;
+    padding-left: 10px;
+}
+
+#messageSide {
+    width: 100%;
+    height: 100%;
+}
+
+#messageTop {
+    width: 100%;
+    height: 20%;
+    border-bottom: 2px solid #d0cece;
+    padding: 15px;
+    text-align: center;
+}
+
+#messageBottom {
+    width: 100%;
+    height: 80%;
+}
+
+#messageInput {
+    margin: auto 20px auto auto;
+    width: 70%;
+    height: 50%;
+    border-radius: 20px;
+    border: 2px solid #d0cece;
+    display: flex;
+}
+
+#more {
+    width: 22px;
+    height: 22px;
+    margin: auto 20px;
+    margin-right: 0px;
+}
+
+#attachFile {
+    width: 22px;
+    height: 22px;
+    margin: auto 0px;
+    margin-right: 30px;
+}

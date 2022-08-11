@@ -1,6 +1,7 @@
 
 
 import styles from "../../styles/Profile.module.css";
+import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
 import Footer from "../../components/Footer.js";
@@ -11,9 +12,9 @@ import MentorCardNarrow from "../../components/MentorCardNarrow.js";
 export default function StudentProfile() {
     return (
         <><HeaderStudent />
-            <div className={styles.container}>
+            <div className={commonStyles.container}>
                 <_Head />
-                <main className={styles.main}>
+                <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
                     {/* Div so that mainBox and sideBox are side by side */}
                     <div style={{ width: "100%" }}>
@@ -67,23 +68,41 @@ export default function StudentProfile() {
                         <div id={styles.sideBox}>
                             <p className={styles.subtitle}>Assigned Resources</p>
 
-                            <div style={{ display: "flex", flexDirection: "row" }}>
-                                <div className={styles.smallBox} style={{ marginLeft: "20px" }}></div>
-                                <div className={styles.smallBox}></div>
-                                <div className={styles.smallBox}></div>
-                                <div className={styles.smallBox}></div>
-                            </div>
+                            <div id={styles.assignedBox} style={{ marginLeft: "15px", height: "33%" }}>
+                                <div className={styles.studentAssignment}>
+                                    Self-Awareness
+                                </div>
+                                <div className={styles.studentAssignment}>
+                                    Grit Quiz
+                                </div>
+                                <div className={styles.studentAssignment}>
+                                    Personality Quiz
+                                </div>
 
+                            </div>
 
 
                             <p className={styles.subtitle} style={{ marginTop: "50px" }}>Current Mentors</p>
 
                             <div style={{ display: "flex", flexDirection: "row" }}>
                                 <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                <MentorCardNarrow />
+                                    <div className={styles.mentorImg}>
+                                    </div>
+                                    Gina Wee
+                                    <p className={styles.mentorDescription}>Personal Mentor</p>
                                 </div>
-                                <div className={styles.mentorBox}><MentorCardNarrow /></div>
-                                <div className={styles.mentorBox}><MentorCardNarrow /></div>
+                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
+                                    <div className={styles.mentorImg}>
+                                    </div>
+                                    Tina Richards
+                                    <p className={styles.mentorDescription}>Time Management Mentor</p>
+                                </div>
+                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
+                                    <div className={styles.mentorImg}>
+                                    </div>
+                                    John Lake
+                                    <p className={styles.mentorDescription}>Sleep Mentor</p>
+                                </div>
                             </div>
 
 

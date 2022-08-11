@@ -1,5 +1,3 @@
-
-
 .title {
     margin: 0;
     line-height: 1.15;
@@ -14,8 +12,8 @@
 }
 
 #mainBox {
-    width: 60%;
-    height: 500px;
+    width: 50%;
+    height: 520px;
     margin: 0px auto auto 10px;
     background-color: white;
     border-radius: 20px;
@@ -99,8 +97,8 @@ p.fontLarge {
 }
 
 #sideBox {
-    width: 38%;
-    height: 500px;
+    width: 45%;
+    height: 520px;
     margin: 0px;
     background-color: white;
     border-radius: 20px;
@@ -114,6 +112,7 @@ p.fontLarge {
     font-weight: bold;
     font-size: large;
     color: rgb(42, 42, 42);
+    margin-top: 0px;
 }
 
 #icon {
@@ -127,29 +126,13 @@ p.fontLarge {
 
 }
 
-.smallBox {
-    border-radius: 10px;
-    border: 2px solid #d0cece;
-    width: 90px;
-    height: 90px;
-    margin-right: 10px;
-}
-
-.mentorBox {
-    border-radius: 10px;
-    border: 2px solid #d0cece;
-    width: 120px;
-    height: 120px;
-    margin-right: 15px;
-}
-
 .assigned {
     border-radius: 10px;
     border: 2px solid #d0cece;
-    width: 210px;
+    width: 50%;
     height: 120px;
     margin-right: 15px;
-    padding: 10px;
+    padding: 15px;
 }
 
 #wallet {
@@ -158,7 +141,7 @@ p.fontLarge {
     padding: 25px;
     padding-top: 15px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 15px;
     background-color: #eeeeee;
 }
@@ -168,4 +151,74 @@ p.fontLarge {
     margin-right: auto;
     width: 100%;
     text-align: center;
+}
+
+
+/* Mentor Page*/
+
+.menteeName {
+    margin: 0px;
+    float: left;
+}
+
+.menteePic {
+    float: right;
+}
+
+.halfVertical {
+    height: 50%;
+}
+
+.assignments {
+    margin-right: 5px;
+    width: 30%;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #eeeeee;
+}
+
+/* Student Added Later*/
+
+#assignedBox {
+    margin: 0px 15px;
+    padding: 0px auto;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.studentAssignment {
+    margin-right: 5px;
+    width: 30%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+}
+
+.mentorBox {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    width: 33%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.mentorImg {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid #d0cece;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+.mentorDescription {
+    margin: 0px;
+    margin-top: 5px;
+    color: #7c7c7c;
+    font-size: small;
+    line-height: 14px;
 }

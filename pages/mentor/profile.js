@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/Profile.module.css";
+import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
 import HeaderMentor from "../../components/HeaderMentor.js";
@@ -12,9 +13,9 @@ import TextField from "@mui/material/TextField";
 export default function StudentProfile() {
   return (
     <><HeaderMentor />
-      <div className={styles.container}>
+      <div className={commonStyles.container}>
         <_Head />
-        <main className={styles.main}>
+        <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
           {/* Div so that mainBox and sideBox are side by side */}
           <div style={{ width: "100%" }}>
@@ -72,20 +73,59 @@ export default function StudentProfile() {
               </div>
             </div>
 
+
+
+
             {/* The box on the right part of the screen */}
             <div id={styles.sideBox}>
               <p className={styles.subtitle}>Assigned to Students</p>
 
               <div style={{ display: "flex", flexDirection: "row" }}>
-                <div className={styles.assigned} style={{ marginLeft: "15px" }}>
-                  Paul Sanjeet
+                <div className={styles.assigned} style={{ marginLeft: "15px", height: "170px" }}>
+                  <div style={{ height: "40%" }}>
+                    <p className={styles.menteeName}>Paul Sanjeet</p>
+                    <div className={styles.menteePic}>
+                      <Image alt="Mentee Profile Pic"
+                        src="/profile-pic.png"
+                        width="40px"
+                        height="40px"
+                      ></Image>
+                    </div>
+                  </div>
+
+                  <div style={{ display: "flex", paddingTop: "10px", height: "60%" }}>
+                    <div className={styles.assignments}>
+                    </div>
+                    <div className={styles.assignments}>
+                    </div>
+                    <div className={styles.assignments}>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.assigned}>
-                  Nicole Tran
+
+                <div className={styles.assigned} style={{ marginLeft: "15px", height: "170px" }}>
+                  <div style={{ height: "40%" }}>
+                    <p className={styles.menteeName}>Nicole Tran</p>
+                    <div className={styles.menteePic}>
+                      <Image alt="Mentee Profile Pic"
+                        src="/profile-pic.png"
+                        width="40px"
+                        height="40px"
+                      ></Image>
+                    </div>
+                  </div>
+
+                  <div style={{ display: "flex", paddingTop: "10px", height: "60%" }}>
+                    <div className={styles.assignments}>
+                    </div>
+                    <div className={styles.assignments}>
+                    </div>
+                    <div className={styles.assignments}>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.assigned}>
-                  Abbey Adams
-                </div>
+
+
               </div>
 
 
