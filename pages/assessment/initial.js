@@ -1,4 +1,4 @@
-import styles from "../../styles/Login.module.css";
+import styles from "../../styles/Default.module.css";
 import { useRouter } from "next/router";
 import _Head from "../../components/_Head.js";
 import AssessmentSubmitButton from "../../components/AssessmentSubmitButton";
@@ -36,10 +36,10 @@ export default function Initial() {
   ];
 
   return (
-    <div>
+    <>
       <_Head />
+      <Header />
       <div className={styles.container}>
-        <Header />
         <main className={styles.main}>
           <form
             onSubmit={handleInitialAssessmentSubmit}
@@ -58,11 +58,13 @@ export default function Initial() {
             </Carousel>
           </form>
         </main>
-        <Footer />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
-{/* <div id={styles.box}>
-</div> */}
+{
+  /* <div id={styles.box}>
+</div> */
+}
