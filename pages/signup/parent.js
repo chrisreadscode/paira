@@ -1,7 +1,7 @@
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
 import Header from "../../components/Header.js";
-import styles from "../../styles/Default.module.css";
+import styles from "../../styles/Signup.module.css";
 import { useRouter } from "next/router";
 
 export default function ParentSignup() {

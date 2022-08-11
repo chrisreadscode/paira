@@ -1,8 +1,8 @@
-import styles from "../../styles/Default.module.css";
-import { useRouter } from "next/router";
 import _Head from "../../components/_Head.js";
 import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
+import styles from "../../styles/Signup.module.css";
+import { useRouter } from "next/router";
 
 export default function Student() {
   const router = useRouter();
