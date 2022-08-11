@@ -3,7 +3,7 @@ import styles from "../../styles/Message.module.css";
 import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
-import HeaderStudent from "../../components/HeaderStudent.js";
+import HeaderMentor from "../../components/HeaderMentor.js";
 import EditIcon from '@mui/icons-material/Edit';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -13,7 +13,7 @@ import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 export default function Messagealt() {
     return (
-        <><HeaderStudent />
+        <><HeaderMentor />
             <div className={commonStyles.container}>
                 <_Head />
                 <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
@@ -28,8 +28,8 @@ export default function Messagealt() {
                                 ></Image>
                                 <div style={{ width: "8%", height: "100%" }}></div>
                                 <div className={styles.mentorDescription}>
-                                    <h3 className={styles.mentorNames}>Gina Wee</h3>
-                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Personal Mentor</p>
+                                    <h3 className={styles.mentorNames}>Paul Sanjeet</h3>
+                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Student</p>
                                 </div>
                             </div>
 
@@ -41,8 +41,8 @@ export default function Messagealt() {
                                 ></Image>
                                 <div style={{ width: "8%", height: "100%" }}></div>
                                 <div className={styles.meentorDescription}>
-                                    <h3 className={styles.mentorNames}>Tina Richards</h3>
-                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Time Management <br></br> Mentor</p>
+                                    <h3 className={styles.mentorNames}>Nicole Tran</h3>
+                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Student</p>
                                 </div>
                             </div>
 
@@ -54,16 +54,16 @@ export default function Messagealt() {
                                 ></Image>
                                 <div style={{ width: "8%", height: "100%" }}></div>
                                 <div className={styles.meentorDescription}>
-                                    <h3 className={styles.mentorNames}>John Lake</h3>
-                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Sleep Mentor</p>
+                                    <h3 className={styles.mentorNames}>Abbey Adams</h3>
+                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Student</p>
                                 </div>
                             </div>
                         </div>
 
                         <div id={styles.messageSide}>
                             <div id={styles.messageTop}>
-                                <h3 className={styles.mentorNames} style={{ fontWeight: "heavy", fontSize: "x-large" }}> Gina Wee</h3>
-                                <p style={{ color: "#7c7c7c" }}> Personal Mentor</p>
+                                <h3 className={styles.mentorNames} style={{ fontWeight: "heavy", fontSize: "x-large" }}> Paul Sanjeet</h3>
+                                <p style={{ color: "#7c7c7c" }}> Student</p>
                             </div>
                             <div id={styles.messageBottom}>
                                 <div style={{ height: "82%" }}>
