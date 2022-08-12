@@ -69,7 +69,7 @@ export default function Calendar() {
         }
         setCalEvents(eventCopies);
       });
-  }, []);
+  }, [url]);
 
   return (
     <>
