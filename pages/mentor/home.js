@@ -130,29 +130,28 @@ export default function Home() {
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
 
-
-                        <div className={styles.resources}>
-                            <div className={styles.imgContainer} style={{ height: "40%" }}>
-                            </div>
-
-                            <div className={styles.content} style={{ height: "60%" }}>
-                                <div className={styles.assignmentTitle}>
-                                    How to Cultivate Self-Awareness
-
-                                    <div style={{ height: "22px" }}>
-                                        <MenuBookIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                        <p className={styles.assignmentDescription}>Article</p>
-                                    </div>
+                        <Link href="/course-content/sample-blog-post">
+                            <div className={styles.resources}>
+                                <div className={styles.imgContainer} style={{ height: "40%" }}>
                                 </div>
-                                <p className={styles.assignmentDetails} style={{ paddingTop: "10px" }}> Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness.</p>
+
+                                <div className={styles.content} style={{ height: "60%" }}>
+                                    <div className={styles.assignmentTitle}>
+                                        How to Cultivate Self-Awareness
+
+                                        <div style={{ height: "22px" }}>
+                                            <MenuBookIcon className={styles.icon} style={{ display: "inlineBlock" }} />
+                                            <p className={styles.assignmentDescription}>Article</p>
+                                        </div>
+                                    </div>
+                                    <p className={styles.assignmentDetails} style={{ paddingTop: "10px" }}> Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness.</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
                         <div className={styles.resources}>
                             <div className={styles.imgContainer} style={{ height: "40%" }}>
                             </div>
-
-
                             <div className={styles.content} style={{ height: "60%" }}>
                                 <div className={styles.assignmentTitle}>
                                     Finding Direction in Life
@@ -209,9 +208,9 @@ export default function Home() {
 
                 </main>
 
-                </div >
+            </div >
             <Footer />
-            </>
+        </>
     );
 }
 

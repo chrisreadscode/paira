@@ -113,6 +113,10 @@
     background-color: #ececec;
 }
 
+.video:hover {
+    cursor: pointer;
+}
+
 .vidPic {
     border: 1px solid #d0cece;
     width: 70%;
