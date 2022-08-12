@@ -12,7 +12,5 @@ module.exports = withTM({
   swcMinify: true,
   env: {
     API_KEY: process.env.API_KEY,
-  },
-  devtool: "none",
-  mode: "development",
+  }
 });
