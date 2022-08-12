@@ -11,8 +11,7 @@ module.exports = withTM({
   reactStrictMode: false,
   swcMinify: true,
   env: {
-    API_KEY: process.env.API_KEY,
-    NODE_ENV: 'dev',
+    API_KEY: process.env.API_KEY
   }
 });
 
