@@ -10,8 +10,8 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Image from "next/image";
 import Link from "next/link";
-
-
+import { InlineWidget } from "react-calendly";
+import { ToggleButton } from "@mui/material";
 
 
 export default function Schedule() {
@@ -20,12 +20,13 @@ export default function Schedule() {
             <_Head />
             <HeaderStudent />
             <div className={commonStyles.container}>
-                <main className={commonStyles.main} style={{ paddingTop: "40px", marginBottom: "50px" }}>
-                    <div id={styles.mentorsBox}>
+                <main className={commonStyles.main} style={{ display: "flex", alignItems: "top", justifyContent: "center", paddingTop: "0" }}>
+                    <div id={styles.mentorsBox} style={{marginTop: "3.5vh"}}>
                         <h4 style={{ margin: "0px", marginBottom: "20px" }}>
                             Your Mentors
                         </h4>
 
+                        <ToggleButton style={{border: "0", padding: "0", margin: "0", width: "100%"}}>
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -37,7 +38,9 @@ export default function Schedule() {
                                 <p className={styles.mentorDescription}> Personal Mentor</p>
                             </div>
                         </div>
+                        </ToggleButton>
 
+                        <ToggleButton style={{border: "0", padding: "0", margin: "0", width: "100%"}}>
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -49,7 +52,9 @@ export default function Schedule() {
                                 <p className={styles.mentorDescription}> Time Management Mentor</p>
                             </div>
                         </div>
+                        </ToggleButton>
 
+                        <ToggleButton style={{border: "0", padding: "0", margin: "0", width: "100%"}}>
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -61,12 +66,14 @@ export default function Schedule() {
                                 <p className={styles.mentorDescription}> Sleep Mentor</p>
                             </div>
                         </div>
+                        </ToggleButton>
                     </div>
 
-                    <div id={styles.scheduleBox}>
-
-                    </div>
-
+                    {/* <div id={styles.scheduleBox}>
+                    </div> */}
+                    {/* <div> */}
+                        <InlineWidget styles={{height: "100vh", padding: "0", margin: "0", width: "80vw"}} url="https://calendly.com/rcreadii/" />
+                    {/* </div> */}
                 </main>
 
             </div >
@@ -82,7 +89,6 @@ export default function Schedule() {
 // import Footer from "../../components/Footer.js";
 // import MentorCard from "../../components/MentorCard";
 // import MentorCardWide from "../../components/MentorCardWide";
-// import { InlineWidget } from "react-calendly";
 // import ToggleButton from "@mui/material/ToggleButton";
 // import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
@@ -104,17 +110,6 @@ export default function Schedule() {
 //             <MentorCardWide />
 //             <MentorCard />
 //             <MentorCard />
-//           </div>
-//           <div>
-//             <ToggleButtonGroup>
-//               <div>How long do you need?</div>
-//               <div>
-//                 <ToggleButton>30 mins</ToggleButton>
-//                 <ToggleButton>1 hour</ToggleButton>
-//               </div>
-//             </ToggleButtonGroup>
-//             {/* Please kindly remove the /meet in the link below to see the alternative calendly presentation */}
-//             <InlineWidget url="https://calendly.com/rcreadii/meet" />
 //           </div>
 //         </main>
 //       </div>
