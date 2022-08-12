@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import styles from "../../styles/StudentsTab.module.css";
 import commonStyles from "../../styles/common.module.css";
