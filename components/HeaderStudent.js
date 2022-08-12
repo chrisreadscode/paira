@@ -12,7 +12,7 @@ import styles from "../styles/Header.module.css";
 export default function HeaderStudent() {
   return (
     <div id={styles.logo}>
-      <Link href="/student/homealt">
+      <Link href="/student/home">
         <a>
           <Image
             alt="paira logo"
@@ -25,7 +25,7 @@ export default function HeaderStudent() {
       </Link>
 
       <div style={{ display: "flex", flexDirection: "row", float: "right" }}>
-        <Link href="/student/homealt">
+        <Link href="/student/home">
           <div className={styles.icon}>
             <HomeIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Home</div>
@@ -39,7 +39,7 @@ export default function HeaderStudent() {
           </div>
         </Link>
 
-        <Link href="/student/discoveralt">
+        <Link href="/student/discover">
           <div className={styles.icon}>
             <SearchIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Discover</div>
@@ -60,14 +60,14 @@ export default function HeaderStudent() {
           </div>
         </Link>
 
-        <Link href="/student/messagealt">
+        <Link href="/student/message">
           <div className={styles.icon}>
             <MessageIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Message</div>
           </div>
         </Link>
 
-        <Link href="/student/saved-resources">
+        <Link href="/student/saved">
           <div className={styles.icon}>
             <BookmarkIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Saved</div>

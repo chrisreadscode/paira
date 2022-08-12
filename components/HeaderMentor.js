@@ -11,7 +11,7 @@ import PersonIcon from '@mui/icons-material/Person';
 export default function Header() {
     return (
         <div id={styles.logo} style={{ width: "98%" }}>
-            <Link href="/">
+            <Link href="/mentor/home">
                 <a>
                     <Image
                         alt="paira logo"
@@ -24,7 +24,7 @@ export default function Header() {
             </Link>
 
             <div style={{ display: "flex", flexDirection: "row", float: "right" }}>
-                <Link href="/mentor/homealt">
+                <Link href="/mentor/home">
                     <div className={styles.icon}>
                         <HomeIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Home</div>
@@ -38,7 +38,7 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <Link href="/mentor/discoveralt">
+                <Link href="/mentor/discover">
                     <div className={styles.icon}>
                         <SearchIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Discover</div>
@@ -52,14 +52,14 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <Link href="/mentor/messagealt">
+                <Link href="/mentor/message">
                     <div className={styles.icon}>
                         <MessageIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Message</div>
                     </div>
                 </Link>
 
-                <Link href="/mentor/saved-resources">
+                <Link href="/mentor/saved">
                     <div className={styles.icon}>
                         <BookmarkIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Saved</div>
