@@ -23,6 +23,7 @@ export default function Home() {
                     </div>
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
+                        <Link href="/student/schedule">
                         <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
@@ -41,8 +42,9 @@ export default function Home() {
                                 <p className={styles.assignmentDetails}>5 more session left to schedule until July 20th</p>
                             </div>
                         </div>
+                        </Link>
 
-
+                        <Link href="/course-content/sample-video">
                         <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
@@ -66,7 +68,9 @@ export default function Home() {
                                 <p className={styles.assignmentDetails}> In this activity, learn to increase self-compassion through fun and playful creativity.</p>
                             </div>
                         </div>
+                        </Link>
 
+                        <Link href="/course-content/sample-blog-post">
                         <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
@@ -90,6 +94,7 @@ export default function Home() {
                                 <p className={styles.assignmentDetails}>  In this activity, learn to help clients cultivate positive emotions through savoring.</p>
                             </div>
                         </div>
+                        </Link>
 
                     </div>
 
@@ -119,13 +124,13 @@ export default function Home() {
 
                                 <div>
                                     <div className={styles.link} style={{ float: "left" }}>
-                                        <Link href="/student/schedulealt">
+                                        <Link href="/student/schedule">
                                             Schedule now
                                         </Link>
 
                                     </div>
                                     <div className={styles.link} style={{ float: "right" }}>
-                                        <Link href="/student/messagealt">
+                                        <Link href="/student/message">
                                             Send a Message
                                         </Link>
                                     </div>
