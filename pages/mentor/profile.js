@@ -9,8 +9,14 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Divider from "@mui/material/Divider";
 import TextField from "@mui/material/TextField";
+import { useState } from 'react';
 
 export default function StudentProfile() {
+  const [editOn, setEditOn] = useState(false);
+  const [education, setEducation] = useState('Harvard Graduate');
+  const [email, setEmail] = useState('ginawee@havard.edu');
+  const [location, setLocation] = useState('Boston, Massachusetts');
+  const [description, setDescription] = useState('Harvard graduate studying education and adolescent psychology');
   return (
     <>
       <_Head />
@@ -40,37 +46,41 @@ export default function StudentProfile() {
 
                   <div id={styles.icon}>
                     <EditIcon alt="Edit Icon"
+                      src="/edit-icon.png"
                       width="20px"
                       height="20px"
+                      onClick={() => setEditOn(!editOn)}
                     > </EditIcon>
                   </div>
                 </div>
                 <br></br>
                 <h4 style={{ margin: "0px" }}>---</h4>
-                <p className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }}>Boston, Massachusetts</p>
+                {editOn ? <input type="text" className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }} value={location} onChange={(event) => setLocation(event.target.value)} />
+                  : <p className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }}>{location}</p>}
 
                 <p id={styles.education} className={styles.fontLarge}>Education</p>
-                <div className={styles.textBox} style={{ width: "50%", lineHeight: "1.6" }}>
-                  <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121" }}>
-                    Harvard Graduate
-                  </p>
-                </div>
+
+                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%" }} type="text" value={education} onChange={(event) => setEducation(event.target.value)} /> :
+                  <div className={styles.textBox} style={{ width: "50%" }}>
+                    <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
+                      {education}
+                    </p>
+                  </div>}
+
 
                 <p id={styles.email} className={styles.fontLarge}>Email</p>
-                <div className={styles.textBox} style={{ width: "50%", lineHeight: "1.6" }}>
-                  <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121" }}>
-                    ginawee@harvard.edu
+                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%" }} type="text" value={email} onChange={(event) => setEmail(event.target.value)} /> : <div className={styles.textBox} style={{ width: "50%" }}>
+                  <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
+                    {email}
                   </p>
-                </div>
+                </div>}
 
                 <p id={styles.email} className={styles.fontLarge}>Description</p>
-                <div className={styles.textBox} style={{ width: "50%" }}>
+                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%" }} type="text" value={description} onChange={(event) => setDescription(event.target.value)} /> : <div className={styles.textBox} style={{ width: "50%" }}>
                   <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
-                    Harvard graduate studying education and adolescent psychology
+                    {description}
                   </p>
-                </div>
-
-
+                </div>}
               </div>
             </div>
 

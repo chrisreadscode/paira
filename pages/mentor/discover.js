@@ -83,29 +83,34 @@ export default function Discover() {
                         </p>
 
                         <div id={styles.videos}>
-                            <div className={styles.video}>
-                                Self-Awareness
-
-                                <div className={styles.vidPic}>
+                            <Link href="/course-content/sample-video">
+                                <div className={styles.video}>
+                                    Self-Awareness
+                                    <div className={styles.vidPic}>
+                                    </div>
+                                    <p style={{ fontSize: "small" }}>2 min</p>
                                 </div>
-                                <p style={{ fontSize: "small" }}>2 min</p>
-                            </div>
+                            </Link>
 
-                            <div className={styles.video}>
-                                Direction
+                            <Link href="/course-content/sample-video">
+                                <div className={styles.video}>
+                                    Direction
 
-                                <div className={styles.vidPic}>
+                                    <div className={styles.vidPic}>
+                                    </div>
+                                    <p style={{ fontSize: "small" }}>3 min</p>
                                 </div>
-                                <p style={{ fontSize: "small" }}>3 min</p>
-                            </div>
+                            </Link>
 
-                            <div className={styles.video}>
-                                Time Management
+                            <Link href="/course-content/sample-video">
+                                <div className={styles.video}>
+                                    Time Management
 
-                                <div className={styles.vidPic}>
+                                    <div className={styles.vidPic}>
+                                    </div>
+                                    <p style={{ fontSize: "small" }}>3 min</p>
                                 </div>
-                                <p style={{ fontSize: "small" }}>3 min</p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -114,9 +119,9 @@ export default function Discover() {
 
                 </main>
 
-                </div >
+            </div >
             <Footer />
-            </>
+        </>
     );
 }
 
@@ -164,5 +169,5 @@ export default function Discover() {
 // }
 
 {
-  /* <div id={styles.box}> */
+    /* <div id={styles.box}> */
 }

@@ -24,76 +24,76 @@ export default function Home() {
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
                         <Link href="/student/schedule">
-                        <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
-                            <div className={styles.imgContainer}>
-                                <div id={styles.img1}>
-                                    <Image alt="Time Management Image"
-                                        src="/time-management.jpg"
-                                        width="396px"
-                                        height="300px"
-                                    ></Image>
+                            <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
+                                <div className={styles.imgContainer}>
+                                    <div id={styles.img1}>
+                                        <Image alt="Time Management Image"
+                                            src="/time-management.jpg"
+                                            width="396px"
+                                            height="300px"
+                                        ></Image>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div className={styles.content}>
-                                <div className={styles.assignmentTitle}>
-                                    Schedule your next session
+                                <div className={styles.content}>
+                                    <div className={styles.assignmentTitle}>
+                                        Schedule your next session
+                                    </div>
+                                    <p className={styles.assignmentDetails}>5 more session left to schedule until July 20th</p>
                                 </div>
-                                <p className={styles.assignmentDetails}>5 more session left to schedule until July 20th</p>
                             </div>
-                        </div>
                         </Link>
 
                         <Link href="/course-content/sample-video">
-                        <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
-                            <div className={styles.imgContainer}>
-                                <div id={styles.img1}>
-                                    <Image alt="Time Management Image"
-                                        src="/time-management.jpg"
-                                        width="396px"
-                                        height="300px"
-                                    ></Image>
-                                </div>
-                            </div>
-
-                            <div className={styles.content}>
-                                <div className={styles.assignmentTitle}>
-                                    Self-Care Vision Board
-
-                                    <div style={{ height: "22px" }}>
-                                        <AccessTimeIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                        <p className={styles.assignmentDescription}>Exercise  ·  60 minute practice</p>
+                            <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
+                                <div className={styles.imgContainer}>
+                                    <div id={styles.img1}>
+                                        <Image alt="Time Management Image"
+                                            src="/time-management.jpg"
+                                            width="396px"
+                                            height="300px"
+                                        ></Image>
                                     </div>
                                 </div>
-                                <p className={styles.assignmentDetails}> In this activity, learn to increase self-compassion through fun and playful creativity.</p>
+
+                                <div className={styles.content}>
+                                    <div className={styles.assignmentTitle}>
+                                        Self-Care Vision Board
+
+                                        <div style={{ height: "22px" }}>
+                                            <AccessTimeIcon className={styles.icon} style={{ display: "inlineBlock" }} />
+                                            <p className={styles.assignmentDescription}>Exercise  ·  60 minute practice</p>
+                                        </div>
+                                    </div>
+                                    <p className={styles.assignmentDetails}> In this activity, learn to increase self-compassion through fun and playful creativity.</p>
+                                </div>
                             </div>
-                        </div>
                         </Link>
 
                         <Link href="/course-content/sample-blog-post">
-                        <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
-                            <div className={styles.imgContainer}>
-                                <div id={styles.img1}>
-                                    <Image alt="Time Management Image"
-                                        src="/time-management.jpg"
-                                        width="396px"
-                                        height="300px"
-                                    ></Image>
-                                </div>
-                            </div>
-
-                            <div className={styles.content}>
-                                <div className={styles.assignmentTitle}>
-                                    Positive Reminiscence
-
-                                    <div style={{ height: "22px" }}>
-                                        <AccessTimeIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                        <p className={styles.assignmentDescription}>Exercise  ·  5-10 minute practice</p>
+                            <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
+                                <div className={styles.imgContainer}>
+                                    <div id={styles.img1}>
+                                        <Image alt="Time Management Image"
+                                            src="/time-management.jpg"
+                                            width="396px"
+                                            height="300px"
+                                        ></Image>
                                     </div>
                                 </div>
-                                <p className={styles.assignmentDetails}>  In this activity, learn to help clients cultivate positive emotions through savoring.</p>
+
+                                <div className={styles.content}>
+                                    <div className={styles.assignmentTitle}>
+                                        Positive Reminiscence
+
+                                        <div style={{ height: "22px" }}>
+                                            <AccessTimeIcon className={styles.icon} style={{ display: "inlineBlock" }} />
+                                            <p className={styles.assignmentDescription}>Exercise  ·  5-10 minute practice</p>
+                                        </div>
+                                    </div>
+                                    <p className={styles.assignmentDetails}>  In this activity, learn to help clients cultivate positive emotions through savoring.</p>
+                                </div>
                             </div>
-                        </div>
                         </Link>
 
                     </div>

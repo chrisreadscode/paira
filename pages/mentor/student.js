@@ -12,6 +12,7 @@ import InsightsMonthlyImprovements from "../../components/InsightsMonthlyImprove
 import FlagIcon from '@mui/icons-material/Flag';
 import NoteIcon from '@mui/icons-material/Note';
 import Link from "next/link";
+import QuizIcon from '@mui/icons-material/Quiz';
 
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Divider from "@mui/material/Divider";
@@ -67,15 +68,24 @@ export default function Student() {
                                     </div>
 
                                     <div id={styles.assignedBox} style={{ marginLeft: "15px" }}>
-                                        <div className={styles.studentAssignment}>
-                                            Self-Awareness
-                                        </div>
-                                        <div className={styles.studentAssignment}>
-                                            Grit Quiz
-                                        </div>
-                                        <div className={styles.studentAssignment}>
-                                            Personality Quiz
-                                        </div>
+                                        <Link href="/assessment/time-management">
+                                            <div className={`${styles.studentAssignment} ${styles.pointer}`} style={{ display: "flex", flexDirection: "column" }}>
+                                                Self-Awareness Quiz
+                                                <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                            </div>
+                                        </Link>
+                                        <Link href="/assessment/time-management">
+                                            <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
+                                                Grit Quiz
+                                                <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                            </div>
+                                        </Link>
+                                        <Link href="/assessment/time-management">
+                                            <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
+                                                Personality Quiz
+                                                <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                            </div>
+                                        </Link>
 
                                     </div>
                                 </div>

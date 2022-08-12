@@ -10,6 +10,8 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Divider from "@mui/material/Divider";
 import TextField from "@mui/material/TextField";
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { useState } from 'react';
+import { Button } from "@mui/material";
 
 export default function Message() {
     return (
@@ -22,7 +24,7 @@ export default function Message() {
                         <div id={styles.mentorSide}>
                             <div className={styles.mentorBox}>
                                 <Image alt="Profile Picture"
-                                    src="/mentor-profile-pic.png"
+                                    src="/profile-pic.png"
                                     width="55px"
                                     height="55px"
                                 ></Image>
@@ -35,7 +37,7 @@ export default function Message() {
 
                             <div className={styles.mentorBox}>
                                 <Image alt="Profile Picture"
-                                    src="/mentor-profile-pic.png"
+                                    src="/profile-pic.png"
                                     width="55px"
                                     height="55px"
                                 ></Image>
@@ -48,7 +50,7 @@ export default function Message() {
 
                             <div className={styles.mentorBox}>
                                 <Image alt="Profile Picture"
-                                    src="/mentor-profile-pic.png"
+                                    src="/profile-pic.png"
                                     width="55px"
                                     height="55px"
                                 ></Image>
@@ -70,19 +72,22 @@ export default function Message() {
 
                                 </div>
 
-                                <div style={{ height: "18%" }}>
-                                    <div id={styles.messageInput}>
-                                        <h3 id={styles.more}>+</h3>
-                                        <AttachFileIcon id={styles.attachFile} />
-                                        <TextField id="message" variant="standard" placeholder="Message..." sx={{ width: '70%' }} />
+                                <div style={{ display: "flex", alignItems: "flex-end", height: "18%", justifyContent: "flex-end" }}>
+                                    <div id={styles.messageInput} style={{ display: "flex", margin: "0 1vw 1vh 0" }}>
+                                        <Button style={{ alignItems: "center", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                                            <h3 id={styles.more}>+</h3>
+                                        </Button>
+                                        <Button style={{ display: "flex" }}>
+                                            <AttachFileIcon id={styles.attachFile} />
+                                        </Button>
+                                        <TextField id="message" variant="standard" placeholder="Message..." sx={{ width: '70%', paddingTop: "3px" }} />
 
-                                        <h4 style={{ margin: "auto 20px" }}>Send</h4>
+                                        <Button>
+                                            <h4 style={{ margin: "auto 20px" }}>Send</h4>
+                                        </Button>
                                     </div>
-
-
-
-
                                 </div>
+
                             </div>
 
                         </div>

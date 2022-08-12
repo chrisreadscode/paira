@@ -96,9 +96,6 @@ export default function Message() {
                                         </Button>
                                     </div>
 
-
-
-
                                 </div>
                             </div>
 
