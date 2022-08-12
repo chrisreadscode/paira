@@ -12,19 +12,24 @@ export default function TimeManagement() {
       <_Head />
       <HeaderStudent />
       {/*styles.main changes the style of the carousel more seriously */}
-      <main className={styles.container}> 
-        <Carousel
-          autoPlay={false}
-          cycleNavigation={false}
-          id="fiveRadioButtonQuestionsContainer"
-          navButtonsAlwaysVisible={true}
+      <main className={styles.container} style={{display: "flex", justifyContent: "center"}}>
+        <form
+          // onSubmit={handleInitialAssessmentSubmit}
+          style={{ height: "80vh", width: "70vw" }}
         >
-           {AssessmentQuestionFiveRadioButtons({
-          id: "self-rating-time-tracking",
-          question: "I keep good track of time",
-        })}
-          {AssessmentSubmitButton()}
-        </Carousel>
+          <Carousel
+            autoPlay={false}
+            cycleNavigation={false}
+            id="fiveRadioButtonQuestionsContainer"
+            navButtonsAlwaysVisible={true}
+          >
+            {AssessmentQuestionFiveRadioButtons({
+              id: "self-rating-time-tracking",
+              question: "I keep good track of time",
+            })}
+            {AssessmentSubmitButton()}
+          </Carousel>
+        </form>
       </main>
       <Footer />
     </>
