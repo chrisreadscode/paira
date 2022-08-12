@@ -90,7 +90,6 @@ export default function Calendar() {
             events={calEvents}
             initialView="listWeek"
             plugins={[listPlugin]}
-            style={{ backgroundColor: "black" }}
           />
         </div>
       </main>
