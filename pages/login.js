@@ -39,9 +39,9 @@ export default function Login() {
             body: JSONdata,
         }
 
-        const response = await fetch(endpoint, options)
+        // const response = await fetch(endpoint, options)
 
-        const result = await response.json();
+        // const result = await response.json();
 
         // if (result) router.push('/student/home');
         router.push('/student/home')

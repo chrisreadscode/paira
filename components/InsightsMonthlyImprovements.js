@@ -18,7 +18,7 @@ export default function InsightsMonthlyImprovements() {
           >
             <div>
               <CircularProgressWithLabel
-                halfCircle={true}
+                halfcircle="true"
                 value={6.5}
                 variant="determinate"
               />
@@ -44,7 +44,7 @@ export default function InsightsMonthlyImprovements() {
           >
             <div>
               <CircularProgressWithLabel
-                halfCircle={true}
+                halfcircle="true"
                 value={17}
                 variant="determinate"
               />
@@ -70,7 +70,7 @@ export default function InsightsMonthlyImprovements() {
           >
             <div>
               <CircularProgressWithLabel
-                halfCircle={true}
+                halfcircle="true"
                 value={3.5}
                 variant="determinate"
               />
