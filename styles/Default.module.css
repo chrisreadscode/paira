@@ -1,31 +1,19 @@
+#bottomBox {
+  padding-bottom: .25em;
+}
+
 #box {
   background-color: white;
-  /* original */ 
-  /* margin: 40px 50px auto auto; */
-  /* alternative */ 
-  margin: 0px 50px 0px auto;
-  padding: 15px;
-  width: 40vw;
-  height: 60%;
-  border-radius: 20px;
   border: 2px solid #d0cece;
-  /* original */
-  padding-bottom: 45px;
-  /* alternative: comment-out */ 
-  padding-bottom: 20px; 
-}
-
-#consent {
-  margin: 15px 0px 0px 20px;
-}
-
-.checkbox {
-  transform: scale(1.5);
-  margin-right: 10px;
+  border-radius: 20px;
+  margin: 2vh 0;
+  padding: 3em;
+  padding-bottom: 20px;
+  width: 75vw;
 }
 
 #button {
-  background-color: #84C7AE;
+  background-color: #84c7ae;
   color: white;
   vertical-align: center;
   width: 40%;
@@ -42,90 +30,9 @@
   cursor: pointer;
 }
 
-.input {
-  color: black;
-  padding-left: 10px;
-  background-color: #f8f4f4;
-  width: 88%;
-  height: 40px;
-  margin: 20px;
-  margin-bottom: 6px;
-  border-radius: 5px;
-  border: 2px solid #d0cece;
-
-}
-
-.container {
-  padding: 0 2rem;
-  background-color: #aed2e6;
-}
-
-.main {
-  min-height: 90vh;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 3rem;
-  color: black;
-  padding-bottom: 10px;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.buttonTopBox {
+  border-radius: 5em;
+  width: 50% ;
 }
 
 .card {
@@ -158,9 +65,122 @@
   line-height: 1.5;
 }
 
+.checkbox {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+#consent {
+  margin: 15px 0px 0px 20px;
+}
+
+.container {
+  background-color: #f2f2f1;
+  display: flex;
+  padding: 4vh 10vw;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.description,
+.title {
+  text-align: center;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRowSpaceAround {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexRowSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.input {
+  color: black;
+  padding-left: 10px;
+  background-color: #f8f4f4;
+  width: 88%;
+  height: 40px;
+  margin: 20px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  border: 2px solid #d0cece;
+}
+
+#leftSide {
+  width: 45%;
+}
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.main {
+  min-height: 90vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#middleBox {
+  padding-bottom: 1.5em;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+#topBox {
+  padding-bottom: .25em;
+}
+
+#topStrengths {
+  margin: 0 !important;
+  padding-bottom: 1em;
 }
 
 @media (max-width: 600px) {
@@ -171,9 +191,7 @@
 }
 
 @media (prefers-color-scheme: white) {
-
-  .card,
-  .footer {
+  .card {
     border-color: #222;
   }
 
