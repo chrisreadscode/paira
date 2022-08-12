@@ -1,10 +1,13 @@
 import "@ericz1803/react-google-calendar/index.css";
 import "@fullcalendar/common/main.css";
-// import "@fullcalendar/react/main.css"
 import "@fullcalendar/list/main.css";
 import "../styles/globals.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+// pleaes kindly uncomment for client-side logging
+// export function reportWebVitals(metric) {
+//   console.log("metrics: ", metric);
+// }
 
 const theme = createTheme({
   //   palette: {
