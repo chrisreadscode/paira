@@ -1,0 +1,18 @@
+#listView {
+  background-color: white;
+  height: 100%;
+  padding: 4vh 2vw;
+  width: 40vw;
+}
+
+.main {
+  background-color: #f2f2f1;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4vh 0;
+}
+
+#monthly {
+  background-color: white;
+  width: 50vw;
+}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import HomeIcon from "@mui/icons-material/Home";
 import MessageIcon from "@mui/icons-material/Message";
 import SearchIcon from "@mui/icons-material/Search";
@@ -45,9 +46,16 @@ export default function HeaderStudent() {
           </div>
         </Link>
 
-        <Link href="/student/schedule">
+        <Link href="/student/calendar">
           <div className={styles.icon}>
             <CalendarTodayIcon className={styles.center} />
+            <div className={styles.center} style={{ fontSize: "small" }}>Calendar</div>
+          </div>
+        </Link>
+
+        <Link href="/student/schedule">
+          <div className={styles.icon}>
+            <EventAvailableIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Schedule</div>
           </div>
         </Link>

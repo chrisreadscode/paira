@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+const withTM = require("next-transpile-modules")([
+  "@babel/preset-react",
+  "@ericz1803/react-google-calendar",
+  "@fullcalendar/list",
+  "@fullcalendar/common",
+  "@fullcalendar/react",
+]);
 
-module.exports = nextConfig
+module.exports = withTM({
+  reactStrictMode: false,
+  swcMinify: true,
+  env: {
+    API_KEY: process.env.API_KEY,
+  }
+});

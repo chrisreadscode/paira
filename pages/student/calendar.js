@@ -3,7 +3,7 @@ import CalendarMonthly from "@ericz1803/react-google-calendar";
 import { css } from "@emotion/react";
 import Footer from "../../components/Footer";
 import FullCalender from "@fullcalendar/react";
-import HeaderMentor from "../../components/HeaderMentor";
+import HeaderStudent from "../../components/HeaderStudent";
 import listPlugin from "@fullcalendar/list";
 import React from "react";
 import styles from "../../styles/Calendar.module.css";
@@ -74,7 +74,7 @@ export default function Calendar() {
   return (
     <>
       <_Head />
-      <HeaderMentor />
+      <HeaderStudent />
       <main className={styles.main}>
         <div
           id={styles.monthly}
