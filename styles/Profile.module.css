@@ -218,6 +218,10 @@ p.fontLarge {
     padding: 10px;
 }
 
+.studentAssignment:hover {
+    cursor: pointer;
+}
+
 .mentorBox {
     border-radius: 10px;
     border: 2px solid #d0cece;
@@ -226,6 +230,11 @@ p.fontLarge {
     text-align: center;
     margin-right: 15px;
     padding: 10px;
+}
+
+.mentorBox:hover {
+    cursor: pointer;
+    background-color: aliceblue;
 }
 
 .mentorImg {

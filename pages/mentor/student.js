@@ -68,24 +68,18 @@ export default function Student() {
                                     </div>
 
                                     <div id={styles.assignedBox} style={{ marginLeft: "15px" }}>
-                                        <Link href="/assessment/time-management">
-                                            <div className={`${styles.studentAssignment} ${styles.pointer}`} style={{ display: "flex", flexDirection: "column" }}>
-                                                Self-Awareness Quiz
-                                                <QuizIcon fontSize="large" style={{ margin: "auto" }} />
-                                            </div>
-                                        </Link>
-                                        <Link href="/assessment/time-management">
-                                            <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
-                                                Grit Quiz
-                                                <QuizIcon fontSize="large" style={{ margin: "auto" }} />
-                                            </div>
-                                        </Link>
-                                        <Link href="/assessment/time-management">
-                                            <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
-                                                Personality Quiz
-                                                <QuizIcon fontSize="large" style={{ margin: "auto" }} />
-                                            </div>
-                                        </Link>
+                                        <div className={`${styles.studentAssignment} ${styles.pointer}`} style={{ display: "flex", flexDirection: "column" }}>
+                                            Self-Awareness Quiz
+                                            <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                        </div>
+                                        <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
+                                            Grit Quiz
+                                            <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                        </div>
+                                        <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
+                                            Personality Quiz
+                                            <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                        </div>
 
                                     </div>
                                 </div>

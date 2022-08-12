@@ -56,21 +56,21 @@ export default function StudentProfile() {
                                 </div>
                                 <br></br>
                                 <h4 style={{ margin: "0px" }}>---</h4>
-                                { editOn ? <input type="text" className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }} value={location} onChange={(event) => setLocation(event.target.value)} />
-                                    : <p className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }}>{location}</p> }
+                                {editOn ? <input type="text" className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }} value={location} onChange={(event) => setLocation(event.target.value)} />
+                                    : <p className={styles.fontSmall} style={{ margin: "0px", color: "#9c9c9c" }}>{location}</p>}
 
                                 <p id={styles.education} className={styles.fontLarge}>Education</p>
-                                
-                                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%"  }} type="text" value={education} onChange={(event) => setEducation(event.target.value)}/> :
-                                <div className={styles.textBox} style={{ width: "50%" }}>
-                                    <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
-                                        {education}
-                                    </p>
-                                </div> }
-                                
+
+                                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%" }} type="text" value={education} onChange={(event) => setEducation(event.target.value)} /> :
+                                    <div className={styles.textBox} style={{ width: "50%" }}>
+                                        <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
+                                            {education}
+                                        </p>
+                                    </div>}
+
 
                                 <p id={styles.email} className={styles.fontLarge}>Email</p>
-                                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%"  }} type="text" value={email} onChange={(event) => setEmail(event.target.value)}/> : <div className={styles.textBox} style={{ width: "50%" }}>
+                                {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%" }} type="text" value={email} onChange={(event) => setEmail(event.target.value)} /> : <div className={styles.textBox} style={{ width: "50%" }}>
                                     <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
                                         {email}
                                     </p>
@@ -84,22 +84,22 @@ export default function StudentProfile() {
 
                             <div id={styles.assignedBox} style={{ marginLeft: "15px", height: "33%" }}>
                                 <Link href="/assessment/time-management">
-                                <div className={`${styles.studentAssignment} ${styles.pointer}`} style={{display: "flex", flexDirection: "column"}}>
-                                    Self-Awareness Quiz
-                                    <QuizIcon fontSize="large" style={{margin: "auto"}}/>
-                                </div>
+                                    <div className={`${styles.studentAssignment} ${styles.pointer}`} style={{ display: "flex", flexDirection: "column" }}>
+                                        Self-Awareness Quiz
+                                        <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                    </div>
                                 </Link>
                                 <Link href="/assessment/time-management">
-                                <div className={styles.studentAssignment} style={{display: "flex", flexDirection: "column"}}>
-                                    Grit Quiz
-                                    <QuizIcon fontSize="large" style={{margin: "auto"}}/>
-                                </div>
+                                    <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
+                                        Grit Quiz
+                                        <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                    </div>
                                 </Link>
                                 <Link href="/assessment/time-management">
-                                <div className={styles.studentAssignment} style={{display: "flex", flexDirection: "column"}}>
-                                    Personality Quiz
-                                    <QuizIcon fontSize="large" style={{margin: "auto"}}/>
-                                </div>
+                                    <div className={styles.studentAssignment} style={{ display: "flex", flexDirection: "column" }}>
+                                        Personality Quiz
+                                        <QuizIcon fontSize="large" style={{ margin: "auto" }} />
+                                    </div>
                                 </Link>
                             </div>
 
@@ -107,29 +107,29 @@ export default function StudentProfile() {
                             <p className={styles.subtitle} style={{ marginTop: "50px" }}>Current Mentors</p>
 
                             <div style={{ display: "flex", flexDirection: "row" }}>
-                            <Link href="/student/message" >
-                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                    <div className={styles.mentorImg}>
+                                <Link href="/student/message" >
+                                    <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
+                                        <div className={styles.mentorImg}>
+                                        </div>
+                                        Gina Wee
+                                        <p className={styles.mentorDescription}>Personal Mentor</p>
                                     </div>
-                                    Gina Wee
-                                    <p className={styles.mentorDescription}>Personal Mentor</p>
-                                </div>
-                            </Link>
-                            <Link href="/student/message" >
-                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                    <div className={styles.mentorImg}>
-                                    </div>
-                                    Tina Richards
-                                    <p className={styles.mentorDescription}>Time Management Mentor</p>
-                                </div>
                                 </Link>
                                 <Link href="/student/message" >
-                                <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                    <div className={styles.mentorImg}>
+                                    <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
+                                        <div className={styles.mentorImg}>
+                                        </div>
+                                        Tina Richards
+                                        <p className={styles.mentorDescription}>Time Management Mentor</p>
                                     </div>
-                                    John Lake
-                                    <p className={styles.mentorDescription}>Sleep Mentor</p>
-                                </div>
+                                </Link>
+                                <Link href="/student/message" >
+                                    <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
+                                        <div className={styles.mentorImg}>
+                                        </div>
+                                        John Lake
+                                        <p className={styles.mentorDescription}>Sleep Mentor</p>
+                                    </div>
                                 </Link>
                             </div>
 
@@ -142,7 +142,7 @@ export default function StudentProfile() {
                 </main>
 
             </div >
-        <Footer />
+            <Footer />
         </>
     );
 }

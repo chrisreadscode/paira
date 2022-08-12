@@ -6,6 +6,7 @@ import Footer from "../../components/Footer.js";
 import HeaderMentor from "../../components/HeaderMentor.js";
 import EditIcon from '@mui/icons-material/Edit';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import Link from "next/link";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Divider from "@mui/material/Divider";
 import TextField from "@mui/material/TextField";
@@ -92,27 +93,30 @@ export default function StudentProfile() {
               <p className={styles.subtitle}>Assigned to Students</p>
 
               <div style={{ display: "flex", flexDirection: "row" }}>
-                <div className={styles.assigned} style={{ marginLeft: "15px", height: "170px" }}>
-                  <div style={{ height: "40%" }}>
-                    <p className={styles.menteeName}>Paul Sanjeet</p>
-                    <div className={styles.menteePic}>
-                      <Image alt="Mentee Profile Pic"
-                        src="/profile-pic.png"
-                        width="40px"
-                        height="40px"
-                      ></Image>
-                    </div>
-                  </div>
 
-                  <div style={{ display: "flex", paddingTop: "10px", height: "60%" }}>
-                    <div className={styles.assignments}>
+                <Link href="/mentor/student">
+                  <div className={styles.assigned} style={{ marginLeft: "15px", height: "170px" }}>
+                    <div style={{ height: "40%" }}>
+                      <p className={styles.menteeName}>Paul Sanjeet</p>
+                      <div className={styles.menteePic}>
+                        <Image alt="Mentee Profile Pic"
+                          src="/profile-pic.png"
+                          width="40px"
+                          height="40px"
+                        ></Image>
+                      </div>
                     </div>
-                    <div className={styles.assignments}>
-                    </div>
-                    <div className={styles.assignments}>
+                    <div style={{ display: "flex", paddingTop: "10px", height: "60%" }}>
+                      <div className={styles.assignments}>
+                      </div>
+                      <div className={styles.assignments}>
+                      </div>
+                      <div className={styles.assignments}>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
+
 
                 <div className={styles.assigned} style={{ marginLeft: "15px", height: "170px" }}>
                   <div style={{ height: "40%" }}>
