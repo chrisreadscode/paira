@@ -1,12 +1,12 @@
-import { CircularProgressWithLabelRotated } from "../lib/circularprogresswheels";
+import CircularProgressWithLabel from "../lib/circularprogresswheels";
 import styles from "../styles/Default.module.css";
 
 export default function InsightsMonthlyImprovements() {
   return (
     <div id={styles.box}>
-      <h2>Monthly Improvements</h2>
+      <h2 style={{textAlign: "center", margin: "0", paddingBottom: "3vh"}}>Monthly Improvements</h2>
       {/* 3 improvements */}
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", flexDirection: "space-between" }}>
         {/* An improvement */}
         <div>
           <div
@@ -17,14 +17,15 @@ export default function InsightsMonthlyImprovements() {
             }}
           >
             <div>
-              <CircularProgressWithLabelRotated
+              <CircularProgressWithLabel
+                halfCircle={true}
                 value={6.5}
                 variant="determinate"
               />
             </div>
-            <div>Increase in self-awareness</div>
+            <div style={{fontSize: "1.25em", paddingBottom: "3vh"}}>Increase in self-awareness</div>
           </div>
-          <div>
+          <div style={{textAlign: "justify", width: "100%", paddingLeft: "5%", paddingRight: "5%", margin: "0"}}>
             Your self-awareness has increased by 13%. Your assessment shows that
             you have greater understanding of who you are as a person, your
             strengths and your growth areas. You also have a greater
@@ -42,14 +43,15 @@ export default function InsightsMonthlyImprovements() {
             }}
           >
             <div>
-              <CircularProgressWithLabelRotated
+              <CircularProgressWithLabel
+                halfCircle={true}
                 value={17}
                 variant="determinate"
               />
             </div>
-            <div>Increase in direction</div>
+            <div style={{fontSize: "1.25em", paddingBottom: "3vh"}}>Increase in direction</div>
           </div>
-          <div>
+          <div style={{textAlign: "justify", width: "100%", paddingLeft: "5%", paddingRight: "5%", margin: "0"}}>
             Your direction score has increased the most this month by 34%. Your
             assessment indicates that you have greater understanding of not only
             what you want to do in life but also the tools needed to figure out
@@ -67,14 +69,15 @@ export default function InsightsMonthlyImprovements() {
             }}
           >
             <div>
-              <CircularProgressWithLabelRotated
+              <CircularProgressWithLabel
+                halfCircle={true}
                 value={3.5}
                 variant="determinate"
               />
             </div>
-            <div>Increase in time management</div>
+            <div style={{fontSize: "1.25em", paddingBottom: "3vh"}}>Increase in time management</div>
           </div>
-          <div>
+          <div style={{textAlign: "justify", width: "100%", paddingLeft: "5%", paddingRight: "5%", margin: "0"}}>
             Your time management skills have increased by 7%. Your assessment
             illustrates that you have a greater understanding of the importance
             of time management and some of the strategies that are proven to

@@ -1,0 +1,46 @@
+.bold {
+  font-weight: bold;
+}
+
+#buttonBox {
+  padding-bottom: .25em;
+}
+
+#box {
+  background-color: white;
+  border: 2px solid #d0cece;
+  border-radius: 20px;
+  margin: 2vh 0;
+  padding: 3em;
+  padding-bottom: 20px;
+  width: 75vw;
+}
+
+.button {
+  border-radius: 5em;
+  width: 50% ;
+  background-color: #73C2FB;
+}
+
+.left45 {
+  text-align: center;
+  width: 45%;
+}
+
+.right45 {
+  text-align: center;
+  width: 45%;
+}
+
+#topGrowthAreasBox {
+  padding-bottom: 1.5em;
+}
+
+#topStrengthsBox {
+  padding-bottom: .25em;
+}
+
+#topStrengthsTitle {
+  margin: 0 !important;
+  padding-bottom: 1em;
+}

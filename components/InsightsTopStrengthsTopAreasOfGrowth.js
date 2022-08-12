@@ -1,53 +1,53 @@
-import { CircularProgressWithLabel } from "../lib/circularprogresswheels";
 import Button from "@mui/material/Button";
+import CircularProgressCard from "./CircularProgressCard";
+import styles from "../styles/Insights.module.css";
+import stylesCommon from "../styles/common.module.css";
+import Link from 'next/link';
 
 export default function InsightsTopStrengthsTopAreasOfGrowth() {
   return (
-    <div id="left-side">
+    <div className={`${styles.left45} ${stylesCommon.flexColumn}`}>
       {/* top box for top strengths */}
-      <div>
-        <h2>Your Top Strengths</h2>
+      <div id={styles.topStrengthsBox}>
+        <h2 className={`${stylesCommon.flexRowCenter} ${styles.title}`}>
+          Your Top Strengths
+        </h2>
         {/* each of top three strengths */}
-        <div style={{ display: "flex" }}>
+        <div className={stylesCommon.flexRowSpaceAround}>
           {/* score and label */}
-          <div>
-            <CircularProgressWithLabel value={80} variant="determinate" />
-            <div>Growth Mindset</div>
-          </div>
-          <div>
-            <CircularProgressWithLabel value={70} variant="determinate" />
-            <div>Empathy</div>
-          </div>
-          <div>
-            <CircularProgressWithLabel value={60} variant="determinate" />
-            <div>Perseverance</div>
-          </div>
+          <CircularProgressCard
+            skillName={"Growth Mindset"}
+            skillStrength={80}
+          />
+          <CircularProgressCard skillName={"Empathy"} skillStrength={70} />
+          <CircularProgressCard skillName={"Perseverance"} skillStrength={60} />
         </div>
       </div>
       {/* middle box for top areas of growth */}
-      <div>
+      <div id={styles.topGrowthAreasBox}>
         {/* each of top three areas of growth */}
-        <h2>Your Top Areas of Growth</h2>
-        <div style={{ display: "flex" }}>
+        <h2 className={`${stylesCommon.flexRowCenter} ${styles.title}`}>Your Top Areas of Growth</h2>
+        <div className={stylesCommon.flexRowSpaceAround}>
           {/* score and label */}
-          <div>
-            <CircularProgressWithLabel value={10} variant="determinate" />
-            <div>Self-Awareness</div>
-          </div>
-          <div>
-            <CircularProgressWithLabel value={20} variant="determinate" />
-            <div>Direction</div>
-          </div>
-          <div>
-            <CircularProgressWithLabel value={40} variant="determinate" />
-            <div>Time Management</div>
-          </div>
+          <CircularProgressCard
+            skillName={"Self-Awareness"}
+            skillStrength={10}
+          />
+          <CircularProgressCard skillName={"Direction"} skillStrength={20} />
+          <CircularProgressCard
+            skillName={"Time Management"}
+            skillStrength={40}
+          />
         </div>
       </div>
       {/* last box of button to find out more */}
-      <Button style={{ borderRadius: "5em" }} variant="contained">
-        Find Out More
-      </Button>
+      <div className={`${stylesCommon.flexRowCenter} ${styles.buttonBox}`}>
+        <Link href="https://www.16personalities.com/free-personality-test">
+        <Button className={styles.button} variant="contained">
+          Find Out More
+        </Button>
+        </Link>
+      </div>
     </div>
   );
 }
