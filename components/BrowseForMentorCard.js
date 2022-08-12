@@ -6,7 +6,7 @@ export default function BrowserForMentor(props) {
   const icon = props.icon;
   const title = props.title;
 
-  console.log(icon);
+  // console.log(icon);
 
   const router = useRouter();
 

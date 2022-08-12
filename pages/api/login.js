@@ -22,7 +22,7 @@ const checkPassword = async (body) => {
     }
   })
 
-  console.log(student);
+  // console.log(student);
 }
 
 // // createStudent(body);
