@@ -45,13 +45,16 @@ export default function Home() {
                             <hr></hr>
 
                             <div>
-                                <div className={styles.buttons} style={{ float: "left" }}>
-                                    Join Meeting
-                                </div>
-
-                                <div className={styles.buttons} style={{ float: "right" }}>
-                                    Message
-                                </div>
+                                <Link href="/mentor/schedule">
+                                    <div className={styles.buttons} style={{ float: "left" }}>
+                                        Join Meeting
+                                    </div>
+                                </Link>
+                                <Link href="/mentor/message">
+                                    <div className={styles.buttons} style={{ float: "right" }}>
+                                        Message
+                                    </div>
+                                </Link>
                             </div>
                         </div>
 

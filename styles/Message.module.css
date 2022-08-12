@@ -31,6 +31,11 @@
     display: flex;
 }
 
+.mentorBox:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
 .mentorNames {
     font-weight: normal;
     margin: 0px;
