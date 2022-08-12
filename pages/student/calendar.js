@@ -28,20 +28,18 @@ export default function Calendar() {
     calendar: {
       borderWidth: "3px", //make outer edge of calendar thicker
     },
-  
+
     //you can also use emotion's string styles
     today: css`
       /* highlight today by making the text red and giving it a red border */
       color: red;
       border: 1px solid red;
     `,
-  }
+  };
 
   const url = `https://content.googleapis.com/calendar/v3/calendars/${calendarId}/events?maxResults=1000&key=${process.env.API_KEY}`;
 
   const [calEvents, setCalEvents] = useState([]);
-
-  console.log("API", process.env.API_KEY)
 
   useEffect(() => {
     fetch(url)
@@ -76,9 +74,7 @@ export default function Calendar() {
       <_Head />
       <HeaderStudent />
       <main className={styles.main}>
-        <div
-          id={styles.monthly}
-        >
+        <div id={styles.monthly}>
           <CalendarMonthly
             apiKey={process.env.API_KEY}
             calendars={calendars}
