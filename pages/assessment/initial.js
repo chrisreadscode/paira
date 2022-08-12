@@ -42,7 +42,7 @@ export default function Initial() {
       <div className={styles.container}>
         <main className={styles.main}>
           <form
-            onSubmit={handleInitialAssessmentSubmit}
+            // onSubmit={handleInitialAssessmentSubmit}
             style={{ height: "80vh", width: "70vw" }}
           >
             <div>
