@@ -140,9 +140,6 @@ export default function Homealt() {
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
 
                         <div className={styles.mentor}>

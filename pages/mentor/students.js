@@ -21,7 +21,58 @@ export default function Students() {
                 <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
                     <div id={styles.mainBox}>
-                        
+                        <div id={styles.topBox}>
+                            
+                        </div>
+
+                        <div id={styles.bottomBox}>
+                            <h3 className={styles.title}>
+                                Students
+
+                                <div id={styles.mentees}>
+
+                                    <div className={styles.menteeCard}>
+                                        <div className={styles.mentee} style={{ height: "120px" }}>
+                                            <Image alt="Mentee Profile Pic"
+                                                src="/profile-pic.png"
+                                                width="100px"
+                                                height="100px"
+                                            ></Image>
+                                            <p className={styles.subtitle}>Paul Sanjeet</p>
+                                        </div>
+                                        <p className={styles.menteeDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Student</p>
+                                    </div>
+
+                                    <div className={styles.menteeCard}>
+                                        <div className={styles.mentee} style={{ height: "120px" }}>
+                                            <Image alt="Mentee Profile Pic"
+                                                src="/profile-pic.png"
+                                                width="100px"
+                                                height="100px"
+                                            ></Image>
+                                            <p className={styles.subtitle}>Nicole Tran</p>
+                                        </div>
+                                        <p className={styles.menteeDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Student</p>
+                                    </div>
+
+                                    <div className={styles.menteeCard}>
+                                        <div className={styles.mentee} style={{ height: "120px" }}>
+                                            <Image alt="Mentee Profile Pic"
+                                                src="/profile-pic.png"
+                                                width="100px"
+                                                height="100px"
+                                            ></Image>
+                                            <p className={styles.subtitle}>Abbey Adams</p>
+                                        </div>
+                                        <p className={styles.menteeDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Student</p>
+                                    </div>
+
+
+                                </div>
+
+
+                            </h3>
+                        </div>
 
                     </div>
 

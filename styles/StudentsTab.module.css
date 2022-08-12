@@ -5,5 +5,97 @@
     border-radius: 10px;
     border: 2px solid #d0cece;
     background-color: white;
+}
+
+#topBox {
+    width: 100%;
+    height: 15%;
+    padding: 15px 30px;
+}
+
+#bottomBox {
+    width: 100%;
+    height: 85%;
+    padding: 10px 50px;
+}
+
+.title {
+    margin: 0px;
+    font-weight: normal;
+    font-size: x-large;
+}
+
+.subtitle {
+    margin: 0px;
+    font-weight: normal;
+    font-size: large;
+}
+
+#mentees {
+    width: 100%;
     display: flex;
+}
+
+.menteeCard {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 18%;
+    height: 200px;
+    margin: 25px 15px;
+    padding: 20px 10px;
+}
+
+.menteeCard:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.mentee {
+    width: 80%;
+    height: 150px;
+    margin: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menteeDescription {
+    font-size: small;
+    color: rgb(98, 98, 98);
+    margin-top: 8px;
+    line-height: 20px;
+
+}
+
+/* Student Page */
+
+#back {
+    opacity: 0.6;
+    border-radius: 10px;
+    border: 2px solid rgb(45, 45, 45);
+    padding: 10px;
+    width: 100px;
+    display: flex;
+}
+
+#back:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.verticalCenter {
+    margin: auto 0px;
+}
+
+#menteeDetail {
+    margin: auto;
+    width: 90%;
+    height: 500px;
+    border: 1px solid grey;
+}
+
+#menteeDetailTop {
+    width: 100%;
+    height: 35%;
 }
