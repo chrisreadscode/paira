@@ -26,7 +26,7 @@ export default function Schedule() {
                             Your Mentors
                         </h4>
 
-                        <ToggleButton style={{border: "0", padding: "0", margin: "0", width: "100%"}}>
+                        <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}>
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -40,7 +40,7 @@ export default function Schedule() {
                         </div>
                         </ToggleButton>
 
-                        <ToggleButton style={{border: "0", padding: "0", margin: "0", width: "100%"}}>
+                        <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}>
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -54,7 +54,7 @@ export default function Schedule() {
                         </div>
                         </ToggleButton>
 
-                        <ToggleButton style={{border: "0", padding: "0", margin: "0", width: "100%"}}>
+                        <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}>
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
