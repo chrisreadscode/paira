@@ -23,10 +23,7 @@ export default function Homealt() {
                     </div>
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
-
-
-
-                        <div className={commonStyles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
+                        <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -46,7 +43,7 @@ export default function Homealt() {
                         </div>
 
 
-                        <div className={commonStyles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
+                        <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -70,11 +67,7 @@ export default function Homealt() {
                             </div>
                         </div>
 
-
-
-
-
-                        <div className={commonStyles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
+                        <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
                             <div className={styles.imgContainer}>
                                 <div id={styles.img1}>
                                     <Image alt="Time Management Image"
@@ -99,8 +92,6 @@ export default function Homealt() {
                         </div>
 
                     </div>
-
-
 
                     <div id={styles.upcomingAssignment}>
                         <h2 className={commonStyles.title}>Your Mentors</h2>
@@ -128,13 +119,13 @@ export default function Homealt() {
 
                                 <div>
                                     <div className={styles.link} style={{ float: "left" }}>
-                                        <Link href="/student/schedule">
+                                        <Link href="/student/schedulealt">
                                             Schedule now
                                         </Link>
 
                                     </div>
                                     <div className={styles.link} style={{ float: "right" }}>
-                                        <Link href="/student/message">
+                                        <Link href="/student/messagealt">
                                             Send a Message
                                         </Link>
                                     </div>
@@ -173,9 +164,9 @@ export default function Homealt() {
 
                 </main>
 
-                
+
             </div >
             <Footer />
-            </>
+        </>
     );
 }

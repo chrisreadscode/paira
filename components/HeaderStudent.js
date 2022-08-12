@@ -12,7 +12,7 @@ import styles from "../styles/Header.module.css";
 export default function HeaderStudent() {
   return (
     <div id={styles.logo}>
-      <Link href="/student/home">
+      <Link href="/student/homealt">
         <a>
           <Image
             alt="paira logo"
@@ -25,7 +25,7 @@ export default function HeaderStudent() {
       </Link>
 
       <div style={{ display: "flex", flexDirection: "row", float: "right" }}>
-        <Link href="/student/home">
+        <Link href="/student/homealt">
           <div className={styles.icon}>
             <HomeIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Home</div>
@@ -39,7 +39,7 @@ export default function HeaderStudent() {
           </div>
         </Link>
 
-        <Link href="/student/discover">
+        <Link href="/student/discoveralt">
           <div className={styles.icon}>
             <SearchIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Discover</div>
@@ -60,7 +60,7 @@ export default function HeaderStudent() {
           </div>
         </Link>
 
-        <Link href="/student/message">
+        <Link href="/student/messagealt">
           <div className={styles.icon}>
             <MessageIcon className={styles.center} />
             <div className={styles.center} style={{ fontSize: "small" }}>Message</div>
