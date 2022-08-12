@@ -39,7 +39,7 @@ import InsightsMonthlyImprovements from "../../components/InsightsMonthlyImprove
 import InsightsPersonalityType from "../../components/InsightsPersonalityType";
 import InsightsTopStrengthsTopAreasOfGrowth from "../../components/InsightsTopStrengthsTopAreasOfGrowth";
 import styles from "../../styles/Insights.module.css";
-import stylesCommon from "../../styles/common.module.css";
+import commonStyles from "../../styles/common.module.css";
 
 export default function Insights() {
   return (
@@ -47,9 +47,9 @@ export default function Insights() {
       <_Head />
       <HeaderStudent />
       {/* styles.main interfering with other styles? */}
-      <main className={`${stylesCommon.containerRelative} ${stylesCommon.flexColumn}`}>
+      <main className={`${commonStyles.containerRelative} ${commonStyles.flexColumn}`}>
         {/* First tab section */}
-        <div id={styles.box} className={stylesCommon.flexRowSpaceBetween}>
+        <div id={styles.box} className={commonStyles.flexRowSpaceBetween}>
           {/* left side */}
           <InsightsTopStrengthsTopAreasOfGrowth />
           {/* right side */}

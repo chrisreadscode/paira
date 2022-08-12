@@ -13,6 +13,7 @@ import FlagIcon from '@mui/icons-material/Flag';
 import NoteIcon from '@mui/icons-material/Note';
 import Link from "next/link";
 import QuizIcon from '@mui/icons-material/Quiz';
+import InsightsPersonalityType from "../../components/InsightsPersonalityType";
 
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Divider from "@mui/material/Divider";
@@ -27,7 +28,7 @@ export default function Student() {
                 <_Head />
                 <main className={commonStyles.main} style={{ paddingTop: "50px" }}>
 
-                    <div id={styles.mainBox} style={{ height: "830px" }}>
+                    <div id={styles.mainBox} style={{ height: "1050px" }}>
                         <div id={styles.topBox}>
                             <Link href="/mentor/students">
                                 <div id={styles.back} style={{ float: "left" }}>
@@ -85,9 +86,14 @@ export default function Student() {
                                 </div>
 
                                 <div id={styles.menteeDetailBotom}>
-                                    <div id={styles.strength}>
+                                    <div id={styles.growthBox} className={commonStyles.flexRowSpaceBetween}>
+                                        {/* left side */}
                                         <InsightsTopStrengthsTopAreasOfGrowth />
+                                        {/* right side */}
+                                        <InsightsPersonalityType />
                                     </div>
+
+
                                     <div id={styles.improvements}>
                                         <InsightsMonthlyImprovements />
                                     </div>
