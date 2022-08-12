@@ -14,3 +14,13 @@ module.exports = withTM({
     API_KEY: process.env.API_KEY,
   }
 });
+
+// import { NextResponse } from "next/server";
+
+// export function middleware(request) {
+//   return NextResponse.redirect(new URL('/login', request.url));
+// }
+
+// export const config = {
+//     matcher: ['/', '/index'],
+// }
