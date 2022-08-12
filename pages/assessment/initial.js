@@ -43,7 +43,7 @@ export default function Initial() {
         <main className={styles.main}>
           <form
             onSubmit={handleInitialAssessmentSubmit}
-            style={{ width: "70vw" }}
+            style={{ height: "80vh", width: "70vw" }}
           >
             <div>
               <h1 className={styles.title}>Quick Assessment</h1>
@@ -51,7 +51,6 @@ export default function Initial() {
             <Carousel
               autoPlay={false}
               cycleNavigation={false}
-              id="fiveRadioButtonQuestionsContainer"
               navButtonsAlwaysVisible={true}
             >
               {assessmentQuestions}

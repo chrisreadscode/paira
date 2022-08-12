@@ -14,9 +14,10 @@ export default function AssessmentQuestionFiveRadioButtons(props) {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          paddingBottom: "10vh"
         }}
       >
-        <FormLabel id={id}>{question}</FormLabel>
+        <FormLabel id={id} style={{ display: "flex", justifyContent: "center", paddingBottom: "10vh", paddingTop: "3vh", fontSize: "large" }}>{question}</FormLabel>
         <RadioGroup name={id} row={true}>
           <FormControlLabel
             control={<Radio />}

@@ -27,11 +27,12 @@ export default function AssessmentQuestionSkillQuestion() {
         justifyContent: "center",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", paddingBottom: "10vh", paddingTop: "1vh", fontSize: "large" }}>
         Select some skills you would like to learn
       </div>
       <ToggleButtonGroup
         onChange={(event, newFormats) => setFormats(newFormats)}
+        style={{display: "flex", flexWrap: "wrap", gap: "3vw", justifyContent: "center", paddingLeft: "5%", paddingBottom: "10vh", width: "90%"}}
         value={formats}
       >
         {skillsToLearn.map((skill, i) =>
