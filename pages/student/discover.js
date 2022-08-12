@@ -20,7 +20,7 @@ export default function Discover() {
             <_Head />
             <HeaderStudent />
             <div className={commonStyles.container}>
-                <main className={commonStyles.main}>
+                <main className={commonStyles.main} style={{paddingBottom: "6vh"}}>
 
                     <div id={styles.search}>
                         <SearchIcon id={styles.searchIcon} />
@@ -39,9 +39,11 @@ export default function Discover() {
 
                                 <hr style={{ margin: "0px" }}></hr>
 
+                                <Link href="/student/choose-your-mentor">
                                 <div className={styles.findMentor}>
                                     Find a Mentor
                                 </div>
+                                </Link>
                             </div>
 
                             <div className={styles.mentor}>
@@ -50,9 +52,11 @@ export default function Discover() {
 
                                 <hr style={{ margin: "0px" }}></hr>
 
+                                <Link href="/student/choose-your-mentor">
                                 <div className={styles.findMentor}>
                                     Find a Mentor
                                 </div>
+                                </Link>
                             </div>
 
                             <div className={styles.mentor}>
@@ -61,9 +65,11 @@ export default function Discover() {
 
                                 <hr style={{ margin: "0px" }}></hr>
 
+                                <Link href="/student/choose-your-mentor">
                                 <div className={styles.findMentor}>
                                     Find a Mentor
                                 </div>
+                                </Link>
                             </div>
 
                             <div className={styles.mentor}>
@@ -72,9 +78,11 @@ export default function Discover() {
 
                                 <hr style={{ margin: "0px" }}></hr>
 
+                                <Link href="/student/choose-your-mentor">
                                 <div className={styles.findMentor}>
                                     Find a Mentor
                                 </div>
+                                </Link>
                             </div>
 
                             <div className={styles.mentor}>
@@ -83,9 +91,11 @@ export default function Discover() {
 
                                 <hr style={{ margin: "0px" }}></hr>
 
+                                <Link href="/student/choose-your-mentor">
                                 <div className={styles.findMentor}>
                                     Find a Mentor
                                 </div>
+                                </Link>
                             </div>
 
                         </div>
@@ -98,6 +108,7 @@ export default function Discover() {
                         </p>
 
                         <div style={{ display: "flex" }}>
+                            <Link href="/course-content/sample-blog-post">
                             <div className={styles.assignments} style={{ height: "300px" }}>
                                 <div className={styles.imgContainer}></div>
                                 <div className={styles.content}>
@@ -110,7 +121,9 @@ export default function Discover() {
                                     <p style={{ opacity: "0.6", fontSize: "small" }}>Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness.</p>
                                 </div>
                             </div>
+                            </Link>
 
+                            <Link href="/course-content/sample-blog-post">
                             <div className={styles.assignments} style={{ height: "300px" }}>
                                 <div className={styles.imgContainer}></div>
                                 <div className={styles.content}>
@@ -123,7 +136,9 @@ export default function Discover() {
                                     <p style={{ opacity: "0.6", fontSize: "small" }}>Finding direction in life can feel like an overwhelming task at times with so many options, so many open paths. Learn how to navigate through this obstacle and find the right path for you.</p>
                                 </div>
                             </div>
+                            </Link>
 
+                            <Link href="/course-content/sample-blog-post">
                             <div className={styles.assignments} style={{ height: "300px" }}>
                                 <div className={styles.imgContainer}></div>
                                 <div className={styles.content}>
@@ -136,6 +151,7 @@ export default function Discover() {
                                     <p style={{ opacity: "0.6", fontSize: "small" }}>Balancing school, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to time management and avoid feeling overwhelmed.</p>
                                 </div>
                             </div>
+                            </Link>
                         </div>
 
 
