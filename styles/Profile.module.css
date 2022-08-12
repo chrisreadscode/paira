@@ -135,6 +135,11 @@ p.fontLarge {
     padding: 15px;
 }
 
+.assigned:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
 #wallet {
     width: 94%;
     height: 40%;
@@ -175,6 +180,23 @@ p.fontLarge {
     height: 60px;
     border-radius: 6px;
     background-color: #eeeeee;
+}
+
+#payment {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    width: 200px;
+    opacity: 0.7;
+}
+
+#payment:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#paymentTxt {
+    margin: 2px 0px 0px 5px;
 }
 
 /* Student Added Later*/

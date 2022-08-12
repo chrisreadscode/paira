@@ -98,7 +98,7 @@ export default function Discoveralt() {
                         </p>
 
                         <div style={{ display: "flex" }}>
-                            <div className={commonStyles.assignments} style={{ height: "300px" }}>
+                            <div className={styles.assignments} style={{ height: "300px" }}>
                                 <div className={styles.imgContainer}></div>
                                 <div className={styles.content}>
                                     <p style={{ margin: "0px" }}>How to Cultivate Self-Awareness</p>
@@ -111,7 +111,7 @@ export default function Discoveralt() {
                                 </div>
                             </div>
 
-                            <div className={commonStyles.assignments} style={{ height: "300px" }}>
+                            <div className={styles.assignments} style={{ height: "300px" }}>
                                 <div className={styles.imgContainer}></div>
                                 <div className={styles.content}>
                                     <p style={{ margin: "0px" }}>Finding Direction in Life</p>
@@ -124,7 +124,7 @@ export default function Discoveralt() {
                                 </div>
                             </div>
 
-                            <div className={commonStyles.assignments} style={{ height: "300px" }}>
+                            <div className={styles.assignments} style={{ height: "300px" }}>
                                 <div className={styles.imgContainer}></div>
                                 <div className={styles.content}>
                                     <p style={{ margin: "0px" }}>The Basics of Time Management</p>

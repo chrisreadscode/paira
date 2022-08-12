@@ -125,8 +125,6 @@ export default function StudentProfile() {
                     </div>
                   </div>
                 </div>
-
-
               </div>
 
 
@@ -138,12 +136,12 @@ export default function StudentProfile() {
                   Payout scheduled July 21st
                 </div>
               </div>
-              <div style={{ marginTop: "10px", marginLeft: "20px", display: "flex", justifyContent: "center", width: "150px" }}>
+              <div id={styles.payment}>
                 <CreditCardIcon alt="Credit Card Icon"
                   width="20px"
                   height="20px"
                 > </CreditCardIcon>
-                Payment Method
+                <p id={styles.paymentTxt}>Payment Method</p>
               </div>
 
 
@@ -162,6 +160,6 @@ export default function StudentProfile() {
 
       </div >
       <Footer />
-      </>
+    </>
   );
 }

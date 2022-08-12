@@ -9,6 +9,10 @@
 
 }
 
+#search {
+    cursor: pointer;
+}
+
 #searchIcon {
     opacity: 0.6;
     display: inline-block;
@@ -114,4 +118,19 @@
     width: 70%;
     height: 70%;
     margin: 10px auto;
+}
+
+.assignments {
+    border-radius: 10px;
+    border: 2px solid #d0cece;
+    background-color: white;
+    width: 33%;
+    height: 250px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.assignments:hover {
+    cursor: pointer;
+    background-color: aliceblue;
 }

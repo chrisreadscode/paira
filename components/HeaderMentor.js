@@ -24,7 +24,7 @@ export default function Header() {
             </Link>
 
             <div style={{ display: "flex", flexDirection: "row", float: "right" }}>
-                <Link href="/mentor/home">
+                <Link href="/mentor/homealt">
                     <div className={styles.icon}>
                         <HomeIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Home</div>
@@ -38,7 +38,7 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <Link href="/mentor/discover">
+                <Link href="/mentor/discoveralt">
                     <div className={styles.icon}>
                         <SearchIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Discover</div>
@@ -52,7 +52,7 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <Link href="/mentor/message">
+                <Link href="/mentor/messagealt">
                     <div className={styles.icon}>
                         <MessageIcon className={styles.center} />
                         <div className={styles.center} style={{ fontSize: "small" }}>Message</div>
