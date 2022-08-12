@@ -41,8 +41,6 @@ export default function Calendar() {
 
   const [calEvents, setCalEvents] = useState([]);
 
-  console.log("API", process.env.API_KEY)
-
   useEffect(() => {
     fetch(url)
       .then((response) => {
