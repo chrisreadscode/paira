@@ -1,6 +1,7 @@
 import _Head from "../../components/_Head.js";
 import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
+import Link from "next/link";
 import styles from "../../styles/ThankYou.module.css";
 
 export default function ParentThankYou() {
@@ -18,6 +19,10 @@ export default function ParentThankYou() {
               We have received your submission. We greatly appreciate your
               interest.
             </div>
+            <br />
+            <Link href="/login">
+              <a>Click here to return to login</a>
+            </Link>
           </div>
         </main>
       </div>

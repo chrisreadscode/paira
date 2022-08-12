@@ -24,6 +24,10 @@
   text-align: center;
 }
 
+.userSignup:hover {
+  text-decoration: underline;
+}
+
 .centerText {
   margin-left: auto;
   margin-right: auto;

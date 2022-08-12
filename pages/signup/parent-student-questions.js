@@ -19,7 +19,7 @@ export default function StudentQuestions() {
       <div className={styles.container}>
         <main className={styles.main}>
           <div id={styles.box}>
-            <h1 className={styles.title} style={{ fontSize: "2rem" }}>
+            <h1 className={styles.title}>
               Questions about Student
             </h1>
 

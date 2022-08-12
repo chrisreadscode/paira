@@ -125,10 +125,10 @@ export default function Login() {
                         <Divider style={{borderBottomColor: "black", width: "40vw"}} variant="middle"/>
                         <List style={{display: "flex", flexDirection: "column", alignItems: "center", height: "50vh", justifyContent: "space-evenly"}}>
                             <div style={{fontSize: "1.5em"}}>Are you a</div>
-                            <ListItem style={{display: "flex", fontSize: "1.1em", justifyContent: "center"}}><Link href="/signup/parent">Parent</Link></ListItem>
+                            <ListItem className={styles.userSignup} style={{display: "flex", fontSize: "1.1em", justifyContent: "center"}}><Link href="/signup/parent">Parent</Link></ListItem>
                             <Divider style={{fontSize: "1.5em", width: "40vw"}} variant="middle">or</Divider>
-                            <ListItem style={{alignItems: "center", display: "flex", fontSize: "1.1em", justifyContent: "center"}}><Link href="/signup/student">Student</Link></ListItem>
-                            <ListItem style={{top: "4vh", fontSize: ".6em"}}><Link href="/signup/mentor">Interested in working as a mentor?</Link></ListItem>
+                            <ListItem className={styles.userSignup} style={{alignItems: "center", display: "flex", fontSize: "1.1em", justifyContent: "center"}}><Link href="/signup/student">Student</Link></ListItem>
+                            <ListItem className={styles.userSignup} style={{top: "4vh", fontSize: ".6em"}}><Link href="/signup/mentor">Interested in working as a mentor?</Link></ListItem>
                         </List>
                         </div>
                     </Dialog>
