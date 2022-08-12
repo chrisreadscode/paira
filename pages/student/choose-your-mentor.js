@@ -9,9 +9,12 @@ import Divider from "@mui/material/Divider";
 import Image from "next/image";
 import commonStyles from "../../styles/common.module.css";
 import stylesHomeAlt from "../../styles/Homealt.module.css";
+import { useState } from 'react';
 
 export default function ChooseYourMentor() {
   const router = useRouter();
+
+  const [mentor, setMentor] = useState({name: "Tina Richards", description: "Gina is a Harvard graduate studying education and adolescent psychology"})
 
   return (
     <div>
@@ -80,13 +83,12 @@ export default function ChooseYourMentor() {
               <div style={{fontSize: "1.2em", paddingBottom: "5vh"}}>Meet Gina Wee</div>
             </div>
             <div style={{fontSize: "1.1em", paddingBottom: "10vh"}}>
-              Gina is a Harvard graduate studying education and adolescent
-              psychology
+              {mentor.description}
             </div>
           </div>
           <div style={{display: "flex"}}>
             <Button onClick={() => router.push("/student/schedule")} variant="contained" style={{backgroundColor: "#73C2FB", marginRight: "1vw", borderRadius: "1em"}}>
-              Schedule with Gina
+              Schedule with {mentor.name}
             </Button>
             <Button onClick={() => router.push("/student/mentor-profile")} variant="contained" style={{backgroundColor: "#73C2FB", marginLeft: "1vw", borderRadius: "1em"}}>
               More about me

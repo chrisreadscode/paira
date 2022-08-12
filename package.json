@@ -37,7 +37,4 @@
     "eslint-config-next": "12.2.3",
     "prisma": "^4.1.0"
   },
-  "engines": {
-    "node": ">=v18.6.0"
-  }
 }
