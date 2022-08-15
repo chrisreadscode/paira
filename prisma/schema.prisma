@@ -6,6 +6,8 @@
 // please kindly run this command after each schema update:
 //    npx prisma generate
 
+// seed database with npx prisma db seed
+
 generator client {
   provider = "prisma-client-js"
 }

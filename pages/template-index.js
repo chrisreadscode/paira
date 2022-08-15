@@ -1,5 +1,5 @@
 import styles from "../styles/Home.module.css";
-import prisma from "../lib/prisma.js";
+import prisma from "../utils/prisma.js";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import DatePicker from "@mui/x-date-pickers/DatePicker";
