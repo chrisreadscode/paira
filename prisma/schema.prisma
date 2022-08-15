@@ -16,8 +16,8 @@ datasource db {
 }
 
 model insightsforstudents {
-  id               Int     @id @default(autoincrement())
-  createdAt        Float   @default(dbgenerated("SELECT extract(epoch from now());"))
+  id               Int      @id @default(autoincrement())
+  createdAt        DateTime @default(now())
   communication    Int
   criticalThinking Int
   direction        Int
@@ -27,8 +27,8 @@ model insightsforstudents {
   resilience       Int
   selfAwareness    Int
   timeManagement   Int
-  updatedAt        Float   @default(dbgenerated("SELECT extract(epoch from now());"))
-  student          student @relation(fields: [studentId], references: [id])
+  updatedAt        DateTime @updatedAt
+  student          student  @relation(fields: [studentId], references: [id])
   studentId        Int
 }
 
@@ -66,14 +66,14 @@ model mentor {
 }
 
 model mentornote {
-  id        Int     @id @default(autoincrement())
-  createdAt Float   @default(dbgenerated("SELECT extract(epoch from now());"))
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
   note      String
   title     String
-  updatedAt Float   @default(dbgenerated("SELECT extract(epoch from now());"))
-  mentor    mentor  @relation(fields: [mentorId], references: [id])
+  updatedAt DateTime @updatedAt
+  mentor    mentor   @relation(fields: [mentorId], references: [id])
   mentorId  Int
-  student   student @relation(fields: [studentId], references: [id])
+  student   student  @relation(fields: [studentId], references: [id])
   studentId Int
 }
 
@@ -113,7 +113,7 @@ model parent {
 // A resource type: article, video, quiz, exercise
 model resource {
   id                             Int                              @id @default(autoincrement())
-  createdAt                      Float
+  createdAt                      DateTime                         @default(now())
   timeToCompleteInMinutes        Int
   link                           String
   summary                        String
@@ -126,7 +126,7 @@ model resourcesforstudentsandmentors {
   id         Int      @id @default(autoincrement())
   assigned   Boolean  @default(true)
   completed  Boolean  @default(false)
-  createdAt  Float
+  createdAt  DateTime @default(now())
   saved      Boolean  @default(false)
   mentor     mentor?  @relation(fields: [mentorId], references: [id])
   mentorId   Int?
@@ -182,10 +182,10 @@ model studentsandparents {
 
 model quiz {
   id                      Int           @id @default(autoincrement())
-  createdAt               Float         @default(dbgenerated("SELECT extract(epoch from now());"))
+  createdAt               DateTime      @default(now())
   title                   String
   timeToCompleteInMinutes Int
-  updatedAt               Float         @default(dbgenerated("SELECT extract(epoch from now());"))
+  updatedAt               DateTime      @updatedAt
   quizanswers             quizanswers[]
 }
 
