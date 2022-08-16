@@ -26,7 +26,7 @@ export default function Schedule() {
                             Your Mentors
                         </h4>
 
-                        <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}>
+                        {/* <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}> */}
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -38,9 +38,9 @@ export default function Schedule() {
                                 <p className={styles.mentorDescription}> Personal Mentor</p>
                             </div>
                         </div>
-                        </ToggleButton>
+                        {/* </ToggleButton> */}
 
-                        <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}>
+                        {/* <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}> */}
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -52,9 +52,9 @@ export default function Schedule() {
                                 <p className={styles.mentorDescription}> Time Management Mentor</p>
                             </div>
                         </div>
-                        </ToggleButton>
+                        {/* </ToggleButton> */}
 
-                        <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}>
+                        {/* <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}> */}
                         <div className={styles.mentor}>
                             <div className={styles.mentorCard}>
                                 <Image alt="Mentor Profile Pic"
@@ -66,14 +66,14 @@ export default function Schedule() {
                                 <p className={styles.mentorDescription}> Sleep Mentor</p>
                             </div>
                         </div>
-                        </ToggleButton>
+                        {/* </ToggleButton> */}
                     </div>
 
                     {/* <div id={styles.scheduleBox}>
                     </div> */}
-                    {/* <div> */}
-                        <InlineWidget styles={{height: "100vh", padding: "0", margin: "0", width: "80vw"}} url="https://calendly.com/rcreadii/" />
-                    {/* </div> */}
+                    <div>
+                        <InlineWidget styles={{height: "100vh", padding: "0", margin: "0", width: "70vw"}} url="https://calendly.com/rcreadii/" />
+                    </div>
                 </main>
 
             </div >
