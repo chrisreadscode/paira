@@ -13,7 +13,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@ericz1803/react-google-calendar": "^4.2.1",
+    "@ericz1803/react-google-calendar": "github:rcreadii/react-google-calendar",
     "@fullcalendar/common": "^5.11.2",
     "@fullcalendar/list": "^5.11.2",
     "@fullcalendar/react": "^5.11.2",
@@ -26,7 +26,7 @@
     "link-preview-js": "^3.0.3",
     "next": "^12.2.5",
     "next-transpile-modules": "^9.0.0",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-big-calendar": "^1.5.0",
     "react-calendly": "^4.0.1",
     "react-dom": "18.2.0",
@@ -34,13 +34,14 @@
     "react-youtube": "^9.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
+    "eslint": "^8.22.0",
     "eslint-config-next": "^12.2.5",
+    "npm-check-updates": "^16.0.5",
     "prisma": "^4.2.1"
   },
   "engines": {
-    "node": "18.6.0",
-    "npm": "8.13.2"
+    "node": "^18.6.0",
+    "npm": "^8.13.2"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
