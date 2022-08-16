@@ -1,4 +1,4 @@
-import CircularProgressWithLabel from "../lib/circularprogresswheels";
+import CircularProgressWithLabel from "../utils/circularprogresswheels";
 import styles from "../styles/Default.module.css";
 
 export default function InsightsMonthlyImprovements() {

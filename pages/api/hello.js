@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import prisma from '../../lib/prisma.js';
+import prisma from '../../utils/prisma.js';
 
 const createStudent = async (body) => {
   await prisma.student.create({

@@ -131,7 +131,7 @@ https://eggerapps.at/postico/
 
 ### Other Folders
 - .next: I don't know, something to do with Next.js
-- lib: I don't know, currently it may be like a utilities folder
+- utils: I don't know, currently it may be like a utilities folder
 - node_modules: where external packages are installed
 - public: I don't know, currently we can put our site images here
 

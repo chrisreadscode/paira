@@ -1,4 +1,4 @@
-import "@ericz1803/react-google-calendar/index.css";
+import "@ericz1803/react-google-calendar/src/index.css";
 import "@fullcalendar/common/main.css";
 import "@fullcalendar/list/main.css";
 import "../styles/globals.css";

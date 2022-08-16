@@ -1,4 +1,4 @@
-import CircularProgressWithLabel from "../lib/circularprogresswheels";
+import CircularProgressWithLabel from "../utils/circularprogresswheels";
 
 export default function CircularProgressCard(props) {
   return (
