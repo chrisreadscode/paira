@@ -9,6 +9,7 @@
     "lint": "next lint",
     "production": "next start"
   },
+  "cacheDirectories": [".next/cache"],
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
     "@emotion/react": "^11.10.0",
