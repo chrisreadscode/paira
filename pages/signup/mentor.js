@@ -7,11 +7,37 @@ import { useRouter } from "next/router";
 export default function ParentSignup() {
   const router = useRouter();
 
-  const handleMentorSignupSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault()
 
-    router.push("/signup/mentor-thank-you");
-  };
+    const data = {
+      first_name: event.target.first_name.value,
+      last_name: event.target.last_name.value,
+      mentor_email: event.target.mentor_email.value,
+      level_of_education: event.target.level_of_education.value,
+      colleges_attended: event.target.colleges_attended.value,
+      how_question: event.target.how_question.value,
+    }
+
+    const JSONdata = JSON.stringify(data);
+
+    const endpoint = "/api/signup/mentor"
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    }
+
+    const response = await fetch(endpoint, options);
+
+    const result = await response.json();
+
+    if (!result.signup) alert(`Error: ${result.data}`);
+    else router.push("/signup/mentor-thank-you");
+  }
 
   return (
     <>
@@ -21,7 +47,7 @@ export default function ParentSignup() {
         <main className={styles.main}>
           <div id={styles.box}>
             <h1 className={styles.title}>Questions About Applicant</h1>
-            <form onSubmit={handleMentorSignupSubmit}>
+            <form action="/api/signup/mentor" method="post" onSubmit={(event) => handleSubmit(event)}>
               <div>
                 <input
                   className={styles.input}
@@ -58,7 +84,7 @@ export default function ParentSignup() {
               ></input>
               <br></br>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <button id={styles.button}>Create new account</button>
+                <button id={styles.button} type="submit">Create new account</button>
               </div>
             </form>
           </div>
