@@ -7,21 +7,22 @@ const withTM = require("next-transpile-modules")([
   "@fullcalendar/react",
 ]);
 
+const envs = {
+  API_KEY: process.env.API_KEY,
+  DATABASE_URL: process.env.DATABASE_URL
+};
+
 module.exports = withTM({
+  env: envs,
   reactStrictMode: false,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/login',
+        permanent: true
+      }
+    ]
+  },
   swcMinify: true,
-  env: {
-    API_KEY: process.env.API_KEY,
-    DATABASE_URL: process.env.DATABASE_URL
-  }
 });
-
-// import { NextResponse } from "next/server";
-
-// export function middleware(request) {
-//   return NextResponse.redirect(new URL('/login', request.url));
-// }
-
-// export const config = {
-//     matcher: ['/', '/index'],
-// }
