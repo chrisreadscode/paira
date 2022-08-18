@@ -1,6 +1,6 @@
 
 
-import styles from "../../styles/Homealt.module.css";
+import styles from "../../styles/Home.module.css";
 import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderMentor from "../../components/HeaderMentor.js";

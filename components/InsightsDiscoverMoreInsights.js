@@ -1,6 +1,6 @@
 import styles from "../styles/Default.module.css";
 import QuizCard from "../components/QuizCard";
-import stylesDiscoverAlt from "../styles/Discoveralt.module.css";
+import stylesDiscover from "../styles/Discover.module.css";
 import commonStyles from "../styles/common.module.css";
 import Link from 'next/link'
 import HotelIcon from '@mui/icons-material/Hotel';
@@ -16,15 +16,15 @@ export default function InsightsDiscoverMoreInsights() {
       {/* Quizzes to take section */}
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex" }}>
-        <div id={stylesDiscoverAlt.recommendedResources}>
+                  <div id={stylesDiscover.recommendedResources}>
                         <div style={{ display: "flex" }}>
                             <Link href="/course-content/sample-blog-post">
-                            <div className={stylesDiscoverAlt.assignments} style={{ height: "300px" }}>
-                                <div className={stylesDiscoverAlt.imgContainer}></div>
-                                <div className={stylesDiscoverAlt.content}>
+                              <div className={stylesDiscover.assignments} style={{ height: "300px" }}>
+                                  <div className={stylesDiscover.imgContainer}></div>
+                                  <div className={stylesDiscover.content}>
                                     <p style={{ margin: "0px" }}>How to Cultivate Self-Awareness</p>
-                                    <div className={stylesDiscoverAlt.articleSubtitle}>
-                                        <QuizIcon className={stylesDiscoverAlt.articleIcon} />
+                                      <div className={stylesDiscover.articleSubtitle}>
+                                          <QuizIcon className={stylesDiscover.articleIcon} />
                                         <p style={{ margin: "0px", paddingTop: "3px" }}>Quiz</p>
                                     </div>
 
@@ -34,12 +34,12 @@ export default function InsightsDiscoverMoreInsights() {
                             </Link>
 
                             <Link href="/course-content/sample-blog-post">
-                            <div className={stylesDiscoverAlt.assignments} style={{ height: "300px" }}>
-                                <div className={stylesDiscoverAlt.imgContainer}></div>
-                                <div className={stylesDiscoverAlt.content}>
+                              <div className={stylesDiscover.assignments} style={{ height: "300px" }}>
+                                  <div className={stylesDiscover.imgContainer}></div>
+                                  <div className={stylesDiscover.content}>
                                     <p style={{ margin: "0px" }}>Finding Direction in Life</p>
-                                    <div className={stylesDiscoverAlt.articleSubtitle}>
-                                        <QuizIcon className={stylesDiscoverAlt.articleIcon} />
+                                      <div className={stylesDiscover.articleSubtitle}>
+                                          <QuizIcon className={stylesDiscover.articleIcon} />
                                         <p style={{ margin: "0px", paddingTop: "3px" }}>Quiz</p>
                                     </div>
 
@@ -49,12 +49,12 @@ export default function InsightsDiscoverMoreInsights() {
                             </Link>
 
                             <Link href="/course-content/sample-blog-post">
-                            <div className={stylesDiscoverAlt.assignments} style={{ height: "300px" }}>
-                                <div className={stylesDiscoverAlt.imgContainer}></div>
-                                <div className={stylesDiscoverAlt.content}>
+                              <div className={stylesDiscover.assignments} style={{ height: "300px" }}>
+                                  <div className={stylesDiscover.imgContainer}></div>
+                                  <div className={stylesDiscover.content}>
                                     <p style={{ margin: "0px" }}>The Basics of Time Management</p>
-                                    <div className={stylesDiscoverAlt.articleSubtitle}>
-                                        <QuizIcon className={stylesDiscoverAlt.articleIcon} />
+                                      <div className={stylesDiscover.articleSubtitle}>
+                                          <QuizIcon className={stylesDiscover.articleIcon} />
                                         <p style={{ margin: "0px", paddingTop: "3px" }}>Quiz</p>
                                     </div>
 
@@ -72,15 +72,15 @@ export default function InsightsDiscoverMoreInsights() {
         </div>
         <br />
         <div style={{ display: "flex" }}>
-        <div id={stylesDiscoverAlt.recommendedResources}>
+                  <div id={stylesDiscover.recommendedResources}>
                         <div style={{ display: "flex" }}>
                             <Link href="/course-content/sample-blog-post">
-                            <div className={stylesDiscoverAlt.assignments} style={{ height: "300px" }}>
-                                <div className={stylesDiscoverAlt.imgContainer}></div>
-                                <div className={stylesDiscoverAlt.content}>
+                              <div className={stylesDiscover.assignments} style={{ height: "300px" }}>
+                                  <div className={stylesDiscover.imgContainer}></div>
+                                  <div className={stylesDiscover.content}>
                                     <p style={{ margin: "0px" }}>How to Cultivate Self-Awareness</p>
-                                    <div className={stylesDiscoverAlt.articleSubtitle}>
-                                        <QuizIcon className={stylesDiscoverAlt.articleIcon} />
+                                      <div className={stylesDiscover.articleSubtitle}>
+                                          <QuizIcon className={stylesDiscover.articleIcon} />
                                         <p style={{ margin: "0px", paddingTop: "3px" }}>Quiz</p>
                                     </div>
 
@@ -90,12 +90,12 @@ export default function InsightsDiscoverMoreInsights() {
                             </Link>
 
                             <Link href="/course-content/sample-blog-post">
-                            <div className={stylesDiscoverAlt.assignments} style={{ height: "300px" }}>
-                                <div className={stylesDiscoverAlt.imgContainer}></div>
-                                <div className={stylesDiscoverAlt.content}>
+                              <div className={stylesDiscover.assignments} style={{ height: "300px" }}>
+                                  <div className={stylesDiscover.imgContainer}></div>
+                                  <div className={stylesDiscover.content}>
                                     <p style={{ margin: "0px" }}>Finding Direction in Life</p>
-                                    <div className={stylesDiscoverAlt.articleSubtitle}>
-                                        <QuizIcon className={stylesDiscoverAlt.articleIcon} />
+                                      <div className={stylesDiscover.articleSubtitle}>
+                                          <QuizIcon className={stylesDiscover.articleIcon} />
                                         <p style={{ margin: "0px", paddingTop: "3px" }}>Quiz</p>
                                     </div>
 
@@ -105,12 +105,12 @@ export default function InsightsDiscoverMoreInsights() {
                             </Link>
 
                             <Link href="/course-content/sample-blog-post">
-                            <div className={stylesDiscoverAlt.assignments} style={{ height: "300px" }}>
-                                <div className={stylesDiscoverAlt.imgContainer}></div>
-                                <div className={stylesDiscoverAlt.content}>
+                              <div className={stylesDiscover.assignments} style={{ height: "300px" }}>
+                                  <div className={stylesDiscover.imgContainer}></div>
+                                  <div className={stylesDiscover.content}>
                                     <p style={{ margin: "0px" }}>The Basics of Time Management</p>
-                                    <div className={stylesDiscoverAlt.articleSubtitle}>
-                                        <QuizIcon className={stylesDiscoverAlt.articleIcon} />
+                                      <div className={stylesDiscover.articleSubtitle}>
+                                          <QuizIcon className={stylesDiscover.articleIcon} />
                                         <p style={{ margin: "0px", paddingTop: "3px" }}>Quiz</p>
                                     </div>
 

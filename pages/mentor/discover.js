@@ -1,5 +1,5 @@
 
-import styles from "../../styles/Discoveralt.module.css";
+import styles from "../../styles/Discover.module.css";
 import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderMentor from "../../components/HeaderMentor.js";

@@ -11,6 +11,7 @@ import MentorCardNarrow from "../../components/MentorCardNarrow.js";
 import Link from 'next/link';
 import QuizIcon from '@mui/icons-material/Quiz';
 import { useState } from 'react';
+import MentorCardSchedule from "../../components/MentorCardProfile";
 
 export default function StudentProfile() {
     const [editOn, setEditOn] = useState(false);
@@ -107,30 +108,11 @@ export default function StudentProfile() {
                             <p className={styles.subtitle} style={{ marginTop: "50px" }}>Current Mentors</p>
 
                             <div style={{ display: "flex", flexDirection: "row" }}>
-                                <Link href="/student/message" >
-                                    <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                        <div className={styles.mentorImg}>
-                                        </div>
-                                        Gina Wee
-                                        <p className={styles.mentorDescription}>Personal Mentor</p>
-                                    </div>
-                                </Link>
-                                <Link href="/student/message" >
-                                    <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                        <div className={styles.mentorImg}>
-                                        </div>
-                                        Tina Richards
-                                        <p className={styles.mentorDescription}>Time Management Mentor</p>
-                                    </div>
-                                </Link>
-                                <Link href="/student/message" >
-                                    <div className={styles.mentorBox} style={{ marginLeft: "20px" }}>
-                                        <div className={styles.mentorImg}>
-                                        </div>
-                                        John Lake
-                                        <p className={styles.mentorDescription}>Sleep Mentor</p>
-                                    </div>
-                                </Link>
+                                <MentorCardSchedule name={"Gina Wee"} description={"Personal Mentor"}></MentorCardSchedule>
+
+                                <MentorCardSchedule name={"Tina Richards"} description={"Time Management Mentor"}></MentorCardSchedule>
+
+                                <MentorCardSchedule name={"John Lake"} description={"Sleep Mentor"}></MentorCardSchedule>
                             </div>
 
 

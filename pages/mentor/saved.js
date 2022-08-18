@@ -2,7 +2,7 @@ import _Head from "../../components/_Head";
 import AssignmentCard from "../../components/AssignmentCard";
 import Footer from "../../components/Footer";
 import HeaderMentor from "../../components/HeaderMentor";
-import styles from "../../styles/Discoveralt.module.css";
+import styles from "../../styles/Discover.module.css";
 import Divider from "@mui/material/Divider";
 import commonStyles from "../../styles/common.module.css";
 import Link from 'next/link';

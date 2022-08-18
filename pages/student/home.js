@@ -1,6 +1,6 @@
 
 
-import styles from "../../styles/Homealt.module.css";
+import styles from "../../styles/Home.module.css";
 import commonStyles from "../../styles/common.module.css";
 import _Head from "../../components/_Head.js";
 import HeaderStudent from "../../components/HeaderStudent.js";
@@ -9,7 +9,8 @@ import Image from "next/image";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Link from "next/link";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-
+import Assignment from '../../components/Assignment.js'
+import MentorCardNarrow from "../../components/MentorCardNarrow";
 
 export default function Home() {
     return (
@@ -24,76 +25,26 @@ export default function Home() {
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
                         <Link href="/student/schedule">
-                            <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
-                                <div className={styles.imgContainer}>
-                                    <div id={styles.img1}>
-                                        <Image alt="Time Management Image"
-                                            src="/time-management.jpg"
-                                            width="396px"
-                                            height="300px"
-                                        ></Image>
-                                    </div>
-                                </div>
 
-                                <div className={styles.content}>
-                                    <div className={styles.assignmentTitle}>
-                                        Schedule your next session
-                                    </div>
-                                    <p className={styles.assignmentDetails}>5 more session left to schedule until July 20th</p>
-                                </div>
-                            </div>
+                            <Assignment img={"/time-management.jpg"} imgTitle={"Time Management Image"} title={"Schedule your next session"}
+                                type={" "} duration={" "} details={"5 more session left to schedule until July 20th"} showIcons={false}
+                            >
+                            </Assignment>
                         </Link>
 
                         <Link href="/course-content/sample-video">
-                            <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
-                                <div className={styles.imgContainer}>
-                                    <div id={styles.img1}>
-                                        <Image alt="Time Management Image"
-                                            src="/time-management.jpg"
-                                            width="396px"
-                                            height="300px"
-                                        ></Image>
-                                    </div>
-                                </div>
+                            <Assignment img={"/time-management.jpg"} imgTitle={"Time Management Image"} title={"Self-Care Vision Board"}
+                                type={"Exercise"} duration={"60 minute practice"} details={"In this activity, learn to increase self-compassion through fun and playful creativity."}
 
-                                <div className={styles.content}>
-                                    <div className={styles.assignmentTitle}>
-                                        Self-Care Vision Board
-
-                                        <div style={{ height: "22px" }}>
-                                            <AccessTimeIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                            <p className={styles.assignmentDescription}>Exercise  ·  60 minute practice</p>
-                                        </div>
-                                    </div>
-                                    <p className={styles.assignmentDetails}> In this activity, learn to increase self-compassion through fun and playful creativity.</p>
-                                </div>
-                            </div>
+                            >
+                            </Assignment>
                         </Link>
 
                         <Link href="/course-content/sample-blog-post">
-                            <div className={styles.assignments} style={{ marginLeft: "20px", height: "300px" }}>
-                                <div className={styles.imgContainer}>
-                                    <div id={styles.img1}>
-                                        <Image alt="Time Management Image"
-                                            src="/time-management.jpg"
-                                            width="396px"
-                                            height="300px"
-                                        ></Image>
-                                    </div>
-                                </div>
-
-                                <div className={styles.content}>
-                                    <div className={styles.assignmentTitle}>
-                                        Positive Reminiscence
-
-                                        <div style={{ height: "22px" }}>
-                                            <AccessTimeIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                            <p className={styles.assignmentDescription}>Exercise  ·  5-10 minute practice</p>
-                                        </div>
-                                    </div>
-                                    <p className={styles.assignmentDetails}>  In this activity, learn to help clients cultivate positive emotions through savoring.</p>
-                                </div>
-                            </div>
+                            <Assignment img={"/time-management.jpg"} imgTitle={"Time Management Image"} title={"Positive Reminiscence"}
+                                type={"Exercise"} duration={"5-10 minute practice"} details={"In this activity, learn to help clients cultivate positive emotions through savoring."}
+                            >
+                            </Assignment>
                         </Link>
 
                     </div>
@@ -138,32 +89,13 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className={styles.mentor}>
-                            <div className={styles.mentorCard} style={{ height: "120px" }}>
-                                <Image alt="Mentor Profile Pic"
-                                    src="/mentor-profile-pic.png"
-                                    width="100px"
-                                    height="100px"
-                                ></Image>
-                                Tina Richards
+                        <MentorCardNarrow imgTitle={"Mentor Profile Pic"} img={"/mentor-profile-pic.png"}
+                            mentorName={"Tina Richards"} mentorDescription={"Time Management Mentor"}>
+                        </MentorCardNarrow>
 
-                            </div>
-                            <p className={styles.mentorDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Time Management Mentor</p>
-
-                        </div>
-
-                        <div className={styles.mentor}>
-                            <div className={styles.mentorCard}>
-                                <Image alt="Mentor Profile Pic"
-                                    src="/mentor-profile-pic.png"
-                                    width="100px"
-                                    height="100px"
-                                ></Image>
-                                Gina Wee
-                                <p className={styles.mentorDescription}> Sleep Mentor</p>
-                            </div>
-
-                        </div>
+                        <MentorCardNarrow imgTitle={"Mentor Profile Pic"} img={"/mentor-profile-pic.png"}
+                            mentorName={"Gina Wee"} mentorDescription={"Sleep Mentor"}>
+                        </MentorCardNarrow>
                     </div>
 
 
@@ -175,51 +107,3 @@ export default function Home() {
         </>
     );
 }
-
-// import styles from "../../styles/Default.module.css";
-// import _Head from "../../components/_Head.js";
-// import AssignmentCard from "../../components/AssignmentCard";
-// import Footer from "../../components/Footer.js";
-// import HeaderStudent from "../../components/HeaderStudent.js";
-// import MeetingCard from "../../components/MeetingCard";
-// import { Divider } from "@mui/material";
-// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-// import MentorCardWide from "../../components/MentorCardWide";
-// import MentorCard from "../../components/MentorCard";
-
-// export default function Home() {
-//   return (
-//     <>
-//       <_Head />
-//       <HeaderStudent />
-//       {/* <div className={styles.container}> */}
-//       <main className={styles.main}>
-//         <div id="upcoming-assignments-container">
-//           <h2>Upcoming Assignments</h2>
-//           <div style={{ display: "flex" }}>
-//             <ArrowBackIosIcon />
-//             <ArrowForwardIosIcon />
-//           </div>
-//           <div style={{ display: "flex" }}>
-//             <MeetingCard />
-//             <AssignmentCard />
-//             <AssignmentCard />
-//           </div>
-//         </div>
-//         <Divider></Divider>
-//         <div id="your-mentors-container">
-//           <h2>Your Mentors</h2>
-//           <div>Explore Mentors</div>
-//           <ArrowForwardIosIcon />
-//           <div style={{ display: "flex" }}>
-//             <MentorCardWide />
-//             <MentorCard />
-//           </div>
-//         </div>
-//       </main>
-//       <Footer />
-//       {/* </div> */}
-//     </>
-//   );
-// }

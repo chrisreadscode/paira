@@ -12,7 +12,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { InlineWidget } from "react-calendly";
 import { ToggleButton } from "@mui/material";
-
+import MentorCardNarrow from "../../components/MentorCardNarrow";
+import MentorCardSchedule from "../../components/MentorCardSchedule";
 
 export default function Schedule() {
     return (
@@ -21,63 +22,37 @@ export default function Schedule() {
             <HeaderStudent />
             <div className={commonStyles.container}>
                 <main className={commonStyles.main} style={{ display: "flex", alignItems: "top", justifyContent: "center", paddingTop: "0" }}>
-                    <div id={styles.mentorsBox} style={{marginTop: "3.5vh"}}>
+                    <div id={styles.mentorsBox} style={{ marginTop: "3.5vh" }}>
                         <h4 style={{ margin: "0px", marginBottom: "20px" }}>
                             Your Mentors
                         </h4>
 
                         {/* <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}> */}
-                        <div className={styles.mentor}>
-                            <div className={styles.mentorCard}>
-                                <Image alt="Mentor Profile Pic"
-                                    src="/mentor-profile-pic.png"
-                                    width="80px"
-                                    height="80px"
-                                ></Image>
-                                <p style={{ margin: "0px" }}>Gina Wee</p>
-                                <p className={styles.mentorDescription}> Personal Mentor</p>
-                            </div>
-                        </div>
+                        <MentorCardSchedule imgTitle={"Mentor Profile Pic"} img={"/mentor-profile-pic.png"}
+                            mentorName={"Gina Wee"} mentorDescription={"Personal Mentor"}></MentorCardSchedule>
                         {/* </ToggleButton> */}
 
                         {/* <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}> */}
-                        <div className={styles.mentor}>
-                            <div className={styles.mentorCard}>
-                                <Image alt="Mentor Profile Pic"
-                                    src="/mentor-profile-pic.png"
-                                    width="80px"
-                                    height="80px"
-                                ></Image>
-                                <p style={{ margin: "0px" }}>Tina Richards</p>
-                                <p className={styles.mentorDescription}> Time Management Mentor</p>
-                            </div>
-                        </div>
+                        <MentorCardSchedule imgTitle={"Mentor Profile Pic"} img={"/mentor-profile-pic.png"}
+                            mentorName={"Tina Richards"} mentorDescription={"Time Management Mentor"}></MentorCardSchedule>
                         {/* </ToggleButton> */}
 
                         {/* <ToggleButton styles={{border: "0", padding: "0", margin: "0", width: "100%"}}> */}
-                        <div className={styles.mentor}>
-                            <div className={styles.mentorCard}>
-                                <Image alt="Mentor Profile Pic"
-                                    src="/mentor-profile-pic.png"
-                                    width="80px"
-                                    height="80px"
-                                ></Image>
-                                <p style={{ margin: "0px" }}>John Lake</p>
-                                <p className={styles.mentorDescription}> Sleep Mentor</p>
-                            </div>
-                        </div>
+                        <MentorCardSchedule imgTitle={"Mentor Profile Pic"} img={"/mentor-profile-pic.png"}
+                            mentorName={"John Lake"} mentorDescription={"Sleep Mentor"}></MentorCardSchedule>
                         {/* </ToggleButton> */}
+                        
                     </div>
 
                     {/* <div id={styles.scheduleBox}>
                     </div> */}
                     <div>
-                        <InlineWidget styles={{height: "100vh", padding: "0", margin: "0", width: "70vw"}} url="https://calendly.com/rcreadii/" />
+                        <InlineWidget styles={{ height: "100vh", padding: "0", margin: "0", width: "70vw" }} url="https://calendly.com/rcreadii/" />
                     </div>
                 </main>
 
             </div >
-        <Footer />
+            <Footer />
         </>
     );
 }
