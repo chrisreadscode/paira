@@ -102,7 +102,8 @@ export default function Message() {
                 </main>
 
                 <Footer />
-            </div ></>
+            </div >
+            </>
     );
 }
 

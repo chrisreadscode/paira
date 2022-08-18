@@ -10,11 +10,36 @@ import EditIcon from '@mui/icons-material/Edit';
 import MentorCardNarrow from "../../components/MentorCardNarrow.js";
 import Link from 'next/link';
 import QuizIcon from '@mui/icons-material/Quiz';
-import { useState } from 'react';
-import MentorCardSchedule from "../../components/MentorCardProfile";
+import { useEffect, useState } from 'react';
+import useSWR from 'swr';
+import { LensTwoTone } from "@mui/icons-material";
 
-export default function StudentProfile() {
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+export default function StudentProfile({student}) {
     const [editOn, setEditOn] = useState(false);
+
+    let studentHardCoded = {
+            age: "",
+            education: 'Frost High School',
+            email: 'paulsanjeet@frosths.edu',
+            location: 'Boston, Massachusetts',
+            name: "Paul Sanjeet"
+        };
+    
+    let mentor = {
+        name: 'Gina Wee',
+        mentorSpecialty: 'Personal'
+    };
+
+    const id = 3;
+    const endpoint = `/api/student/profile/${id}`;
+    const { data, error } = useSWR(endpoint, fetcher);
+    console.log({data, error});
+
+    // if error return <div>Failed to load</div>
+    // if (!data) return <div>Loading...</div>
+
     const [education, setEducation] = useState('Frost High School');
     const [email, setEmail] = useState('paulsanjeet@frosths.edu');
     const [location, setLocation] = useState('Boston, Massachusetts');
@@ -128,3 +153,33 @@ export default function StudentProfile() {
         </>
     );
 }
+
+// export async function getStaticPaths({id}) {
+//   const endpoint = `/api/student/profile/${id}`;
+//   console.log(endpoint)
+// //   const res = await fetch(endpoint);
+
+// //   const student = await res.json();
+
+//   return {
+//     paths: [{
+//             params: {
+//                 id: "0" // id.toString()
+//             },
+//         }],
+//     fallback: false
+//     }
+// };
+
+// export async function getStaticProps(context) {
+//     const endpoint = `/api/student/profile/${id}`;
+//     const res = await fetch(endpoint);
+  
+//     const student = await res.json();
+  
+//     return {
+//       props: {
+//         studentData: data
+//       }
+//   };
+// }
