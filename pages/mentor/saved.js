@@ -5,6 +5,7 @@ import HeaderMentor from "../../components/HeaderMentor";
 import styles from "../../styles/Discover.module.css";
 import Divider from "@mui/material/Divider";
 import commonStyles from "../../styles/common.module.css";
+import SavedResources from "../../components/SavedResources";
 import Link from 'next/link';
 
 import SearchIcon from '@mui/icons-material/Search';
@@ -40,53 +41,15 @@ export default function Saved() {
           </p>
 
           <div style={{ display: "flex" }}>
-            <Link href="/course-content/sample-blog-post">
-              <div className={styles.assignments} style={{ height: "300px" }}>
-                <div className={styles.imgContainer}></div>
-                <div className={styles.content} style={{ position: "relative" }}>
-                  <BookmarkIcon fontSize="large" style={{ position: "absolute", right: "0", top: "-20vh" }} />
-                  <p style={{ margin: "0px" }}>How to Cultivate Self-Awareness</p>
-                  <div className={styles.articleSubtitle}>
-                    <MenuBookIcon className={styles.articleIcon} />
-                    <p style={{ margin: "0px", paddingTop: "3px" }}>Article</p>
-                  </div>
+            <SavedResources title={"How to Cultivate Self-Awareness"}
+              description={"Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness."}></SavedResources>
 
-                  <p style={{ opacity: "0.6", fontSize: "small" }}>Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness.</p>
-                </div>
-              </div>
-            </Link>
+            <SavedResources title={"Finding Direction in Life"}
+              description={"Finding direction in life can feel like an overwhelming task at times with so many options, so many open paths. Learn how to navigate through this obstacle and find the right path for you."}></SavedResources>
 
-            <Link href="/course-content/sample-blog-post">
-              <div className={styles.assignments} style={{ height: "300px" }}>
-                <div className={styles.imgContainer}></div>
-                <div className={styles.content} style={{ position: "relative" }}>
-                  <BookmarkIcon fontSize="large" style={{ position: "absolute", right: "0", top: "-20vh" }} />
-                  <p style={{ margin: "0px" }}>Finding Direction in Life</p>
-                  <div className={styles.articleSubtitle}>
-                    <MenuBookIcon className={styles.articleIcon} />
-                    <p style={{ margin: "0px", paddingTop: "3px" }}>Article</p>
-                  </div>
+            <SavedResources title={"The Basics of Time Management"}
+              description={"Balancing school, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to time management and avoid feeling overwhelmed."}></SavedResources>
 
-                  <p style={{ opacity: "0.6", fontSize: "small" }}>Finding direction in life can feel like an overwhelming task at times with so many options, so many open paths. Learn how to navigate through this obstacle and find the right path for you.</p>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/course-content/sample-blog-post">
-              <div className={styles.assignments} style={{ height: "300px" }}>
-                <div className={styles.imgContainer}></div>
-                <div className={styles.content} style={{ position: "relative" }}>
-                  <BookmarkIcon fontSize="large" style={{ position: "absolute", right: "0", top: "-20vh" }} />
-                  <p style={{ margin: "0px" }}>The Basics of Time Management</p>
-                  <div className={styles.articleSubtitle}>
-                    <MenuBookIcon className={styles.articleIcon} />
-                    <p style={{ margin: "0px", paddingTop: "3px" }}>Article</p>
-                  </div>
-
-                  <p style={{ opacity: "0.6", fontSize: "small" }}>Balancing school, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to time management and avoid feeling overwhelmed.</p>
-                </div>
-              </div>
-            </Link>
           </div>
 
 

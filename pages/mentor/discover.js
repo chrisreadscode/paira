@@ -10,8 +10,8 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Image from "next/image";
 import Link from "next/link";
-
-
+import ArticleResource from "../../components/ArticleResource";
+import VisualResources from "../../components/VisualResources";
 
 
 export default function Discover() {
@@ -34,44 +34,14 @@ export default function Discover() {
                         </p>
 
                         <div style={{ display: "flex" }}>
-                            <div className={styles.assignments} style={{ height: "300px" }}>
-                                <div className={styles.imgContainer}></div>
-                                <div className={styles.content}>
-                                    <p style={{ margin: "0px" }}>How to Cultivate Self-Awareness</p>
-                                    <div className={styles.articleSubtitle}>
-                                        <MenuBookIcon className={styles.articleIcon} />
-                                        <p style={{ margin: "0px", paddingTop: "3px" }}>Article</p>
-                                    </div>
+                            <ArticleResource link={"/course-content/sample-blog-post"} title={"How to Cultivate Self-Awareness"} description={"Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness."}>
+                            </ArticleResource>
 
-                                    <p style={{ opacity: "0.6", fontSize: "small" }}>Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness.</p>
-                                </div>
-                            </div>
+                            <ArticleResource link={"/course-content/sample-blog-post"} title={"Finding Direction in Life"} description={"Finding direction in life can feel like an overwhelming task at times with so many options, so many open paths. Learn how to navigate through this obstacle and find the right path for you."}>
+                            </ArticleResource>
 
-                            <div className={styles.assignments} style={{ height: "300px" }}>
-                                <div className={styles.imgContainer}></div>
-                                <div className={styles.content}>
-                                    <p style={{ margin: "0px" }}>Finding Direction in Life</p>
-                                    <div className={styles.articleSubtitle}>
-                                        <MenuBookIcon className={styles.articleIcon} />
-                                        <p style={{ margin: "0px", paddingTop: "3px" }}>Article</p>
-                                    </div>
-
-                                    <p style={{ opacity: "0.6", fontSize: "small" }}>Finding direction in life can feel like an overwhelming task at times with so many options, so many open paths. Learn how to navigate through this obstacle and find the right path for you.</p>
-                                </div>
-                            </div>
-
-                            <div className={styles.assignments} style={{ height: "300px" }}>
-                                <div className={styles.imgContainer}></div>
-                                <div className={styles.content}>
-                                    <p style={{ margin: "0px" }}>The Basics of Time Management</p>
-                                    <div className={styles.articleSubtitle}>
-                                        <MenuBookIcon className={styles.articleIcon} />
-                                        <p style={{ margin: "0px", paddingTop: "3px" }}>Article</p>
-                                    </div>
-
-                                    <p style={{ opacity: "0.6", fontSize: "small" }}>Balancing school, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to time management and avoid feeling overwhelmed.</p>
-                                </div>
-                            </div>
+                            <ArticleResource link={"/course-content/sample-blog-post"} title={"The Basics of Time Management"} description={"Balancing school, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to time management and avoid feeling overwhelmed."}>
+                            </ArticleResource>
                         </div>
 
 
@@ -83,34 +53,15 @@ export default function Discover() {
                         </p>
 
                         <div id={styles.videos}>
-                            <Link href="/course-content/sample-video">
-                                <div className={styles.video}>
-                                    Self-Awareness
-                                    <div className={styles.vidPic}>
-                                    </div>
-                                    <p style={{ fontSize: "small" }}>2 min</p>
-                                </div>
-                            </Link>
 
-                            <Link href="/course-content/sample-video">
-                                <div className={styles.video}>
-                                    Direction
+                            <VisualResources link={"/course-content/sample-video"} title={"Self-Awareness"}
+                                duration={"2 min"}></VisualResources>
 
-                                    <div className={styles.vidPic}>
-                                    </div>
-                                    <p style={{ fontSize: "small" }}>3 min</p>
-                                </div>
-                            </Link>
+                            <VisualResources link={"/course-content/sample-video"} title={"Direction"}
+                                duration={"3 min"}></VisualResources>
 
-                            <Link href="/course-content/sample-video">
-                                <div className={styles.video}>
-                                    Time Management
-
-                                    <div className={styles.vidPic}>
-                                    </div>
-                                    <p style={{ fontSize: "small" }}>3 min</p>
-                                </div>
-                            </Link>
+                            <VisualResources link={"/course-content/sample-video"} title={"Time Management"}
+                                duration={"5 min"}></VisualResources>
                         </div>
                     </div>
 

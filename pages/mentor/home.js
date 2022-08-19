@@ -10,6 +10,8 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Link from "next/link";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import MentorHomeMeeting from "../../components/MentorHomeMeeting";
+import MentorHomeResources from "../../components/MentorHomeResources";
 
 
 export default function Home() {
@@ -24,108 +26,17 @@ export default function Home() {
                     </div>
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
+                        <MentorHomeMeeting name={"Paul Sanjeet"} imgTitle={"Mentee Profile Pic"}
+                            img={"/profile-pic.png"} date={"July 12th"} time={"2:30pm"}></MentorHomeMeeting>
 
-                        <div className={styles.menteeBox}>
-                            <div>
-                                <p className={styles.menteeName}>Paul Sanjeet</p>
-                                <div className={styles.menteePic}>
-                                    <Image alt="Mentee Profile Pic"
-                                        src="/profile-pic.png"
-                                        width="50px"
-                                        height="50px"
-                                    ></Image>
-                                </div>
-                            </div>
-
-                            <div className={styles.meetingDescription}>
-                                <p style={{ margin: "0px", marginBottom: "10px" }}>Date: July 12th</p>
-                                <p style={{ margin: "0px" }}>Time: 2:30pm</p>
-                            </div>
-
-                            <hr></hr>
-
-                            <div>
-                                <Link href="/mentor/schedule">
-                                    <div className={styles.buttons} style={{ float: "left" }}>
-                                        Join Meeting
-                                    </div>
-                                </Link>
-                                <Link href="/mentor/message">
-                                    <div className={styles.buttons} style={{ float: "right" }}>
-                                        Message
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className={styles.menteeBox}>
-                            <div>
-                                <p className={styles.menteeName}>Nicole Tran</p>
-                                <div className={styles.menteePic}>
-                                    <Image alt="Mentee Profile Pic"
-                                        src="/profile-pic.png"
-                                        width="50px"
-                                        height="50px"
-                                    ></Image>
-                                </div>
-                            </div>
-
-                            <div className={styles.meetingDescription}>
-                                <p style={{ margin: "0px", marginBottom: "10px" }}>Date: July 14th</p>
-                                <p style={{ margin: "0px" }}>Time: 11:00am</p>
-                            </div>
-
-                            <hr></hr>
-
-                            <div>
-                                <div className={styles.buttons} style={{ float: "left" }}>
-                                    Join Meeting
-                                </div>
-
-                                <div className={styles.buttons} style={{ float: "right" }}>
-                                    Message
-                                </div>
-                            </div>
-                        </div>
+                        <MentorHomeMeeting name={"Nicole Tran"} imgTitle={"Mentee Profile Pic"}
+                            img={"/profile-pic.png"} date={"July 14th"} time={"11:00am"}></MentorHomeMeeting>
 
 
-                        <div className={styles.menteeBox}>
-                            <div>
-                                <p className={styles.menteeName}>Abbey Adams</p>
-                                <div className={styles.menteePic}>
-                                    <Image alt="Mentee Profile Pic"
-                                        src="/profile-pic.png"
-                                        width="50px"
-                                        height="50px"
-                                    ></Image>
-                                </div>
-                            </div>
-
-                            <div className={styles.meetingDescription}>
-                                <p style={{ margin: "0px", marginBottom: "10px" }}>Date: July 15th</p>
-                                <p style={{ margin: "0px" }}>Time: 1:00pm</p>
-                            </div>
-
-                            <hr></hr>
-
-                            <div>
-                                <div className={styles.buttons} style={{ float: "left" }}>
-                                    Join Meeting
-                                </div>
-
-                                <div className={styles.buttons} style={{ float: "right" }}>
-                                    Message
-                                </div>
-                            </div>
-                        </div>
+                        <MentorHomeMeeting name={"Abbey Adams"} imgTitle={"Mentee Profile Pic"}
+                            img={"/profile-pic.png"} date={"July 15th"} time={"1:00pm"}></MentorHomeMeeting>
 
                     </div>
-
-
-
-
-
-
 
                     <div id={styles.upcomingAssignment}>
                         <h2 className={commonStyles.title}>Resources on Positive Psychology</h2>
@@ -133,78 +44,17 @@ export default function Home() {
 
                     <div style={{ display: "flex", flexDirection: "row", marginBottom: "30px" }}>
 
-                        <Link href="/course-content/sample-blog-post">
-                            <div className={styles.resources}>
-                                <div className={styles.imgContainer} style={{ height: "40%" }}>
-                                </div>
+                        <MentorHomeResources link={"/course-content/sample-blog-post"} title={"How to Cultivate Self-Awareness"}
+                            description={"Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness."}></MentorHomeResources>
 
-                                <div className={styles.content} style={{ height: "60%" }}>
-                                    <div className={styles.assignmentTitle}>
-                                        How to Cultivate Self-Awareness
+                        <MentorHomeResources link={"/course-content/sample-blog-post"} title={"Finding Direction in Life"}
+                            description={"Finding direction in life can feel like an overwhelming task, so many open paths. Learn how to navigate through this obstacle and find the right path for you."}></MentorHomeResources>
 
-                                        <div style={{ height: "22px" }}>
-                                            <MenuBookIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                            <p className={styles.assignmentDescription}>Article</p>
-                                        </div>
-                                    </div>
-                                    <p className={styles.assignmentDetails} style={{ paddingTop: "10px" }}> Learn about the importance of Self-Awareness and some of its proven benefits. Discover 5 ways to increase your Self-Awareness.</p>
-                                </div>
-                            </div>
-                        </Link>
+                        <MentorHomeResources link={"/course-content/sample-blog-post"} title={"Daily Motivation"}
+                            description={"A step-by-step tutorial on finding out what motivates you. Begin with a questionnaire using awareness building tools."}></MentorHomeResources>
 
-                        <div className={styles.resources}>
-                            <div className={styles.imgContainer} style={{ height: "40%" }}>
-                            </div>
-                            <div className={styles.content} style={{ height: "60%" }}>
-                                <div className={styles.assignmentTitle}>
-                                    Finding Direction in Life
-
-                                    <div style={{ height: "22px" }}>
-                                        <MenuBookIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                        <p className={styles.assignmentDescription}>Article</p>
-                                    </div>
-                                </div>
-                                <p className={styles.assignmentDetails} style={{ paddingTop: "10px" }}> Finding direction in life can feel like an overwhelming task, so many open paths. Learn how to navigate through this obstacle and find the right path for you.</p>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.resources}>
-                            <div className={styles.imgContainer} style={{ height: "40%" }}>
-                            </div>
-
-
-                            <div className={styles.content} style={{ height: "60%" }}>
-                                <div className={styles.assignmentTitle}>
-                                    Daily Motivation
-
-                                    <div style={{ height: "22px" }}>
-                                        <MenuBookIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                        <p className={styles.assignmentDescription}>Article</p>
-                                    </div>
-                                </div>
-                                <p className={styles.assignmentDetails} style={{ paddingTop: "10px" }}> A step-by-step tutorial on finding out what motivates you. Begin with a questionnaire using awareness building tools.</p>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.resources}>
-                            <div className={styles.imgContainer} style={{ height: "40%" }}>
-                            </div>
-
-
-                            <div className={styles.content} style={{ height: "60%" }}>
-                                <div className={styles.assignmentTitle}>
-                                    The Basics of Time Management
-
-                                    <div style={{ height: "22px" }}>
-                                        <MenuBookIcon className={styles.icon} style={{ display: "inlineBlock" }} />
-                                        <p className={styles.assignmentDescription}>Article</p>
-                                    </div>
-                                </div>
-                                <p className={styles.assignmentDetails} style={{ paddingTop: "10px" }}> Balancing academics, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to avoid feeling overwhelmed.</p>
-                            </div>
-                        </div>
+                        <MentorHomeResources link={"/course-content/sample-blog-post"} title={"The Basics of Time Management"}
+                            description={"Balancing academics, athletics and a social life can often feel like an inpossible task at times. Find out 7 key components to avoid feeling overwhelmed."}></MentorHomeResources>
 
                     </div>
 

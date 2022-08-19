@@ -5,6 +5,7 @@ import _Head from "../../components/_Head.js";
 import Footer from "../../components/Footer.js";
 import HeaderMentor from "../../components/HeaderMentor.js";
 import Link from "next/link";
+import MentorStudent from "../../components/MentorStudent";
 
 import EditIcon from '@mui/icons-material/Edit';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
@@ -30,46 +31,14 @@ export default function Students() {
                                 Students
 
                                 <div id={styles.mentees}>
+                                    <MentorStudent link={"/mentor/student"} imgTitle={"Mentee Profile Pic"} img={"/profile-pic.png"}
+                                        name={"Paul Sanjeet"}></MentorStudent>
 
-                                    <Link href="/mentor/student">
-                                        <div className={styles.menteeCard}>
-                                            <div className={styles.mentee} style={{ height: "120px" }}>
-                                                <Image alt="Mentee Profile Pic"
-                                                    src="/profile-pic.png"
-                                                    width="100px"
-                                                    height="100px"
-                                                ></Image>
-                                                <p className={styles.subtitle}>Paul Sanjeet</p>
-                                            </div>
-                                            <p className={styles.menteeDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Student</p>
-                                        </div>
+                                    <MentorStudent link={"/mentor/student"} imgTitle={"Mentee Profile Pic"} img={"/profile-pic.png"}
+                                        name={"Nicole Tran"}></MentorStudent>
 
-                                    </Link>
-
-                                    <div className={styles.menteeCard}>
-                                        <div className={styles.mentee} style={{ height: "120px" }}>
-                                            <Image alt="Mentee Profile Pic"
-                                                src="/profile-pic.png"
-                                                width="100px"
-                                                height="100px"
-                                            ></Image>
-                                            <p className={styles.subtitle}>Nicole Tran</p>
-                                        </div>
-                                        <p className={styles.menteeDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Student</p>
-                                    </div>
-
-                                    <div className={styles.menteeCard}>
-                                        <div className={styles.mentee} style={{ height: "120px" }}>
-                                            <Image alt="Mentee Profile Pic"
-                                                src="/profile-pic.png"
-                                                width="100px"
-                                                height="100px"
-                                            ></Image>
-                                            <p className={styles.subtitle}>Abbey Adams</p>
-                                        </div>
-                                        <p className={styles.menteeDescription} style={{ textAlign: "center", lineHeight: "14px", marginTop: "12px" }}> Student</p>
-                                    </div>
-
+                                    <MentorStudent link={"/mentor/student"} imgTitle={"Mentee Profile Pic"} img={"/profile-pic.png"}
+                                        name={"Abbey Adams"}></MentorStudent>
 
                                 </div>
 

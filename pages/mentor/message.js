@@ -12,6 +12,7 @@ import TextField from "@mui/material/TextField";
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import { useState } from 'react';
 import { Button } from "@mui/material";
+import MentorMessageMentee from "../../components/MentorMessageMentee";
 
 export default function Message() {
     return (
@@ -22,44 +23,11 @@ export default function Message() {
 
                     <div id={styles.mainBox}>
                         <div id={styles.mentorSide}>
-                            <div className={styles.mentorBox}>
-                                <Image alt="Profile Picture"
-                                    src="/profile-pic.png"
-                                    width="55px"
-                                    height="55px"
-                                ></Image>
-                                <div style={{ width: "8%", height: "100%" }}></div>
-                                <div className={styles.mentorDescription}>
-                                    <h3 className={styles.mentorNames}>Paul Sanjeet</h3>
-                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Student</p>
-                                </div>
-                            </div>
+                            <MentorMessageMentee imgTitle={"Mentee Profile Picture"} img={"/profile-pic.png"} menteeName={"Paul Sanjeet"}></MentorMessageMentee>
 
-                            <div className={styles.mentorBox}>
-                                <Image alt="Profile Picture"
-                                    src="/profile-pic.png"
-                                    width="55px"
-                                    height="55px"
-                                ></Image>
-                                <div style={{ width: "8%", height: "100%" }}></div>
-                                <div className={styles.meentorDescription}>
-                                    <h3 className={styles.mentorNames}>Nicole Tran</h3>
-                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Student</p>
-                                </div>
-                            </div>
+                            <MentorMessageMentee imgTitle={"Mentee Profile Picture"} img={"/profile-pic.png"} menteeName={"Nicole Tran"}></MentorMessageMentee>
 
-                            <div className={styles.mentorBox}>
-                                <Image alt="Profile Picture"
-                                    src="/profile-pic.png"
-                                    width="55px"
-                                    height="55px"
-                                ></Image>
-                                <div style={{ width: "8%", height: "100%" }}></div>
-                                <div className={styles.meentorDescription}>
-                                    <h3 className={styles.mentorNames}>Abbey Adams</h3>
-                                    <p className={styles.mentorNames} style={{ fontSize: "small", color: "#7c7c7c" }}> Student</p>
-                                </div>
-                            </div>
+                            <MentorMessageMentee imgTitle={"Mentee Profile Picture"} img={"/profile-pic.png"} menteeName={"Abbey Adams"}></MentorMessageMentee>
                         </div>
 
                         <div id={styles.messageSide}>
@@ -103,7 +71,7 @@ export default function Message() {
 
                 <Footer />
             </div >
-            </>
+        </>
     );
 }
 
