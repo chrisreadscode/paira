@@ -69,7 +69,6 @@ export default function StudentProfile() {
                     </p>
                   </div>}
 
-
                 <p id={styles.email} className={styles.fontLarge}>Email</p>
                 {editOn ? <input className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6", width: "50%" }} type="text" value={email} onChange={(event) => setEmail(event.target.value)} /> : <div className={styles.textBox} style={{ width: "50%" }}>
                   <p className={styles.fontSmall} style={{ margin: "0px", color: "#212121", lineHeight: "1.6" }}>
@@ -85,9 +84,6 @@ export default function StudentProfile() {
                 </div>}
               </div>
             </div>
-
-
-
 
             {/* The box on the right part of the screen */}
             <div id={styles.sideBox}>
@@ -118,17 +114,7 @@ export default function StudentProfile() {
                 > </CreditCardIcon>
                 <p id={styles.paymentTxt}>Payment Method</p>
               </div>
-
-
-
-
-
-
-
-
             </div>
-
-
           </div>
 
         </main>
