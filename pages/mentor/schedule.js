@@ -10,7 +10,8 @@ import styles from "../../styles/Calendar.module.css";
 import { useEffect, useState } from "react";
 
 export default function Calendar() {
-  const calendarId = "jdkg942utcddst4mnc34nkc59o@group.calendar.google.com";
+  // place calendarId in environmental variables
+  const calendarId = "";
 
   let calendars = [
     {
@@ -18,7 +19,7 @@ export default function Calendar() {
       color: "rgb(18, 136, 222)",
     },
     // {
-    //   calendarId: "appacademy.io_jtt32ih2g9bb6djbev0e6o6rdg@group.calendar.google.com@group.calendar.google.com",
+    //   calendarId: "moretexthere@group.calendar.google.com@group.calendar.google.com",
     //   color: "rgb(22, 136, 18)",
     // }
   ];
